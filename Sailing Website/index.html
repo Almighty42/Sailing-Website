@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <img class="header__logo" src="./assets/svgs/logo.svg" alt="logo" />
+            <ul class="header__list">
+                <li class="header__item">
+                    <a href="http://127.0.0.1:5500/vodic" class="header__anchor header__anchor__selected">
+                        Vodič
+                    </a>
+                    <img class="header__item__arrow" src="./assets/svgs/arrow-down.svg" alt="strelica na dole" />
+                </li>
+                <li class="header__item">
+                    <a href="http://127.0.0.1:5500/pustolovine" class="header__anchor">
+                        Pustolovine
+                    </a>
+                    <img class="header__item__arrow" src="./assets/svgs/arrow-down.svg" alt="strelica na dole" />
+                </li>
+                <li class="header__item">
+                    <a href="http://127.0.0.1:5500/destinacije" class="header__anchor">
+                        Destinacije
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="http://127.0.0.1:5500/galerija" class="header__anchor">
+                        Galerija
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="http://127.0.0.1:5500/o-nama" class="header__anchor">
+                        O nama
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="http://127.0.0.1:5500/o-nama" class="CTA CTA__default CTA__primary">
+                        Rezerviši plovilo
+                    </a>
+                </li>
+            </ul>
+            <button class="header__button" id="burgerButton" aria-label="burger button">
+                <hr class="header__hr" id="hr1">
+                <hr class="header__hr" id="hr2">
+                <hr class="header__hr" id="hr3">
+            </button>
+            <menu class="header__menu" id="menu">
+                <li class="header__menu__item">
+                    <a href="http://localhost:5500" class="header__menu__anchor"> Vodič </a>
+                </li>
+                <li class="header__menu__item">
+                    <a href="http://localhost:5500/o-nama" class="header__menu__anchor"> Pustolovine
+                    </a>
+                    <img class="header__item__arrow" src="./assets/svgs/arrow-down.svg" alt="strelica na dole" />
+                </li>
+                <li class="header__menu__item">
+                    <a href="http://localhost:5500/veterinarske-usluge" class="header__menu__anchor"> Destinacije
+                    </a>
+                    <img class="header__item__arrow" src="./assets/svgs/arrow-down.svg" alt="strelica na dole" />
+                </li>
+                <li class="header__menu__item">
+                    <a href="http://127.0.0.1:5500/psi" class="header__menu__anchor"> Galerija
+                    </a>
+                </li>
+                <li class="header__menu__item">
+                    <a href="http://127.0.0.1:5500/macke" class="header__menu__anchor"> O nama
+                    </a>
+                </li>
+                <li class="header__menu__item">
+                    <a href="http://127.0.0.1:5500/o-nama" class="CTA CTA__small CTA__primary">
+                        Rezerviši plovilo
+                    </a>
+                </li>
+            </menu>
+        </nav>
+    </header>
+    <section class="section-hero" >
+        <div class="section-hero__text">
+            <h1 class="heading__h1 section-hero__text__heading" > Doživi. Oseti. Istraži. </h1>
+            <p class="paragraph__subheading-h1 paragraph__subheading-h1__lightmode section-hero__text__subheading" > Nezaboravno iskustvo na Jadranu </p>
+        </div>
+        <a class="CTA CTA__default CTA__primary" >Rent now</a>
+    </section>
+    <section class="section section-plovila" >
+        <div class="section__heading">
+            <h2 class="heading__h2 heading__h2__lightmode" > Naša plovila </h2>
+            <p class="paragraph__subheading-h2 paragraph__subheading-h2__lightmode" >Ovde se nalazi prikaz nasih trenutnih plovila koja su Vam na raspolaganju. Naravno, ocekujemo da ce broj rasti kako vreme prolazi. Kliknite na neki od njih da saznate vise.</p>
+        </div>
+        <div class="section-plovila__cards">
+            <article class="section-plovila__card" >
+                <img class="section-plovila__card__image" src="./assets/images/card-image-1.jpg" alt="slika broda" />
+                <div class="section-plovila__card__text">
+                    <div class="section-plovila__card__title">
+                        <p class="section-plovila__card__subheading" >Jedrilica</p>
+                        <p class="section-plovila__card__heading" >Aurora's Grace</p>
+                    </div>
+                    <p class="section-plovila__card__paragraph" >Elegantna jedrilica s prepoznatljivim belim trupom i plavim živopisnim jedrima, Aurora's Grace nudi nezaboravan doživljaj plovidbe, kombinujući brzinu i gracioznost pod vedrim nebom.</p>
+                </div>
+                <div class="section-plovila__card__actions">
+                    <a class="CTA CTA__small CTA__secondary" >Saznaj više <img class="CTA__icon" src="./assets/svgs/arrow-right-secondary.svg" /></a>
+                    <div class="section-plovila__card__info">
+                        <img class="section-plovila__card__info__icon" src="./assets/svgs/users.svg" />
+                        <p class="section-plovila__card__info__text" > 1-6 </p>
+                    </div>
+                </div>
+            </article>
+            <article class="section-plovila__card" >
+                <img class="section-plovila__card__image" src="./assets/images/card-image-1.jpg" alt="slika broda" />
+                <div class="section-plovila__card__text">
+                    <div class="section-plovila__card__title">
+                        <p class="section-plovila__card__subheading" >Jedrilica</p>
+                        <p class="section-plovila__card__heading" >Aurora's Grace</p>
+                    </div>
+                    <p class="section-plovila__card__paragraph" >Elegantna jedrilica s prepoznatljivim belim trupom i plavim živopisnim jedrima, Aurora's Grace nudi nezaboravan doživljaj plovidbe, kombinujući brzinu i gracioznost pod vedrim nebom.</p>
+                </div>
+                <div class="section-plovila__card__actions">
+                    <a class="CTA CTA__small CTA__secondary" >Saznaj više <img class="CTA__icon" src="./assets/svgs/arrow-right-secondary.svg" /></a>
+                    <div class="section-plovila__card__info">
+                        <img class="section-plovila__card__info__icon" src="./assets/svgs/users.svg" />
+                        <p class="section-plovila__card__info__text" > 1-6 </p>
+                    </div>
+                </div>
+            </article>
+            <article class="section-plovila__card" >
+                <img class="section-plovila__card__image" src="./assets/images/card-image-1.jpg" alt="slika broda" />
+                <div class="section-plovila__card__text">
+                    <div class="section-plovila__card__title">
+                        <p class="section-plovila__card__subheading" >Jedrilica</p>
+                        <p class="section-plovila__card__heading" >Aurora's Grace</p>
+                    </div>
+                    <p class="section-plovila__card__paragraph" >Elegantna jedrilica s prepoznatljivim belim trupom i plavim živopisnim jedrima, Aurora's Grace nudi nezaboravan doživljaj plovidbe, kombinujući brzinu i gracioznost pod vedrim nebom.</p>
+                </div>
+                <div class="section-plovila__card__actions">
+                    <a class="CTA CTA__small CTA__secondary" >Saznaj više <img class="CTA__icon" src="./assets/svgs/arrow-right-secondary.svg" /></a>
+                    <div class="section-plovila__card__info">
+                        <img class="section-plovila__card__info__icon" src="./assets/svgs/users.svg" />
+                        <p class="section-plovila__card__info__text" > 1-6 </p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section class="section section-plovila-2" >
+        <div class="section__heading">
+            <h2 class="heading__h2 heading__h2__darkmode" > Naslov </h2>
+            <p class="paragraph__subheading-h2 paragraph__subheading-h2__darkmode" >Ovde se nalazi prikaz nasih trenutnih plovila koja su Vam na raspolaganju. Naravno, ocekujemo da ce broj rasti kako vreme prolazi. Kliknite na neki od njih da saznate vise.</p>
+        </div>
+        <div class="section-plovila-2__cards" >
+            <article class="section-plovila-2__card" id="plovila-2-card-1">
+                <div class="section-plovila-2__card__overlay" ></div>
+                <p class="section-plovila-2__card__heading" >Jedrilica</p>
+                <p class="section-plovila-2__card__paragraph" >Jedrilica description example for this ship type that also includes all kinds of info about this ship that you might not expect from a convectional website that are on the market</p>
+                <a class="CTA CTA__small CTA__primary" >Saznaj više <img class="CTA__icon" src="./assets/svgs/arrow-right-primary.svg" /></a>
+            </article>
+            <article class="section-plovila-2__card" id="plovila-2-card-2">
+                <div class="section-plovila-2__card__overlay" ></div>
+                <p class="section-plovila-2__card__heading" >Jedrilica</p>
+                <p class="section-plovila-2__card__paragraph" >Jedrilica description example for this ship type that also includes all kinds of info about this ship that you might not expect from a convectional website that are on the market</p>
+                <a class="CTA CTA__small CTA__primary" >Saznaj više <img class="CTA__icon" src="./assets/svgs/arrow-right-primary.svg" /></a>
+            </article>
+        </div>
+    </section>
+    <section class="section section-proces" >
+        <div class="section__heading">
+            <h2 class="heading__h2 heading__h2__lightmode" > Kako Izgleda Ceo Proces </h2>
+            <p class="paragraph__subheading-h2 paragraph__subheading-h2__lightmode" >Ovde se nalazi kratko opisani proces bukiranja plovila. Molimo Vas da, za svaki korak, kliknete "pogledaj jos" i tako da saznate proces detaljnije. Ukoliko imate dodatna pitanja uvek smo dostupni na broj: 063 445 738</p>
+        </div>
+        <div class="section-proces__cards">
+            <article class="section-proces__card" >
+                <div class="section-proces__card__body">
+                    <img class="section-proces__card__icon" src="./assets/svgs/process-icon-1.svg" alt="slika telefona" />
+                </div>
+                <div class="section-proces__card__content">
+                    <p class="section-proces__card__heading">Slanje forme</p>
+                    <p class="section-proces__card__paragraph" >Popunite i posaljite formu nakon koje ce Vam stici email od nekog od nas za dalji dogovor i potvrdu.</p>
+                    <a class="CTA CTA__small CTA__secondary" >Pročitaj više <img class="CTA__icon" src="./assets/svgs/arrow-right-secondary.svg" /></a>
+                </div>
+            </article>
+            <hr class="seperator" >
+            <article class="section-proces__card section-proces__card-2" >
+                <div class="section-proces__card__content">
+                    <p class="section-proces__card__heading">Placanje i otkazivanje</p>
+                    <p class="section-proces__card__paragraph" >Plaćanje može biti izvršeno jedino bankovnim transferom. Podatke vezane za plaćanje dobićete u predračunu.</p>
+                    <a class="CTA CTA__small CTA__secondary" >Pročitaj više <img class="CTA__icon" src="./assets/svgs/arrow-right-secondary.svg" /></a>
+                </div>
+                <div class="section-proces__card__body">
+                    <img class="section-proces__card__icon" style="width: 52px; height: 52px;" src="./assets/svgs/process-icon-2.svg" alt="slika novcanice" />
+                </div>
+            </article>
+            <hr class="seperator" >
+            <article class="section-proces__card" >
+                <div class="section-proces__card__body">
+                    <img class="section-proces__card__icon" style="width: 64px; height: 64px;" src="./assets/svgs/process-icon-3.svg" alt="slika sidra" />
+                </div>
+                <div class="section-proces__card__content">
+                    <p class="section-proces__card__heading">Potvrda i kraj procesa</p>
+                    <p class="section-proces__card__paragraph" >Nakon obrade svih potrebnih podataka i potvrde o uplati poslaćemo putem e-maila sledeće: <br>Vaučer – dokument potreban za preuzimanje plovila, i info sa dodatnim informacijama.</p>
+                    <a class="CTA CTA__small CTA__secondary" >Pročitaj više <img class="CTA__icon" src="./assets/svgs/arrow-right-secondary.svg" /></a>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section class="section section-gallery" >
+        <div class="section__heading">
+            <h2 class="heading__h2 heading__h2__darkmode" > Naslov </h2>
+            <p class="paragraph__subheading-h2 paragraph__subheading-h2__darkmode" >Ovde se nalazi prikaz nasih trenutnih plovila koja su Vam na raspolaganju. Naravno, ocekujemo da ce broj rasti kako vreme prolazi. Kliknite na neki od njih da saznate vise.</p>
+        </div>
+        <div class="section-gallery__gallery">
+            <div class="section-gallery__gallery__column">
+                <div class="section-gallery__gallery__row">
+                    <img class="section-gallery__gallery__image-2" src="./assets/images/gallery-image-1.png" />
+                    <img class="section-gallery__gallery__image-2" src="./assets/images/gallery-image-2.png" />
+                </div>
+                <div class="section-gallery__gallery__row-large">
+                    <img class="section-gallery__gallery__image" src="./assets/images/gallery-image-3.png" />
+                </div>
+            </div>
+            <div class="section-gallery__gallery__column">
+                <div class="section-gallery__gallery__row-large">
+                    <img class="section-gallery__gallery__image" src="./assets/images/gallery-image-4.png" />
+                </div>
+                <div class="section-gallery__gallery__row">
+                    <img class="section-gallery__gallery__image-2" src="./assets/images/gallery-image-5.png" />
+                    <img class="section-gallery__gallery__image-2" src="./assets/images/gallery-image-6.png" />
+                </div>
+            </div>
+        </div>
+        <a href="http://127.0.0.1:5500/o-nama" class="CTA CTA__small CTA__primary">
+            Pogledajte našu galeriju
+        </a>
+    </section>
+    <section class="section section-form" >
+        <div class="section__heading">
+            <h2 class="heading__h2 heading__h2__lightmode" > Forma za bukiranje Plovila </h2>
+            <p class="paragraph__subheading-h2 paragraph__subheading-h2__lightmode" >Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.</p>
+        </div>
+        <form class="section-form__body" >
+            <div class="section-form__row">
+                <div class="section-form__input-section">
+                    <p class="section-form__input-title">Ime i prezime</p>
+                    <div class="section-form__input-body">
+                        <input class="section-form__input" placeholder="Bogdan Bogdanovic" />
+                    </div>
+                </div>
+                <div class="section-form__input-section">
+                    <p class="section-form__input-title">Email</p>
+                    <div class="section-form__input-body">
+                        <input class="section-form__input" placeholder="bogdanbogdanovic@email.com" />
+                    </div>
+                </div>
+                <div class="section-form__input-section">
+                    <p class="section-form__input-title">Telefon</p>
+                    <div class="section-form__input-body">
+                        <input class="section-form__input" placeholder="063-456-7890" />
+                    </div>
+                </div>
+            </div>
+            <div class="section-form__row">
+                <div class="section-form__input-section">
+                    <p class="section-form__input-title">Datum rezervacije</p>
+                    <div class="section-form__input-body">
+                        <input class="section-form__input" placeholder="mm/dd/yyyy" />
+                    </div>
+                </div>
+                <div class="section-form__input-section">
+                    <p class="section-form__input-title">Inclusive</p>
+                    <div class="section-form__input-body" style="height: 100%;">
+                        <select class="section-form__input" style="margin-right: 10px;" >
+                            <option selected disabled >DA / NE</option>
+                            <option value="da" >DA</option>
+                            <option value="ne" >NE</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="section-form__input-section">
+                    <p class="section-form__input-title">Broj soba</p>
+                    <div class="section-form__input-body">
+                        <input class="section-form__input" placeholder="2" />
+                    </div>
+                </div>
+            </div>
+            <div class="section-form__row">
+                <div class="section-form__input-section">
+                    <p class="section-form__input-title">Da li vam je potreban skipper</p>
+                    <div class="section-form__input-body">
+                        <select class="section-form__input" style="margin-right: 10px; padding: 12px 16px;" >
+                            <option selected disabled >DA / NE</option>
+                            <option value="da" >DA</option>
+                            <option value="ne" >NE</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="section-form__input-section">
+                    <p class="section-form__input-title">Da li vam je potrebna hostesa</p>
+                    <div class="section-form__input-body">
+                        <select class="section-form__input" style="margin-right: 10px; padding: 12px 16px;" >
+                            <option selected disabled >DA / NE</option>
+                            <option value="da" >DA</option>
+                            <option value="ne" >NE</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="section-form__input-section">
+                    <p class="section-form__input-title">Napomena</p>
+                    <div class="section-form__input-body">
+                        <textarea class="section-form__input" placeholder="Dodatne informacije" ></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="section-form__radio-section">
+                <div class="section-form__radio-body" id="radio-body-1">
+                    <img class="section-form__radio-image" src="./assets/images/radio-image-1.jpg" alt="slika broda" />
+                    <p class="section-form__radio-text" > Jedrilica </p>
+                    <input name="radio-button" type="radio" class="section-form__radio" id="radio-button-1" disabled />
+                </div>
+                <div class="section-form__radio-body" id="radio-body-2">
+                    <img class="section-form__radio-image" src="./assets/images/radio-image-2.jpg" alt="slika broda" />
+                    <p class="section-form__radio-text" > Katamaran </p>
+                    <input name="radio-button" type="radio" class="section-form__radio" id="radio-button-2" disabled />
+                </div>
+            </div>
+            <button type="submit" class="section-form__button" >
+                <a class="CTA CTA__small CTA__primary" >
+                    Pošaljite poruku
+                </a>
+            </button>
+        </form>
+    </section>
+    <footer class="footer" >
+        <div class="footer__body">
+            <div class="footer__mobile">
+                <img class="footer__mobile__logo" src="./assets/svgs/logo.svg" />
+                <div class="footer__mobile__social">
+                    <a class="footer__mobile__social__link" >
+                        <img class="footer__mobile__social__icon" src="./assets/svgs/social-icon-1.svg" />
+                    </a>
+                    <a class="footer__mobile__social__link" >
+                        <img class="footer__mobile__social__icon" src="./assets/svgs/social-icon-2.svg" />
+                    </a>
+                    <a class="footer__mobile__social__link" >
+                        <img class="footer__mobile__social__icon" src="./assets/svgs/social-icon-3.svg" />
+                    </a>
+                </div>
+            </div>
+            <img class="footer__logo" src="./assets/svgs/logo.svg" />
+            <ul class="footer__links">
+                <div class="footer__divider">
+                    <li class="footer__link" >
+                        <p class="footer__link__title" >Vodič</p>
+                        <ul class="footer__sublinks" >
+                            <li class="footer__sublink" >
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" >Kako bukirati brod</a>
+                            </li>
+                            <li class="footer__sublink" >
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" >Odabir plovila</a>
+                            </li>
+                            <li class="footer__sublink" >
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" >Sve o jedrenju</a>
+                            </li>
+                            <li class="footer__sublink" >
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" >Skipper/Kapetan</a>
+                            </li>
+                            <li class="footer__sublink" >
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" >Agent za najam plovila</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer__link" >
+                        <p class="footer__link__title" >Pustolovine</p>
+                        <ul class="footer__sublinks" >
+                            <li class="footer__sublink" >
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" >Privatna tura</a>
+                            </li>
+                            <li class="footer__sublink" >
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" >Iznajmljivanje kabine</a>
+                            </li>
+                            <li class="footer__sublink" >
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" >Hotila</a>
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+                <div class="footer__divider">
+                    <li class="footer__link" >
+                        <p class="footer__link__title" >Destinacije</p>
+                    </li>
+                    <li class="footer__link" >
+                        <p class="footer__link__title" >Galerija</p>
+                    </li>
+                    <li class="footer__link" >
+                        <p class="footer__link__title" >O nama</p>
+                    </li>
+                </div>
+            </ul>
+            <div class="footer__social">
+                <a class="footer__social__link" >
+                    <img class="footer__social__icon" src="./assets/svgs/social-icon-1.svg" />
+                </a>
+                <a class="footer__social__link" >
+                    <img class="footer__social__icon" src="./assets/svgs/social-icon-2.svg" />
+                </a>
+                <a class="footer__social__link" >
+                    <img class="footer__social__icon" src="./assets/svgs/social-icon-3.svg" />
+                </a>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p class="footer__copyright__text">© 2024 SunShine Iznajmljivanje Vozila. Sva prava zadrzana.</p>
+        </div>
+    </footer>
+    <script src="./index.js" >
+    </script>
+</body>
+
+</html> 
