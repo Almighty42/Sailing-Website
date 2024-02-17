@@ -16,17 +16,17 @@
         <nav class="header__nav">
             <img class="header__logo" src="./assets/svgs/logo.svg" alt="logo" />
             <ul class="header__list">
-                <li class="header__item">
-                    <a href="http://127.0.0.1:5500/vodic" class="header__anchor header__anchor__selected">
+                <li class="header__item header__item__dropdown" id="vodic">
+                    <a class="header__anchor header__anchor__selected">
                         Vodič
                     </a>
-                    <img class="header__item__arrow" src="./assets/svgs/arrow-down.svg" alt="strelica na dole" />
+                    <img class="header__item__arrow" id="vodic-arrow" src="./assets/svgs/arrow-down.svg" alt="strelica na dole" />
                 </li>
-                <li class="header__item">
-                    <a href="http://127.0.0.1:5500/pustolovine" class="header__anchor">
+                <li class="header__item header__item__dropdown" id="pustolovine">
+                    <a class="header__anchor">
                         Pustolovine
                     </a>
-                    <img class="header__item__arrow" src="./assets/svgs/arrow-down.svg" alt="strelica na dole" />
+                    <img class="header__item__arrow" id="pustolovine-arrow" src="./assets/svgs/arrow-down.svg" alt="strelica na dole" />
                 </li>
                 <li class="header__item">
                     <a href="http://127.0.0.1:5500/destinacije" class="header__anchor">
@@ -55,18 +55,54 @@
                 <hr class="header__hr" id="hr3">
             </button>
             <menu class="header__menu" id="menu">
-                <li class="header__menu__item">
-                    <a href="http://localhost:5500" class="header__menu__anchor"> Vodič </a>
+                <li class="header__menu__item" id="vodic-hamburger">
+                    <a class="header__menu__anchor"> Vodič </a>
+                    <img class="header__item__arrow" id="vodic-hamburger-arrow" src="./assets/svgs/arrow-down.svg" alt="strelica na dole" />
                 </li>
-                <li class="header__menu__item">
-                    <a href="http://localhost:5500/o-nama" class="header__menu__anchor"> Pustolovine
+                <menu class="header__vodic-hamburger-menu" id="vodic-hamburger-menu" >
+                    <a class="header__vodic-hamburger-menu__item" >
+                        <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__vodic-hamburger-menu__text" >Kako bukirati brod</p>
                     </a>
-                    <img class="header__item__arrow" src="./assets/svgs/arrow-down.svg" alt="strelica na dole" />
+                    <a class="header__vodic-hamburger-menu__item" >
+                        <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__vodic-hamburger-menu__text" >Sve o jedrenju</p>
+                    </a>
+                    <a class="header__vodic-hamburger-menu__item" >
+                        <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__vodic-hamburger-menu__text" >Odabir plovila</p>
+                    </a>
+                    <a class="header__vodic-hamburger-menu__item" >
+                        <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__vodic-hamburger-menu__text" >Skipper / Kapetan</p>
+                    </a>
+                    <a class="header__vodic-hamburger-menu__item" >
+                        <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__vodic-hamburger-menu__text" >Agent za najam plovila</p>
+                    </a>
+                </menu>
+                <li class="header__menu__item" id="pustolovine-hamburger">
+                    <a class="header__menu__anchor"> Pustolovine
+                    </a>
+                    <img class="header__item__arrow" id="pustolovine-hamburger-arrow" src="./assets/svgs/arrow-down.svg" alt="strelica na dole" />
                 </li>
+                <menu class="header__pustolovine-hamburger-menu" id="pustolovine-hamburger-menu" >
+                    <a class="header__pustolovine-hamburger-menu__item" >
+                        <img class="header__pustolovine-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__pustolovine-hamburger-menu__text" >Privatna tura</p>
+                    </a>
+                    <a class="header__pustolovine-hamburger-menu__item" >
+                        <img class="header__pustolovine-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__pustolovine-hamburger-menu__text" >Iznajmljivanje kabine</p>
+                    </a>
+                    <a class="header__pustolovine-hamburger-menu__item" >
+                        <img class="header__pustolovine-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__pustolovine-hamburger-menu__text" >Hotila</p>
+                    </a>
+                </menu>
                 <li class="header__menu__item">
                     <a href="http://localhost:5500/veterinarske-usluge" class="header__menu__anchor"> Destinacije
                     </a>
-                    <img class="header__item__arrow" src="./assets/svgs/arrow-down.svg" alt="strelica na dole" />
                 </li>
                 <li class="header__menu__item">
                     <a href="http://127.0.0.1:5500/psi" class="header__menu__anchor"> Galerija
@@ -83,6 +119,48 @@
                 </li>
             </menu>
         </nav>
+        <menu class="header__vodic-menu" id="vodic-menu">
+            <a class="header__vodic-menu__item" >
+                <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-1.svg" />
+                <p class="header__vodic-menu__text" >Kako bukirati brod</p>
+            </a>
+            <a class="header__vodic-menu__item" >
+                <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-2.svg" />
+                <p class="header__vodic-menu__text" >Odabir plovila</p>
+            </a>
+            <a class="header__vodic-menu__item" >
+                <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-3.svg" />
+                <p class="header__vodic-menu__text" >Sve o jedrenju</p>
+            </a>
+            <a class="header__vodic-menu__item" >
+                <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-4.svg" />
+                <p class="header__vodic-menu__text" >Skiper / Kapetan</p>
+            </a>
+            <a class="header__vodic-menu__item" >
+                <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-5.svg" />
+                <p class="header__vodic-menu__text" >Agent za najam plovila</p>
+            </a>
+        </menu>
+        <menu class="header__pustolovine-menu" id="pustolovine-menu">
+            <a class="header__pustolovine-menu__item" >
+                <img class="header__pustolovine-menu__icon" src="./assets/svgs/pustolovina-icon-1.svg" />
+                <p class="header__pustolovine-menu__text" >Privatna tura</p>
+            </a>
+            <a class="header__pustolovine-menu__item" >
+                <img class="header__pustolovine-menu__icon" src="./assets/svgs/pustolovina-icon-2.svg" />
+                <p class="header__pustolovine-menu__text" >Iznajmljivanje kabine</p>
+            </a>
+            <a class="header__pustolovine-menu__item" >
+                <img class="header__pustolovine-menu__icon" src="./assets/svgs/pustolovina-icon-3.svg" />
+                <p class="header__pustolovine-menu__text" >Hotila</p>
+            </a>
+        </menu>
+        <!-- <menu class="header__pustolovine-hamburger-menu" id="pustolovine-hamburger" >
+            <a class="header__pustolovine-hamburger-menu__item" >
+                <img class="header__pustolovine-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                <p class="header__pustolovine-hamburger-menu__text" >Kako bukirati brod</p>
+            </a>
+        </menu> -->
     </header>
     <section class="section-hero" >
         <div class="section-hero__text">
@@ -317,6 +395,7 @@
                     </div>
                 </div>
             </div>
+            <p class="section-form__input-title">Izaberite plovilo</p>
             <div class="section-form__radio-section">
                 <div class="section-form__radio-body" id="radio-body-1">
                     <img class="section-form__radio-image" src="./assets/images/radio-image-1.jpg" alt="slika broda" />
