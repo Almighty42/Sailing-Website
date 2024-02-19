@@ -34,43 +34,6 @@ window.addEventListener('load', function () {
         hr3.classList.toggle('active')
     });
 
-    radioBody1.addEventListener("click", () => {
-        if (radioButton1.checked && !radioButton2.checked) {
-            radioBody1.classList.remove("section-form__radio-body__selected")
-            radioButton1.classList.remove("section-form__radio__selected")
-            radioButton1.checked = false
-        } else if (!radioButton1.checked && !radioButton2.checked) {
-            radioBody1.classList.add("section-form__radio-body__selected")
-            radioButton1.classList.add("section-form__radio__selected")
-            radioButton1.checked = true
-        } else if (!radioButton1.checked && radioButton2.checked) {
-            radioBody1.classList.add("section-form__radio-body__selected")
-            radioButton1.classList.add("section-form__radio__selected")
-            radioButton1.checked = true
-            radioBody2.classList.remove("section-form__radio-body__selected")
-            radioButton2.classList.remove("section-form__radio__selected")
-            radioButton2.checked = false
-        }
-    })
-    radioBody2.addEventListener("click", () => {
-        if (radioButton2.checked && !radioButton1.checked) {
-            radioBody2.classList.remove("section-form__radio-body__selected")
-            radioButton2.classList.remove("section-form__radio__selected")
-            radioButton2.checked = false
-        } else if (!radioButton2.checked && !radioButton1.checked) {
-            radioBody2.classList.add("section-form__radio-body__selected")
-            radioButton2.classList.add("section-form__radio__selected")
-            radioButton2.checked = true
-        } else if (!radioButton2.checked && radioButton1.checked) {
-            radioBody2.classList.add("section-form__radio-body__selected")
-            radioButton2.classList.add("section-form__radio__selected")
-            radioButton2.checked = true
-            radioBody1.classList.remove("section-form__radio-body__selected")
-            radioButton1.classList.remove("section-form__radio__selected")
-            radioButton1.checked = false
-        }
-    })
-
     vodicButton.addEventListener("click", () => {
         if (pustolovineMenu.classList.contains("header__pustolovine-menu__shown")) {
             pustolovineMenu.classList.toggle("header__pustolovine-menu__shown")

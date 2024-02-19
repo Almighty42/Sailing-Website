@@ -14,10 +14,12 @@
 <body>
     <header class="header">
         <nav class="header__nav">
-            <img class="header__logo" src="./assets/svgs/logo.svg" alt="logo" />
+            <a class="header__logo-link" href="/index.html" >
+                <img class="header__logo" src="./assets/svgs/logo.svg" alt="logo" />
+            </a>
             <ul class="header__list">
                 <li class="header__item header__item__dropdown" id="vodic">
-                    <a class="header__anchor header__anchor__selected">
+                    <a class="header__anchor">
                         Vodič
                     </a>
                     <img class="header__item__arrow" id="vodic-arrow" src="./assets/svgs/arrow-down.svg" alt="strelica na dole" />
@@ -60,23 +62,23 @@
                     <img class="header__item__arrow" id="vodic-hamburger-arrow" src="./assets/svgs/arrow-down.svg" alt="strelica na dole" />
                 </li>
                 <menu class="header__vodic-hamburger-menu" id="vodic-hamburger-menu" >
-                    <a class="header__vodic-hamburger-menu__item" >
+                    <a class="header__vodic-hamburger-menu__item" href="/vodic.html#link-1" >
                         <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
                         <p class="header__vodic-hamburger-menu__text" >Kako bukirati brod</p>
                     </a>
-                    <a class="header__vodic-hamburger-menu__item" >
+                    <a class="header__vodic-hamburger-menu__item" href="/vodic.html#link-2" >
                         <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
                         <p class="header__vodic-hamburger-menu__text" >Sve o jedrenju</p>
                     </a>
-                    <a class="header__vodic-hamburger-menu__item" >
+                    <a class="header__vodic-hamburger-menu__item" href="/vodic.html#link-3" >
                         <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
                         <p class="header__vodic-hamburger-menu__text" >Odabir plovila</p>
                     </a>
-                    <a class="header__vodic-hamburger-menu__item" >
+                    <a class="header__vodic-hamburger-menu__item" href="/vodic.html#link-4" >
                         <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
                         <p class="header__vodic-hamburger-menu__text" >Skipper / Kapetan</p>
                     </a>
-                    <a class="header__vodic-hamburger-menu__item" >
+                    <a class="header__vodic-hamburger-menu__item" href="/vodic.html#link-5" >
                         <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
                         <p class="header__vodic-hamburger-menu__text" >Agent za najam plovila</p>
                     </a>
@@ -101,7 +103,7 @@
                     </a>
                 </menu>
                 <li class="header__menu__item">
-                    <a href="http://localhost:5500/veterinarske-usluge" class="header__menu__anchor"> Destinacije
+                    <a href="http://localhost:5500/destinacije" class="header__menu__anchor"> Destinacije
                     </a>
                 </li>
                 <li class="header__menu__item">
@@ -120,23 +122,23 @@
             </menu>
         </nav>
         <menu class="header__vodic-menu" id="vodic-menu">
-            <a class="header__vodic-menu__item" >
+            <a class="header__vodic-menu__item" href="/vodic.html#link-1" >
                 <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-1.svg" />
                 <p class="header__vodic-menu__text" >Kako bukirati brod</p>
             </a>
-            <a class="header__vodic-menu__item" >
+            <a class="header__vodic-menu__item" href="/vodic.html#link-2" >
                 <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-2.svg" />
                 <p class="header__vodic-menu__text" >Odabir plovila</p>
             </a>
-            <a class="header__vodic-menu__item" >
+            <a class="header__vodic-menu__item" href="/vodic.html#link-3" >
                 <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-3.svg" />
                 <p class="header__vodic-menu__text" >Sve o jedrenju</p>
             </a>
-            <a class="header__vodic-menu__item" >
+            <a class="header__vodic-menu__item" href="/vodic.html#link-4" >
                 <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-4.svg" />
                 <p class="header__vodic-menu__text" >Skiper / Kapetan</p>
             </a>
-            <a class="header__vodic-menu__item" >
+            <a class="header__vodic-menu__item" href="/vodic.html#link-5" >
                 <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-5.svg" />
                 <p class="header__vodic-menu__text" >Agent za najam plovila</p>
             </a>
@@ -155,12 +157,6 @@
                 <p class="header__pustolovine-menu__text" >Hotila</p>
             </a>
         </menu>
-        <!-- <menu class="header__pustolovine-hamburger-menu" id="pustolovine-hamburger" >
-            <a class="header__pustolovine-hamburger-menu__item" >
-                <img class="header__pustolovine-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
-                <p class="header__pustolovine-hamburger-menu__text" >Kako bukirati brod</p>
-            </a>
-        </menu> -->
     </header>
     <section class="section-hero" >
         <div class="section-hero__text">
@@ -439,23 +435,23 @@
                         <ul class="footer__sublinks" >
                             <li class="footer__sublink" >
                                 <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
-                                <a class="footer__sublink__anchor" >Kako bukirati brod</a>
+                                <a class="footer__sublink__anchor" href="/vodic.html#link-1" >Kako bukirati brod</a>
                             </li>
                             <li class="footer__sublink" >
                                 <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
-                                <a class="footer__sublink__anchor" >Odabir plovila</a>
+                                <a class="footer__sublink__anchor" href="/vodic.html#link-2" >Odabir plovila</a>
                             </li>
                             <li class="footer__sublink" >
                                 <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
-                                <a class="footer__sublink__anchor" >Sve o jedrenju</a>
+                                <a class="footer__sublink__anchor" href="/vodic.html#link-3" >Sve o jedrenju</a>
                             </li>
                             <li class="footer__sublink" >
                                 <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
-                                <a class="footer__sublink__anchor" >Skipper/Kapetan</a>
+                                <a class="footer__sublink__anchor" href="/vodic.html#link-4" >Skipper/Kapetan</a>
                             </li>
                             <li class="footer__sublink" >
                                 <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
-                                <a class="footer__sublink__anchor" >Agent za najam plovila</a>
+                                <a class="footer__sublink__anchor" href="/vodic.html#link-5" >Agent za najam plovila</a>
                             </li>
                         </ul>
                     </li>
@@ -479,7 +475,7 @@
                 </div>
                 <div class="footer__divider">
                     <li class="footer__link" >
-                        <p class="footer__link__title" >Destinacije</p>
+                        <a class="footer__link__title" >Destinacije</a>
                     </li>
                     <li class="footer__link" >
                         <p class="footer__link__title" >Galerija</p>
