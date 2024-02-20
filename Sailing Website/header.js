@@ -1,11 +1,6 @@
 
 window.addEventListener('load', function () {
 
-    const radioBody1 = document.querySelector("#radio-body-1")
-    const radioButton1 = document.querySelector("#radio-button-1")
-    const radioBody2 = document.querySelector("#radio-body-2")
-    const radioButton2 = document.querySelector("#radio-button-2")
-
     const burgerButton = document.getElementById('burgerButton');
     const menu = document.getElementById('menu');
     const hr1 = document.getElementById('hr1')
@@ -34,38 +29,45 @@ window.addEventListener('load', function () {
         hr3.classList.toggle('active')
     });
 
-    vodicButton.addEventListener("click", () => {
-        if (pustolovineMenu.classList.contains("header__pustolovine-menu__shown")) {
-            pustolovineMenu.classList.toggle("header__pustolovine-menu__shown")
-            pustolovineArrow.classList.toggle("header__item__arrow__show")
+    const headerShowFunc = (burger, type) => {
+        if (!burger) {
+            if (type == 'vodic') {
+                if (pustolovineMenu.classList.contains("header__pustolovine-menu__shown")) {
+                    pustolovineMenu.classList.toggle("header__pustolovine-menu__shown")
+                    pustolovineArrow.classList.toggle("header__item__arrow__show")
+                }
+                vodicMenu.classList.toggle("header__vodic-menu__shown")
+                vodicArrow.classList.toggle("header__item__arrow__show")
+            } else if (type == 'pustolovine') {
+                if (vodicMenu.classList.contains("header__vodic-menu__shown")) {
+                    vodicMenu.classList.toggle("header__vodic-menu__shown")
+                    vodicArrow.classList.toggle("header__item__arrow__show")
+                }
+                pustolovineMenu.classList.toggle("header__pustolovine-menu__shown")
+                pustolovineArrow.classList.toggle("header__item__arrow__show")
+            }
+        } else {
+            if (type == 'vodic') {
+                if (pustolovineHamburgerArrow.classList.contains("header__item__arrow__show")) {
+                    pustolovineHamburgerMenu.classList.toggle("header__pustolovine-hamburger-menu__show")
+                    pustolovineHamburgerArrow.classList.toggle("header__item__arrow__show")
+                }
+                vodicHamburgerMenu.classList.toggle("header__vodic-hamburger-menu__show")
+                vodicHamburgerArrow.classList.toggle("header__item__arrow__show")
+            } else if (type == 'pustolovine') {
+                if (vodicHamburgerArrow.classList.contains("header__item__arrow__show")) {
+                    vodicHamburgerMenu.classList.toggle("header__vodic-hamburger-menu__show")
+                    vodicHamburgerArrow.classList.toggle("header__item__arrow__show")
+                }
+                pustolovineHamburgerMenu.classList.toggle("header__pustolovine-hamburger-menu__show")
+                pustolovineHamburgerArrow.classList.toggle("header__item__arrow__show")
+            }
         }
-        vodicMenu.classList.toggle("header__vodic-menu__shown")
-        vodicArrow.classList.toggle("header__item__arrow__show")
-    })
-    pustolovineButton.addEventListener("click", () => {
-        if (vodicMenu.classList.contains("header__vodic-menu__shown")) {
-            vodicMenu.classList.toggle("header__vodic-menu__shown")
-            vodicArrow.classList.toggle("header__item__arrow__show")
-        }
-        pustolovineMenu.classList.toggle("header__pustolovine-menu__shown")
-        pustolovineArrow.classList.toggle("header__item__arrow__show")
-    })
+    }
 
+    vodicButton.addEventListener("click", () => { headerShowFunc(false, 'vodic') })
+    pustolovineButton.addEventListener("click", () => { headerShowFunc(false, 'pustolovine') })
+    vodicHamburger.addEventListener("click", () => { headerShowFunc(true, 'vodic') })
+    pustolovineHamburger.addEventListener("click", () => { headerShowFunc(true, 'pustolovine') })
 
-    vodicHamburger.addEventListener("click", () => {
-        if (pustolovineHamburgerArrow.classList.contains("header__item__arrow__show")) {
-            pustolovineHamburgerMenu.classList.toggle("header__pustolovine-hamburger-menu__show")
-            pustolovineHamburgerArrow.classList.toggle("header__item__arrow__show")
-        }
-        vodicHamburgerMenu.classList.toggle("header__vodic-hamburger-menu__show")
-        vodicHamburgerArrow.classList.toggle("header__item__arrow__show")
-    })
-    pustolovineHamburger.addEventListener("click", () => {
-        if (vodicHamburgerArrow.classList.contains("header__item__arrow__show")) {
-            vodicHamburgerMenu.classList.toggle("header__vodic-hamburger-menu__show")
-            vodicHamburgerArrow.classList.toggle("header__item__arrow__show")
-        }
-        pustolovineHamburgerMenu.classList.toggle("header__pustolovine-hamburger-menu__show")
-        pustolovineHamburgerArrow.classList.toggle("header__item__arrow__show")
-    })
 });

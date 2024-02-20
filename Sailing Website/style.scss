@@ -255,7 +255,7 @@ $font-size-paragraph-1: 24px;
     align-items: center;
     box-sizing: border-box;
     position: fixed;
-    z-index: 10;
+    z-index: 50;
     &__button {
         border: none;
         background: none;
@@ -514,6 +514,7 @@ $font-size-paragraph-1: 24px;
     &__pustolovine-menu {
         &__item {
             transition: 0.2s ease-in-out;
+            text-decoration: none;
             &:hover {
                 transition: 0.2s ease-in-out;
                 background-color: $neutral-800;
@@ -664,6 +665,16 @@ $font-size-paragraph-1: 24px;
     background-image: url("./assets/images/hero-image-ostrvo-1.jpg") !important;
 }
 
+.section-hero-pustolovine {
+    background-position: center;
+    background-image: url("./assets/images/hero-image-pustolovine.jpg")
+}
+
+.section-hero-galerija {
+    background-position: center;
+    background-image: url("./assets/images/hero-image-galerija.jpg")
+}
+
 .section-content {
     width: 100%;
     box-sizing: border-box;
@@ -774,6 +785,7 @@ $font-size-paragraph-1: 24px;
         width: 100%;
         height: 2px;
         background-color: $neutral-200;
+        border: black 0px solid;
     }
     &__blog {
         flex-direction: column;
@@ -781,14 +793,25 @@ $font-size-paragraph-1: 24px;
         opacity: 0 !important;
         transition: 0.5s ease-in-out;
         margin-bottom: 0px !important;
+        position: relative;
+        z-index: -10;
         * {
             max-height: 0px;
             transition: max-height 0.5s ease-in-out;
+        }
+        h2, h3, p {
+            cursor: default;
+            width: fit-content;
         }
         &__show {
             transition: 0.5s ease-in-out;
             max-height: 2000px;
             opacity: 1 !important;
+            z-index: 10;
+            h2,h3,p {
+                cursor: text;
+                width: fit-content;
+            }
             * {
                 transition: max-height 0.5s ease-in-out;
                 max-height: 2000px;
@@ -1939,4 +1962,194 @@ $font-size-paragraph-1: 24px;
             width: 40%;
         }
     }
+}
+
+.section-gallery-page {
+    align-items: center;
+
+    &__heading {
+        font-weight: 400;
+        @media (min-width: 1600px) or (min-height: 899px) {
+            font-size: 36px;
+        }
+        @media (max-width: 1600px) or (max-height: 899px) {
+            font-size: 32px;
+        }
+        @media (max-width: 1050px) or (max-height: 599px) {
+            font-size: 24px;
+        }
+        @media (max-width: 650px) {
+            font-size: 20px;
+        }
+    }
+    &__gallery {
+        width: 100%;
+        box-sizing: border-box;
+
+        @media (min-width: 1600px) or (min-height: 899px) {
+            @include marginBetweenElements(20px, "horizontal");
+            padding: 0 100px;
+        }
+        @media (max-width: 1600px) or (max-height: 899px) {
+            @include marginBetweenElements(16px, "horizontal");
+            padding: 0 80px;
+        }
+        @media (max-width: 1050px) or (max-height: 599px) {
+            @include marginBetweenElements(14px, "vertical");
+            flex-direction: column;
+            padding: 0;
+        }
+        @media (max-width: 650px) {
+            @include marginBetweenElements(10px, "vertical");
+        }
+        &__column {
+            flex-direction: column;
+            width: 100%;
+
+            @media (min-width: 1600px) or (min-height: 899px) {
+                @include marginBetweenElements(20px, "vertical");
+            }
+            @media (max-width: 1600px) or (max-height: 899px) {
+                @include marginBetweenElements(16px, "vertical");
+            }
+            @media (max-width: 1050px) or (max-height: 599px) {
+                @include marginBetweenElements(14px, "vertical");
+            }
+            @media (max-width: 650px) {
+                @include marginBetweenElements(10px, "vertical");
+            }
+        }
+        &__row {
+            height: 100%;
+            width: 100%;
+
+            @media (min-width: 1600px) or (min-height: 899px) {
+                @include marginBetweenElements(20px, "horizontal");
+            }
+            @media (max-width: 1600px) or (max-height: 899px) {
+                @include marginBetweenElements(16px, "horizontal");
+            }
+            @media (max-width: 1050px) or (max-height: 599px) {
+                @include marginBetweenElements(14px, "horizontal");
+            }
+            @media (max-width: 650px) {
+                @include marginBetweenElements(10px, "horizontal");
+            }
+        }
+        &__row-section {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            background-image: url("./assets/images/gallery-section-image.jpg");
+            background-position: bottom;
+            box-sizing: border-box;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            @media (min-width: 1600px) or (min-height: 899px) {
+                padding: 52px;
+            }
+            @media (max-width: 1600px) or (max-height: 899px) {
+                padding: 24px;
+            }
+            @media (max-width: 1050px) or (max-height: 599px) {
+                //padding: 24px;
+            }
+            @media (max-width: 650px) {
+                //padding: 16px;
+            }
+
+            &__content {
+                background-color: $neutral-900;
+                border-radius: 7.5px;
+                padding: 12px 24px;
+                box-sizing: border-box;
+                flex-direction: column;
+                justify-content: center;
+                
+                @media (min-width: 1600px) or (min-height: 899px) {
+                    @include marginBetweenElements(20px, 'vertical');
+                }
+                @media (max-width: 1600px) or (max-height: 899px) {
+                    @include marginBetweenElements(16px, 'vertical');
+                }
+                @media (max-width: 1050px) or (max-height: 599px) {
+                    @include marginBetweenElements(14px, 'vertical');
+                }
+                @media (max-width: 650px) {
+                    @include marginBetweenElements(12px, 'vertical');
+                }
+            }
+            &__heading {
+                font-weight: 400;
+                @media (min-width: 1600px) or (min-height: 899px) {
+                    font-size: 22px;
+                }
+                @media (max-width: 1600px) or (max-height: 899px) {
+                    font-size: 20px;
+                }
+                @media (max-width: 1050px) or (max-height: 599px) {
+                    font-size: 18px;
+                }
+                @media (max-width: 650px) {
+                    font-size: 16px;
+                }
+                color: white;
+            }
+            &__paragraph {
+                font-weight: 300;
+                @media (min-width: 1600px) or (min-height: 899px) {
+                    font-size: 14px;
+                }
+                @media (max-width: 1600px) or (max-height: 899px) {
+                    font-size: 14px;
+                }
+                @media (max-width: 1050px) or (max-height: 599px) {
+                    font-size: 12px;
+                }
+                @media (max-width: 650px) {
+                    font-size: 12px;
+                }       
+                color: $neutral-400;
+            }
+        }
+        &__row-large {
+        }
+        &__image {
+            width: 100%;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        &__image-2 {
+            height: 60%;
+            width: 100%;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        &__image-3 {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+    }
+}
+
+#gallery-section-1 {
+    background-color: $neutral-100;
+}
+#gallery-section-2 {
+    background-color: $neutral-900;
+}
+#gallery-section-2-content {
+    background-color: $neutral-100;
+    h3 {
+        color: $neutral-900;
+    }
+    p {
+        color: $neutral-700;
+    }
+}
+#gallery-section-2-heading {
+    text-align: right;
+    color: $primary-100;
 }
