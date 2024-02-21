@@ -66,17 +66,17 @@ textarea {
 }
 @media (min-width: 1600px) or (min-height: 899px) {
   .CTA__default {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 400;
-    padding: 6px 12px;
+    padding: 4px 12px;
     transition: ease-in-out 0.25s;
   }
 }
 @media (max-width: 1600px) or (max-height: 899px) {
   .CTA__default {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
-    padding: 6px 12px;
+    padding: 4px 12px;
     transition: ease-in-out 0.25s;
   }
 }
@@ -276,47 +276,51 @@ textarea {
 @media (min-width: 1600px) or (min-height: 899px) {
   .header {
     padding: 0 192px;
-    height: 94px;
+    height: 80px;
   }
   .header__logo-link {
-    width: 52px;
-    height: 52px;
+    width: 48px;
+    height: 48px;
   }
   .header__logo {
-    width: 52px;
-    height: 52px;
+    width: 48px;
+    height: 48px;
   }
   .header__list > :not(:last-child) {
     margin-right: 48px;
   }
   .header__item__arrow {
     margin-left: 6px;
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
   }
   .header__anchor {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 @media (max-width: 1600px) or (max-height: 899px) {
   .header {
     padding: 0 124px;
-    height: 72px;
+    height: 66px;
+  }
+  .header__logo-link {
+    width: 34px;
+    height: 34px;
   }
   .header__logo {
-    width: 38px;
-    height: 38px;
+    width: 34px;
+    height: 34px;
   }
   .header__list > :not(:last-child) {
     margin-right: 32px;
   }
   .header__item__arrow {
     margin-left: 6px;
-    width: 14px;
-    height: 14px;
+    width: 13px;
+    height: 13px;
   }
   .header__anchor {
-    font-size: 16px;
+    font-size: 15px;
   }
 }
 @media (max-width: 1050px) or (max-height: 599px) {
@@ -464,12 +468,12 @@ textarea {
 }
 @media (min-width: 1600px) or (min-height: 899px) {
   .header__vodic-menu__shown, .header__pustolovine-menu__shown {
-    top: 76px;
+    top: 63px;
   }
 }
 @media (max-width: 1600px) or (max-height: 899px) {
   .header__vodic-menu__shown, .header__pustolovine-menu__shown {
-    top: 54px;
+    top: 50px;
   }
 }
 .header__vodic-menu__item, .header__pustolovine-menu__item {
@@ -576,6 +580,10 @@ textarea {
     margin-bottom: 6px;
   }
 }
+.header__vodic-hamburger-menu a, .header__pustolovine-hamburger-menu a {
+  pointer-events: none;
+  text-decoration: none;
+}
 .header__vodic-hamburger-menu__item, .header__pustolovine-hamburger-menu__item {
   display: flex;
   align-items: center;
@@ -613,6 +621,9 @@ textarea {
   transition: 0.4s ease-in-out;
   opacity: 1;
   margin-bottom: 16px !important;
+}
+.header__vodic-hamburger-menu__show a, .header__pustolovine-hamburger-menu__show a {
+  pointer-events: visible;
 }
 #hr1 {
   width: 20px;
@@ -654,6 +665,8 @@ textarea {
   justify-content: center;
   flex-direction: column;
   background-image: url("./assets/images/hero-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 @media (min-width: 1600px) or (min-height: 899px) {
   .section-hero {
@@ -672,9 +685,6 @@ textarea {
   }
 }
 @media (max-width: 1050px) or (max-height: 599px) {
-  .section-hero {
-    background-size: 200% 100%;
-  }
   .section-hero > :not(:last-child) {
     margin-bottom: 32px;
   }
@@ -690,8 +700,8 @@ textarea {
 }
 @media (max-width: 1050px) or (max-height: 599px) {
   .section-hero-mini {
-    background-size: 300% 100% !important;
-    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .section-hero-mini > :not(:last-child) {
     margin-bottom: 32px;
@@ -720,6 +730,11 @@ textarea {
 .section-hero-galerija {
   background-position: center;
   background-image: url("./assets/images/hero-image-galerija.jpg");
+}
+
+.section-hero-o-nama {
+  background-position: center;
+  background-image: url("./assets/images/hero-image-o-nama.png");
 }
 
 .section-content {
@@ -901,7 +916,7 @@ textarea {
 }
 .section-content__blog__show {
   transition: 0.5s ease-in-out;
-  max-height: 2000px;
+  max-height: 3000px;
   opacity: 1 !important;
   z-index: 10;
 }
@@ -911,7 +926,7 @@ textarea {
 }
 .section-content__blog__show * {
   transition: max-height 0.5s ease-in-out;
-  max-height: 2000px;
+  max-height: 3000px;
 }
 @media (min-width: 1600px) or (min-height: 899px) {
   .section-content__blog > :not(:last-child) {
@@ -1291,7 +1306,7 @@ textarea {
   align-items: center;
   justify-content: center;
   border-radius: 12.5px;
-  background-size: 135%;
+  background-size: cover;
   position: relative;
   background-repeat: no-repeat;
 }
@@ -1402,6 +1417,229 @@ textarea {
 .section-plovila-2__card:hover .CTA__icon {
   transition: 0.2s ease-in-out;
   opacity: 1;
+}
+
+@media (min-width: 1600px) or (min-height: 899px) {
+  .section-contact__content > :not(:last-child) {
+    margin-right: 50px;
+  }
+}
+@media (max-width: 1600px) or (max-height: 899px) {
+  .section-contact__content > :not(:last-child) {
+    margin-right: 50px;
+  }
+}
+@media (max-width: 1050px) or (max-height: 599px) {
+  .section-contact__content {
+    flex-direction: column-reverse;
+  }
+  .section-contact__content > :not(:last-child) {
+    margin-right: 0px;
+  }
+  .section-contact__content > :last-child {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 650px) {
+  .section-contact__content {
+    flex-direction: column-reverse;
+  }
+  .section-contact__content > :last-child {
+    margin-bottom: 40px;
+  }
+}
+.section-contact__content__info {
+  width: 60%;
+  height: 100%;
+  border-radius: 10px;
+  background-size: cover;
+  flex-direction: column;
+  background-image: url("./assets/images/contact-image.png");
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+@media (min-width: 1600px) or (min-height: 899px) {
+  .section-contact__content__info {
+    padding: 40px 50px;
+  }
+  .section-contact__content__info > :not(:last-child) {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 1600px) or (max-height: 899px) {
+  .section-contact__content__info {
+    padding: 25px 40px;
+  }
+}
+@media (max-width: 1050px) or (max-height: 599px) {
+  .section-contact__content__info {
+    padding: 25px 40px;
+    width: 100%;
+  }
+}
+@media (max-width: 650px) {
+  .section-contact__content__info {
+    padding: 25px 30px;
+    width: 100%;
+  }
+  .section-contact__content__info > :not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.section-contact__content__info__article {
+  background-color: #f2f7ff;
+  border-radius: 7.5px;
+}
+@media (min-width: 1600px) or (min-height: 899px) {
+  .section-contact__content__info__article {
+    padding: 16px 32px;
+  }
+  .section-contact__content__info__article > :not(:last-child) {
+    margin-right: 32px;
+  }
+}
+@media (max-width: 1600px) or (max-height: 899px) {
+  .section-contact__content__info__article {
+    padding: 16px 20px;
+  }
+  .section-contact__content__info__article > :not(:last-child) {
+    margin-right: 28px;
+  }
+}
+@media (max-width: 1050px) or (max-height: 599px) {
+  .section-contact__content__info__article {
+    padding: 16px 20px;
+  }
+  .section-contact__content__info__article > :not(:last-child) {
+    margin-right: 28px;
+  }
+}
+@media (max-width: 650px) {
+  .section-contact__content__info__article {
+    flex-direction: column;
+    padding: 16px 0px;
+    align-items: center;
+  }
+  .section-contact__content__info__article > :not(:last-child) {
+    margin-right: 0px;
+  }
+  .section-contact__content__info__article > :not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+.section-contact__content__info__icon-body {
+  background-color: #d7e6fe;
+  border-radius: 300px;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 1600px) or (min-height: 899px) {
+  .section-contact__content__info__icon-body {
+    width: 64px;
+    height: 64px;
+  }
+}
+@media (max-width: 1600px) or (max-height: 899px) {
+  .section-contact__content__info__icon-body {
+    width: 52px;
+    height: 52px;
+  }
+}
+@media (min-width: 1600px) or (min-height: 899px) {
+  .section-contact__content__info__icon {
+    width: 28px;
+    height: 28px;
+  }
+}
+@media (max-width: 1600px) or (max-height: 899px) {
+  .section-contact__content__info__icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+.section-contact__content__info__text-body {
+  flex-direction: column;
+}
+@media (max-width: 650px) {
+  .section-contact__content__info__text-body {
+    width: fit-content;
+  }
+}
+.section-contact__content__info__big-text {
+  font-weight: 300;
+  color: #012765;
+}
+@media (min-width: 1600px) or (min-height: 899px) {
+  .section-contact__content__info__big-text {
+    font-size: 20px;
+  }
+}
+@media (max-width: 1600px) or (max-height: 899px) {
+  .section-contact__content__info__big-text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1050px) or (max-height: 599px) {
+  .section-contact__content__info__big-text {
+    font-size: 18px;
+  }
+}
+@media (max-width: 650px) {
+  .section-contact__content__info__big-text {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+.section-contact__content__info__small-text {
+  font-weight: 300;
+  color: #64748b;
+}
+@media (min-width: 1600px) or (min-height: 899px) {
+  .section-contact__content__info__small-text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1600px) or (max-height: 899px) {
+  .section-contact__content__info__small-text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1050px) or (max-height: 599px) {
+  .section-contact__content__info__small-text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 650px) {
+  .section-contact__content__info__small-text {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+.section-contact__content__form {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1600px) or (min-height: 899px) {
+  .section-contact__content__form > :not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 1600px) or (max-height: 899px) {
+  .section-contact__content__form > :not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 1050px) or (max-height: 599px) {
+  .section-contact__content__form > :not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 650px) {
+  .section-contact__content__form > :not(:last-child) {
+    margin-bottom: 16px;
+  }
 }
 
 #plovila-2-card-1 {

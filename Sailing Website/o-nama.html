@@ -36,12 +36,12 @@
                     </a>
                 </li>
                 <li class="header__item">
-                    <a href="http://127.0.0.1:5500/galerija" class="header__anchor header__anchor__selected">
+                    <a href="http://127.0.0.1:5500/galerija" class="header__anchor">
                         Galerija
                     </a>
                 </li>
                 <li class="header__item">
-                    <a href="http://127.0.0.1:5500/o-nama" class="header__anchor">
+                    <a href="http://127.0.0.1:5500/o-nama" class="header__anchor header__anchor__selected">
                         O nama
                     </a>
                 </li>
@@ -107,7 +107,7 @@
                     </a>
                 </li>
                 <li class="header__menu__item">
-                    <a href="/galerija" class="header__menu__anchor"> Galerija
+                    <a href="http://127.0.0.1:5500/galerija" class="header__menu__anchor"> Galerija
                     </a>
                 </li>
                 <li class="header__menu__item">
@@ -158,85 +158,80 @@
             </a>
         </menu>
     </header>
-    <section class="section-hero section-hero-mini section-hero-galerija">
+    <section class="section-hero section-hero-mini section-hero-o-nama">
         <div class="section-hero__text">
-            <h1 class="heading__h1 section-hero__text__heading"> Galerija </h1>
+            <h1 class="heading__h1 section-hero__text__heading"> O nama </h1>
             <p class="paragraph__subheading-h1 paragraph__subheading-h1__lightmode section-hero__text__subheading">
                 Discover the thrill of sailing with our fleet of modern
                 and comfortable sailboats. </p>
         </div>
     </section>
-    <section class="section section-gallery-page" id="gallery-section-1" >
-        <div class="section-gallery-page__gallery">
-            <div class="section-gallery-page__gallery__column">
-                <h2 class="section-gallery-page__heading" >Slike sa tura</h2>
-                <div class="section-gallery-page__gallery__row-large">
-                    <img class="section-gallery-page__gallery__image" src="./assets/images/gallery-image-3.png" />
-                </div>
-                <div class="section-gallery-page__gallery__row-large">
-                    <img class="section-gallery-page__gallery__image-3" src="./assets/images/gallery-image-7.png" />
-                </div>
-            </div>
-            <div class="section-gallery-page__gallery__column">
-                <div class="section-gallery-page__gallery__row-large">
-                    <img class="section-gallery-page__gallery__image" src="./assets/images/gallery-image-4.png" />
-                </div>
-                <div class="section-gallery-page__gallery__row-section">
-                    <div class="section-gallery-page__gallery__row-section__content">
-                        <h3 class="section-gallery-page__gallery__row-section__heading" >Example Title</h3>
-                        <p class="section-gallery-page__gallery__row-section__paragraph" >Example dummy text for a image card that contains info about the gallery section you are currently viewing and exploring</p>
-                    </div>
-                </div>
-            </div>
+    <section class="section section-contact" >
+        <div class="section__heading">
+            <h2 class="heading__h2 heading__h2__lightmode" > Kontakt forma </h2>
+            <p class="paragraph__subheading-h2 paragraph__subheading-h2__lightmode" >Ovde se nalazi prikaz nasih trenutnih plovila koja su Vam na raspolaganju. Naravno, ocekujemo da ce broj rasti kako vreme prolazi. Kliknite na neki od njih da saznate vise.</p>
         </div>
-    </section>
-    <section class="section section-gallery-page" id="gallery-section-2" >
-        <div class="section-gallery-page__gallery">
-            <div class="section-gallery-page__gallery__column">
-                <div class="section-gallery-page__gallery__row-large">
-                    <img class="section-gallery-page__gallery__image" src="./assets/images/gallery-image-4.png" />
-                </div>
-                <div class="section-gallery-page__gallery__row-section">
-                    <div class="section-gallery-page__gallery__row-section__content" id="gallery-section-2-content">
-                        <h3 class="section-gallery-page__gallery__row-section__heading" >Example Title</h3>
-                        <p class="section-gallery-page__gallery__row-section__paragraph" >Example dummy text for a image card that contains info about the gallery section you are currently viewing and exploring</p>
-                        <a class="CTA CTA__small CTA__secondary" >Saznaj više <img class="CTA__icon" src="./assets/svgs/arrow-right-secondary.svg" /></a>
+        <div class="section-contact__content">
+            <div class="section-contact__content__info">
+                <article class="section-contact__content__info__article">
+                    <div class="section-contact__content__info__icon-body">
+                        <img class="section-contact__content__info__icon" src="./assets/svgs/contact-form-icon-1.svg" />
+                    </div>
+                    <div class="section-contact__content__info__text-body">
+                        <p class="section-contact__content__info__big-text" >+381 65 335 7622</p>
+                        <p class="section-contact__content__info__small-text" >Naš broj telefona</p>
+                    </div>
+                </article>
+                <article class="section-contact__content__info__article">
+                    <div class="section-contact__content__info__icon-body">
+                        <img class="section-contact__content__info__icon" src="./assets/svgs/contact-form-icon-2.svg" />
+                    </div>
+                    <div class="section-contact__content__info__text-body">
+                        <p class="section-contact__content__info__big-text" >office@showmesailing.com</p>
+                        <p class="section-contact__content__info__small-text" >Naša email adresa</p>
+                    </div>
+                </article>
+                <article class="section-contact__content__info__article">
+                    <div class="section-contact__content__info__icon-body">
+                        <img class="section-contact__content__info__icon" src="./assets/svgs/contact-form-icon-3.svg" />
+                    </div>
+                    <div class="section-contact__content__info__text-body">
+                        <p class="section-contact__content__info__big-text" >Strumička 86/I, 11000 Beograd</p>
+                        <p class="section-contact__content__info__small-text" >Naša adresa</p>
+                    </div>
+                </article>
+            </div>
+            <form class="section-contact__content__form">
+                <div class="section-form__input-section">
+                    <p class="section-form__input-title">Ime i prezime</p>
+                    <div class="section-form__input-body">
+                        <input class="section-form__input" placeholder="Bogdan Bogdanovic" />
                     </div>
                 </div>
-            </div>
-            <div class="section-gallery-page__gallery__column">
-                <h2 class="section-gallery-page__heading" id="gallery-section-2-heading" >Slike sa tura</h2>
-                <div class="section-gallery-page__gallery__row-large">
-                    <img class="section-gallery-page__gallery__image" src="./assets/images/gallery-image-3.png" />
-                </div>
-                <div class="section-gallery-page__gallery__row-large">
-                    <img class="section-gallery-page__gallery__image-3" src="./assets/images/gallery-image-7.png" />
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section section-gallery-page" id="gallery-section-1" >
-        <div class="section-gallery-page__gallery">
-            <div class="section-gallery-page__gallery__column">
-                <h2 class="section-gallery-page__heading" >Slike sa tura</h2>
-                <div class="section-gallery-page__gallery__row-large">
-                    <img class="section-gallery-page__gallery__image" src="./assets/images/gallery-image-3.png" />
-                </div>
-                <div class="section-gallery-page__gallery__row-large">
-                    <img class="section-gallery-page__gallery__image-3" src="./assets/images/gallery-image-7.png" />
-                </div>
-            </div>
-            <div class="section-gallery-page__gallery__column">
-                <div class="section-gallery-page__gallery__row-large">
-                    <img class="section-gallery-page__gallery__image" src="./assets/images/gallery-image-4.png" />
-                </div>
-                <div class="section-gallery-page__gallery__row-section">
-                    <div class="section-gallery-page__gallery__row-section__content">
-                        <h3 class="section-gallery-page__gallery__row-section__heading" >Example Title</h3>
-                        <p class="section-gallery-page__gallery__row-section__paragraph" >Example dummy text for a image card that contains info about the gallery section you are currently viewing and exploring</p>
+                <div class="section-form__input-section">
+                    <p class="section-form__input-title">Email</p>
+                    <div class="section-form__input-body">
+                        <input class="section-form__input" placeholder="bogdanbogdanovic@gmail.com" />
                     </div>
                 </div>
-            </div>
+                <div class="section-form__input-section">
+                    <p class="section-form__input-title">Telefon</p>
+                    <div class="section-form__input-body">
+                        <input class="section-form__input" placeholder="063-456-7890" />
+                    </div>
+                </div>
+                <div class="section-form__input-section">
+                    <p class="section-form__input-title">Poruka</p>
+                    <div class="section-form__input-body">
+                        <textarea class="section-form__input" placeholder="Dodatne informacije" ></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="section-form__button" >
+                    <a class="CTA CTA__small CTA__primary" >
+                        Pošaljite poruku
+                    </a>
+                </button>
+            </form>
         </div>
     </section>
     <footer class="footer" >
@@ -329,8 +324,8 @@
             <p class="footer__copyright__text">© 2024 SunShine Iznajmljivanje Vozila. Sva prava zadrzana.</p>
         </div>
     </footer>
-    <script src="./header.js">
+    <script src="./header.js" >
     </script>
 </body>
 
-</html>
+</html> 
