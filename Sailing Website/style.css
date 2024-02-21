@@ -1470,11 +1470,17 @@ textarea {
   .section-contact__content__info {
     padding: 25px 40px;
   }
+  .section-contact__content__info > :not(:last-child) {
+    margin-bottom: 60px;
+  }
 }
 @media (max-width: 1050px) or (max-height: 599px) {
   .section-contact__content__info {
     padding: 25px 40px;
     width: 100%;
+  }
+  .section-contact__content__info > :not(:last-child) {
+    margin-bottom: 60px;
   }
 }
 @media (max-width: 650px) {

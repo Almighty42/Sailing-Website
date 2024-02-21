@@ -1228,10 +1228,12 @@ $font-size-paragraph-1: 24px;
             }
             @media (max-width: 1600px) or (max-height: 899px) {
                 padding: 25px 40px;
+                @include marginBetweenElements(60px, 'vertical');
             }
             @media (max-width: 1050px) or (max-height: 599px) {
                 padding: 25px 40px;
                 width: 100%;
+                @include marginBetweenElements(60px, 'vertical');
             }
             @media (max-width: 650px) {
                 padding: 25px 30px;
