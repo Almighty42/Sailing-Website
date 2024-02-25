@@ -429,7 +429,7 @@ textarea {
 }
 @media (max-width: 650px) {
   .header__menu__anchor {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 .header__vodic-menu, .header__pustolovine-menu {
@@ -609,7 +609,7 @@ textarea {
 }
 @media (max-width: 650px) {
   .header__vodic-hamburger-menu__text, .header__pustolovine-hamburger-menu__text {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 .header__vodic-hamburger-menu__icon, .header__pustolovine-hamburger-menu__icon {
@@ -1142,6 +1142,10 @@ textarea {
 @media (max-width: 650px) {
   .section-plovila__card {
     padding: 0;
+  }
+  .section-plovila__card:hover {
+    transition: 0.3s ease-out;
+    box-shadow: none !important;
   }
 }
 .section-plovila__card__image {
@@ -1931,6 +1935,11 @@ textarea {
     width: calc(50% - 10px);
   }
 }
+@media (max-width: 650px) {
+  .section-gallery__gallery__image-2 {
+    width: 49%;
+  }
+}
 
 .section-form__body {
   width: 100%;
@@ -2590,7 +2599,7 @@ textarea {
 }
 @media (max-width: 650px) {
   .section-content-destinacije__cards > :not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 }
 
@@ -2942,6 +2951,11 @@ textarea {
 
 #gallery-section-2 {
   background-color: #0f172a;
+}
+@media (max-width: 1050px) or (max-height: 599px) {
+  #gallery-section-2 .section-gallery-page__gallery {
+    flex-direction: column-reverse;
+  }
 }
 
 #gallery-section-2-content {

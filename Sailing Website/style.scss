@@ -417,7 +417,7 @@ $font-size-paragraph-1: 24px;
                 font-size: 20px;
             }
             @media (max-width: 650px) {
-                font-size: 16px;
+                font-size: 18px;
             }
             text-decoration: none;
             font-weight: 300;
@@ -572,7 +572,7 @@ $font-size-paragraph-1: 24px;
                 font-size: 16px;
             }
             @media (max-width: 650px) {
-                font-size: 12px;
+                font-size: 14px;
             }
         }
         &__icon {
@@ -974,6 +974,10 @@ $font-size-paragraph-1: 24px;
         }
         @media (max-width: 650px) {
             padding: 0;
+            &:hover {
+                transition: 0.3s ease-out;
+                box-shadow: none !important;
+            }
         }
         border-radius: 10px;
 
@@ -1550,6 +1554,9 @@ $font-size-paragraph-1: 24px;
             @media (max-width: 1600px) or (max-height: 899px) {
                 width: calc(50% - 10px);
             }
+            @media (max-width: 650px) {
+                width: 49%
+            }
             border-radius: 10px;
             display: inline-block;
         }
@@ -2050,7 +2057,7 @@ $font-size-paragraph-1: 24px;
             @include marginBetweenElements(16px, "vertical");
         }
         @media (max-width: 650px) {
-            @include marginBetweenElements(20px, "vertical");
+            @include marginBetweenElements(40px, "vertical");
         }
     }
 }
@@ -2314,6 +2321,11 @@ $font-size-paragraph-1: 24px;
 }
 #gallery-section-2 {
     background-color: $neutral-900;
+    .section-gallery-page__gallery {
+        @media (max-width: 1050px) or (max-height: 599px) {
+            flex-direction: column-reverse;
+        }
+    }
 }
 #gallery-section-2-content {
     background-color: $neutral-100;
