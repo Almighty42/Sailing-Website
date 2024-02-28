@@ -159,6 +159,10 @@
         </menu>
     </header>
     <section class="section-hero" >
+        <video class="section-hero__video" autoplay loop muted >
+            <source src="./assets/images/home-page-video.mp4" type="video/mp4" >
+        </video>
+        <div class="section-hero__overlay" ></div>
         <div class="section-hero__text">
             <h1 class="heading__h1 section-hero__text__heading" > Doživi. Oseti. Istraži. </h1>
             <p class="paragraph__subheading-h1 paragraph__subheading-h1__lightmode section-hero__text__subheading" > Nezaboravno iskustvo na Jadranu </p>
@@ -230,19 +234,156 @@
             <p class="paragraph__subheading-h2 paragraph__subheading-h2__darkmode" >Ovde se nalazi prikaz nasih trenutnih plovila koja su Vam na raspolaganju. Naravno, ocekujemo da ce broj rasti kako vreme prolazi. Kliknite na neki od njih da saznate vise.</p>
         </div>
         <div class="section-plovila-2__cards" >
-            <article class="section-plovila-2__card" id="plovila-2-card-1">
-                <div class="section-plovila-2__card__overlay" ></div>
+            <article class="section-plovila-2__card-2" >
+                <img class="section-plovila-2__card-2__image" src="./assets/images/ship-image-1.jpg" />
                 <p class="section-plovila-2__card__heading" >Jedrilica</p>
                 <p class="section-plovila-2__card__paragraph" >Jedrilica description example for this ship type that also includes all kinds of info about this ship that you might not expect from a convectional website that are on the market</p>
                 <a class="CTA CTA__small CTA__primary" >Saznaj više <img class="CTA__icon" src="./assets/svgs/arrow-right-primary.svg" /></a>
             </article>
-            <article class="section-plovila-2__card" id="plovila-2-card-2">
-                <div class="section-plovila-2__card__overlay" ></div>
+            <article class="section-plovila-2__card-2" >
+                <img class="section-plovila-2__card-2__image" src="./assets/images/ship-image-2.jpg" />
                 <p class="section-plovila-2__card__heading" >Jedrilica</p>
                 <p class="section-plovila-2__card__paragraph" >Jedrilica description example for this ship type that also includes all kinds of info about this ship that you might not expect from a convectional website that are on the market</p>
                 <a class="CTA CTA__small CTA__primary" >Saznaj više <img class="CTA__icon" src="./assets/svgs/arrow-right-primary.svg" /></a>
             </article>
         </div>
+    </section>
+    <section class="section section-form" id="sailing-form" >
+        <div class="section__heading">
+            <h2 class="heading__h2 heading__h2__lightmode" > Forma za bukiranje Plovila </h2>
+            <p class="paragraph__subheading-h2 paragraph__subheading-h2__lightmode" >Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.</p>
+        </div>
+        <form class="section-form__body" >
+            <div class="section-form__row">
+                <div class="section-form__input-section">
+                    <p class="section-form__input-title">Ime i prezime</p>
+                    <div class="section-form__input-body">
+                        <input class="section-form__input" placeholder="Bogdan Bogdanovic" />
+                    </div>
+                    <p class="section-form__input-warning">Morate da upišete !</p>
+                </div>
+                <div class="section-form__input-section">
+                    <p class="section-form__input-title">Email</p>
+                    <div class="section-form__input-body">
+                        <input class="section-form__input" placeholder="bogdanbogdanovic@email.com" />
+                    </div>
+                    <p class="section-form__input-warning">Morate da upišete !</p>
+                </div>
+                <div class="section-form__input-section">
+                    <p class="section-form__input-title">Telefon</p>
+                    <div class="section-form__input-body">
+                        <input class="section-form__input" placeholder="063-456-7890" />
+                    </div>
+                    <p class="section-form__input-warning">Morate da upišete !</p>
+                </div>
+            </div>
+            <div class="section-form__row">
+                <div class="section-form__input-section">
+                    <p class="section-form__input-title">Datum rezervacije</p>
+                    <div class="section-form__input-body">
+                        <input class="section-form__input" placeholder="mm/dd/yyyy" />
+                    </div>
+                    <p class="section-form__input-warning">Morate da upišete !</p>
+                </div>
+                <div class="section-form__input-section">
+                    <p class="section-form__input-title">Inclusive</p>
+                    <div class="section-form__input-body" style="height: 100%;">
+                        <select class="section-form__input" style="margin-right: 10px;" >
+                            <option selected disabled >DA / NE</option>
+                            <option value="da" >DA</option>
+                            <option value="ne" >NE</option>
+                        </select>
+                    </div>
+                    <p class="section-form__input-warning">Morate da upišete !</p>
+                </div>
+                <div class="section-form__input-section">
+                    <p class="section-form__input-title">Broj soba</p>
+                    <div class="section-form__input-body">
+                        <input class="section-form__input" placeholder="2" />
+                    </div>
+                    <p class="section-form__input-warning">Morate da upišete !</p>
+                </div>
+            </div>
+            <div class="section-form__row">
+                <div class="section-form__input-section">
+                    <p class="section-form__input-title">Da li vam je potreban skipper</p>
+                    <div class="section-form__input-body">
+                        <select class="section-form__input" style="margin-right: 10px; padding: 12px 16px;" >
+                            <option selected disabled >DA / NE</option>
+                            <option value="da" >DA</option>
+                            <option value="ne" >NE</option>
+                        </select>
+                    </div>
+                    <p class="section-form__input-warning">Morate da upišete !</p>
+                </div>
+                <div class="section-form__input-section">
+                    <p class="section-form__input-title">Da li vam je potrebna hostesa</p>
+                    <div class="section-form__input-body">
+                        <select class="section-form__input" style="margin-right: 10px; padding: 12px 16px;" >
+                            <option selected disabled >DA / NE</option>
+                            <option value="da" >DA</option>
+                            <option value="ne" >NE</option>
+                        </select>
+                    </div>
+                    <p class="section-form__input-warning">Morate da upišete !</p>
+                </div>
+                <div class="section-form__input-section">
+                    <p class="section-form__input-title">Napomena</p>
+                    <div class="section-form__input-body">
+                        <textarea class="section-form__input" placeholder="Dodatne informacije" ></textarea>
+                    </div>
+                    <p class="section-form__input-warning">Morate da upišete !</p>
+                </div>
+            </div>
+            <p class="section-form__input-title">Izaberite plovilo</p>
+            <div class="section-form__radio-section">
+                <div class="section-form__radio-body" id="radio-body-1">
+                    <img class="section-form__radio-image" src="./assets/images/radio-image-1.jpg" alt="slika broda" />
+                    <p class="section-form__radio-text" > Jedrilica </p>
+                    <input name="radio-button" type="radio" class="section-form__radio" id="radio-button-1" disabled />
+                </div>
+                <div class="section-form__radio-body" id="radio-body-2">
+                    <img class="section-form__radio-image" src="./assets/images/radio-image-2.jpg" alt="slika broda" />
+                    <p class="section-form__radio-text" > Katamaran </p>
+                    <input name="radio-button" type="radio" class="section-form__radio" id="radio-button-2" disabled />
+                </div>
+            </div>
+            <p class="section-form__input-warning">Morate da upišete !</p>
+            <button type="submit" class="section-form__button" >
+                <a class="CTA CTA__small CTA__primary" >
+                    Pošaljite poruku
+                </a>
+            </button>
+        </form>
+    </section>
+    <section class="section section-gallery" >
+        <div class="section__heading">
+            <h2 class="heading__h2 heading__h2__darkmode" > Naslov </h2>
+            <p class="paragraph__subheading-h2 paragraph__subheading-h2__darkmode" >Ovde se nalazi prikaz nasih trenutnih plovila koja su Vam na raspolaganju. Naravno, ocekujemo da ce broj rasti kako vreme prolazi. Kliknite na neki od njih da saznate vise.</p>
+        </div>
+        <div class="section-gallery__gallery">
+            <div class="section-gallery__gallery__column">
+                <div class="section-gallery__gallery__row">
+                    <img class="section-gallery__gallery__image-2" src="./assets/images/gallery-image-1.png" />
+                    <img class="section-gallery__gallery__image-2" src="./assets/images/gallery-image-2.png" />
+                </div>
+                <div class="section-gallery__gallery__row-large">
+                    <img class="section-gallery__gallery__image" src="./assets/images/gallery-image-3.png" />
+                </div>
+            </div>
+            <div class="section-gallery__gallery__column">
+                <div class="section-gallery__gallery__row-large">
+                    <img class="section-gallery__gallery__image" src="./assets/images/gallery-image-4.png" />
+                </div>
+                <div class="section-gallery__gallery__row">
+                    <img class="section-gallery__gallery__image-2" src="./assets/images/gallery-image-5.png" />
+                    <img class="section-gallery__gallery__image-2" src="./assets/images/gallery-image-6.png" />
+                </div>
+            </div>
+        </div>
+        <a href="/galerija.html" class="CTA CTA__small CTA__primary">
+            Pogledajte našu galeriju
+        </a>
     </section>
     <section class="section section-proces" >
         <div class="section__heading">
@@ -283,133 +424,6 @@
                 </div>
             </article>
         </div>
-    </section>
-    <section class="section section-gallery" >
-        <div class="section__heading">
-            <h2 class="heading__h2 heading__h2__darkmode" > Naslov </h2>
-            <p class="paragraph__subheading-h2 paragraph__subheading-h2__darkmode" >Ovde se nalazi prikaz nasih trenutnih plovila koja su Vam na raspolaganju. Naravno, ocekujemo da ce broj rasti kako vreme prolazi. Kliknite na neki od njih da saznate vise.</p>
-        </div>
-        <div class="section-gallery__gallery">
-            <div class="section-gallery__gallery__column">
-                <div class="section-gallery__gallery__row">
-                    <img class="section-gallery__gallery__image-2" src="./assets/images/gallery-image-1.png" />
-                    <img class="section-gallery__gallery__image-2" src="./assets/images/gallery-image-2.png" />
-                </div>
-                <div class="section-gallery__gallery__row-large">
-                    <img class="section-gallery__gallery__image" src="./assets/images/gallery-image-3.png" />
-                </div>
-            </div>
-            <div class="section-gallery__gallery__column">
-                <div class="section-gallery__gallery__row-large">
-                    <img class="section-gallery__gallery__image" src="./assets/images/gallery-image-4.png" />
-                </div>
-                <div class="section-gallery__gallery__row">
-                    <img class="section-gallery__gallery__image-2" src="./assets/images/gallery-image-5.png" />
-                    <img class="section-gallery__gallery__image-2" src="./assets/images/gallery-image-6.png" />
-                </div>
-            </div>
-        </div>
-        <a href="/galerija.html" class="CTA CTA__small CTA__primary">
-            Pogledajte našu galeriju
-        </a>
-    </section>
-    <section class="section section-form" id="sailing-form" >
-        <div class="section__heading">
-            <h2 class="heading__h2 heading__h2__lightmode" > Forma za bukiranje Plovila </h2>
-            <p class="paragraph__subheading-h2 paragraph__subheading-h2__lightmode" >Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.</p>
-        </div>
-        <form class="section-form__body" >
-            <div class="section-form__row">
-                <div class="section-form__input-section">
-                    <p class="section-form__input-title">Ime i prezime</p>
-                    <div class="section-form__input-body">
-                        <input class="section-form__input" placeholder="Bogdan Bogdanovic" />
-                    </div>
-                </div>
-                <div class="section-form__input-section">
-                    <p class="section-form__input-title">Email</p>
-                    <div class="section-form__input-body">
-                        <input class="section-form__input" placeholder="bogdanbogdanovic@email.com" />
-                    </div>
-                </div>
-                <div class="section-form__input-section">
-                    <p class="section-form__input-title">Telefon</p>
-                    <div class="section-form__input-body">
-                        <input class="section-form__input" placeholder="063-456-7890" />
-                    </div>
-                </div>
-            </div>
-            <div class="section-form__row">
-                <div class="section-form__input-section">
-                    <p class="section-form__input-title">Datum rezervacije</p>
-                    <div class="section-form__input-body">
-                        <input class="section-form__input" placeholder="mm/dd/yyyy" />
-                    </div>
-                </div>
-                <div class="section-form__input-section">
-                    <p class="section-form__input-title">Inclusive</p>
-                    <div class="section-form__input-body" style="height: 100%;">
-                        <select class="section-form__input" style="margin-right: 10px;" >
-                            <option selected disabled >DA / NE</option>
-                            <option value="da" >DA</option>
-                            <option value="ne" >NE</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="section-form__input-section">
-                    <p class="section-form__input-title">Broj soba</p>
-                    <div class="section-form__input-body">
-                        <input class="section-form__input" placeholder="2" />
-                    </div>
-                </div>
-            </div>
-            <div class="section-form__row">
-                <div class="section-form__input-section">
-                    <p class="section-form__input-title">Da li vam je potreban skipper</p>
-                    <div class="section-form__input-body">
-                        <select class="section-form__input" style="margin-right: 10px; padding: 12px 16px;" >
-                            <option selected disabled >DA / NE</option>
-                            <option value="da" >DA</option>
-                            <option value="ne" >NE</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="section-form__input-section">
-                    <p class="section-form__input-title">Da li vam je potrebna hostesa</p>
-                    <div class="section-form__input-body">
-                        <select class="section-form__input" style="margin-right: 10px; padding: 12px 16px;" >
-                            <option selected disabled >DA / NE</option>
-                            <option value="da" >DA</option>
-                            <option value="ne" >NE</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="section-form__input-section">
-                    <p class="section-form__input-title">Napomena</p>
-                    <div class="section-form__input-body">
-                        <textarea class="section-form__input" placeholder="Dodatne informacije" ></textarea>
-                    </div>
-                </div>
-            </div>
-            <p class="section-form__input-title">Izaberite plovilo</p>
-            <div class="section-form__radio-section">
-                <div class="section-form__radio-body" id="radio-body-1">
-                    <img class="section-form__radio-image" src="./assets/images/radio-image-1.jpg" alt="slika broda" />
-                    <p class="section-form__radio-text" > Jedrilica </p>
-                    <input name="radio-button" type="radio" class="section-form__radio" id="radio-button-1" disabled />
-                </div>
-                <div class="section-form__radio-body" id="radio-body-2">
-                    <img class="section-form__radio-image" src="./assets/images/radio-image-2.jpg" alt="slika broda" />
-                    <p class="section-form__radio-text" > Katamaran </p>
-                    <input name="radio-button" type="radio" class="section-form__radio" id="radio-button-2" disabled />
-                </div>
-            </div>
-            <button type="submit" class="section-form__button" >
-                <a class="CTA CTA__small CTA__primary" >
-                    Pošaljite poruku
-                </a>
-            </button>
-        </form>
     </section>
     <footer class="footer" >
         <div class="footer__body">
