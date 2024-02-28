@@ -281,12 +281,12 @@ textarea {
     height: 80px;
   }
   .header__logo-link {
-    width: 48px;
-    height: 48px;
+    width: 56px;
+    height: 56px;
   }
   .header__logo {
-    width: 48px;
-    height: 48px;
+    width: 56px;
+    height: 56px;
   }
   .header__list > :not(:last-child) {
     margin-right: 48px;
@@ -670,6 +670,8 @@ textarea {
   background-image: url("./assets/images/hero-image.png");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  overflow-x: hidden;
 }
 @media (min-width: 1600px) or (min-height: 899px) {
   .section-hero {
@@ -694,10 +696,37 @@ textarea {
 }
 .section-hero__text {
   flex-direction: column;
+  z-index: 30;
 }
 .section-hero__text > :not(:last-child) {
   margin-bottom: 8px;
 }
+.section-hero .CTA {
+  z-index: 30;
+}
+.section-hero__video {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+  object-fit: cover;
+}
+.section-hero__overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.6;
+  z-index: 1;
+}
+
 .section-hero-mini {
   height: 50vh !important;
 }
@@ -738,6 +767,11 @@ textarea {
 .section-hero-o-nama {
   background-position: center;
   background-image: url("./assets/images/hero-image-o-nama.png");
+}
+
+.section-hero-plovila {
+  background-position: center;
+  background-image: url("./assets/images/hero-image-plovila-2.png");
 }
 
 .section-content {
@@ -1254,6 +1288,11 @@ textarea {
     line-height: 24px;
   }
 }
+.section-plovila__card__paragraph__list {
+  padding-left: 12px;
+  flex-direction: column;
+  list-style-type: none;
+}
 .section-plovila__card__info {
   color: #94a3b8;
   align-items: center;
@@ -1426,6 +1465,32 @@ textarea {
 .section-plovila-2__card:hover .CTA__icon {
   transition: 0.2s ease-in-out;
   opacity: 1;
+}
+.section-plovila-2__card-2 {
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1600px) or (min-height: 899px) {
+  .section-plovila-2__card-2 {
+    padding: 0px 64px;
+  }
+  .section-plovila-2__card-2 > :not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 1600px) or (max-height: 899px) {
+  .section-plovila-2__card-2 {
+    padding: 0px 52px;
+  }
+  .section-plovila-2__card-2 > :not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.section-plovila-2__card-2__image {
+  width: 60%;
+  aspect-ratio: 1;
+  border-radius: 600px;
+  background-size: 100%;
 }
 
 @media (min-width: 1600px) or (min-height: 899px) {
@@ -2115,6 +2180,28 @@ textarea {
     font-size: 12px;
   }
 }
+.section-form__input-warning {
+  color: red;
+  display: none;
+}
+@media (min-width: 1600px) or (min-height: 899px) {
+  .section-form__input-warning {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1600px) or (max-height: 899px) {
+  .section-form__input-warning {
+    font-size: 16px;
+  }
+}
+@media (max-width: 650px) {
+  .section-form__input-warning {
+    font-size: 15px;
+  }
+}
+.section-form__input-warning-show {
+  display: block;
+}
 .section-form__input:focus {
   outline: none;
 }
@@ -2122,7 +2209,7 @@ textarea {
   margin-right: 10px;
 }
 .section-form__radio-section {
-  width: 100%;
+  width: 60%;
   justify-content: center;
 }
 .section-form__radio-section > :not(:last-child) {
