@@ -43,6 +43,7 @@ textarea {
   border-radius: 5px;
   text-decoration: none;
   display: flex;
+  width: -moz-fit-content;
   width: fit-content;
   align-items: center;
 }
@@ -253,6 +254,7 @@ textarea {
 .header__button {
   border: none;
   background: none;
+  width: -moz-fit-content;
   width: fit-content;
   flex-direction: column;
   z-index: 2000;
@@ -554,6 +556,7 @@ textarea {
   filter: brightness(0) saturate(100%) invert(43%) sepia(75%) saturate(2923%) hue-rotate(203deg) brightness(100%) contrast(94%);
 }
 .header__vodic-hamburger-menu, .header__pustolovine-hamburger-menu {
+  width: -moz-fit-content;
   width: fit-content;
   max-height: 0;
   z-index: -30;
@@ -946,6 +949,7 @@ textarea {
 }
 .section-content__blog h2, .section-content__blog h3, .section-content__blog p {
   cursor: default;
+  width: -moz-fit-content;
   width: fit-content;
 }
 .section-content__blog__show {
@@ -956,6 +960,7 @@ textarea {
 }
 .section-content__blog__show h2, .section-content__blog__show h3, .section-content__blog__show p {
   cursor: text;
+  width: -moz-fit-content;
   width: fit-content;
 }
 .section-content__blog__show * {
@@ -1637,6 +1642,7 @@ textarea {
 }
 @media (max-width: 650px) {
   .section-contact__content__info__text-body {
+    width: -moz-fit-content;
     width: fit-content;
   }
 }
@@ -1792,6 +1798,7 @@ textarea {
 @media (max-width: 650px) {
   .section-proces__card {
     flex-direction: column;
+    height: -moz-fit-content;
     height: fit-content;
   }
   .section-proces__card > :not(:last-child) {
@@ -2141,21 +2148,34 @@ textarea {
     font-size: 12px;
   }
 }
+.section-form__input ::-moz-placeholder {
+  color: #94a3b8;
+  font-weight: 300;
+}
 .section-form__input ::placeholder {
   color: #94a3b8;
   font-weight: 300;
 }
 @media (min-width: 1600px) or (min-height: 899px) {
+  .section-form__input ::-moz-placeholder {
+    font-size: 16px;
+  }
   .section-form__input ::placeholder {
     font-size: 16px;
   }
 }
 @media (max-width: 1600px) or (max-height: 899px) {
+  .section-form__input ::-moz-placeholder {
+    font-size: 15px;
+  }
   .section-form__input ::placeholder {
     font-size: 15px;
   }
 }
 @media (max-width: 650px) {
+  .section-form__input ::-moz-placeholder {
+    font-size: 12px;
+  }
   .section-form__input ::placeholder {
     font-size: 12px;
   }
@@ -2250,6 +2270,7 @@ textarea {
   .section-form__radio-body {
     padding: 12px 32px;
     border: 2px solid #64748b;
+    width: -moz-fit-content;
     width: fit-content;
     width: 20%;
   }
@@ -2268,7 +2289,9 @@ textarea {
   border-color: #5f9bfc;
 }
 .section-form__radio {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   position: relative;
   border: 2.5px solid #1e293b;
   border-radius: 50%;
@@ -2318,6 +2341,7 @@ textarea {
 .section-form__button {
   padding: 0;
   border: none;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -3058,6 +3082,4 @@ textarea {
 #gallery-section-2-heading {
   text-align: right;
   color: #f2f7ff;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
