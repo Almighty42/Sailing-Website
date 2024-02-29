@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <a class="header__logo-link" href="/index.html" >
+                <img class="header__logo" src="./assets/svgs/logo.svg" alt="logo" />
+            </a>
+            <ul class="header__list">
+                <li class="header__item header__item__dropdown" id="vodic">
+                    <a class="header__anchor">
+                        Vodič
+                    </a>
+                    <img class="header__item__arrow" id="vodic-arrow" src="./assets/svgs/arrow-down.svg" alt="strelica na dole" />
+                </li>
+                <li class="header__item header__item__dropdown" id="pustolovine">
+                    <a class="header__anchor">
+                        Pustolovine
+                    </a>
+                    <img class="header__item__arrow" id="pustolovine-arrow" src="./assets/svgs/arrow-down.svg" alt="strelica na dole" />
+                </li>
+                <li class="header__item">
+                    <a href="/destinacije" class="header__anchor header__anchor__selected">
+                        Destinacije
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="/galerija" class="header__anchor">
+                        Galerija
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="/o-nama" class="header__anchor">
+                        O nama
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="/index.html#sailing-form" class="CTA CTA__default CTA__primary">
+                        Rezerviši plovilo
+                    </a>
+                </li>
+            </ul>
+            <button class="header__button" id="burgerButton" aria-label="burger button">
+                <hr class="header__hr" id="hr1">
+                <hr class="header__hr" id="hr2">
+                <hr class="header__hr" id="hr3">
+            </button>
+            <menu class="header__menu" id="menu">
+                <li class="header__menu__item" id="vodic-hamburger">
+                    <a class="header__menu__anchor"> Vodič </a>
+                    <img class="header__item__arrow" id="vodic-hamburger-arrow" src="./assets/svgs/arrow-down.svg" alt="strelica na dole" />
+                </li>
+                <menu class="header__vodic-hamburger-menu" id="vodic-hamburger-menu" >
+                    <a class="header__vodic-hamburger-menu__item" href="/vodic.html#link-1" >
+                        <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__vodic-hamburger-menu__text" >Kako bukirati brod</p>
+                    </a>
+                    <a class="header__vodic-hamburger-menu__item" href="/vodic.html#link-2" >
+                        <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__vodic-hamburger-menu__text" >Sve o jedrenju</p>
+                    </a>
+                    <a class="header__vodic-hamburger-menu__item" href="/vodic.html#link-3" >
+                        <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__vodic-hamburger-menu__text" >Odabir plovila</p>
+                    </a>
+                    <a class="header__vodic-hamburger-menu__item" href="/vodic.html#link-4" >
+                        <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__vodic-hamburger-menu__text" >Skipper / Kapetan</p>
+                    </a>
+                    <a class="header__vodic-hamburger-menu__item" href="/vodic.html#link-5" >
+                        <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__vodic-hamburger-menu__text" >Agent za najam plovila</p>
+                    </a>
+                </menu>
+                <li class="header__menu__item" id="pustolovine-hamburger">
+                    <a class="header__menu__anchor"> Pustolovine
+                    </a>
+                    <img class="header__item__arrow" id="pustolovine-hamburger-arrow" src="./assets/svgs/arrow-down.svg" alt="strelica na dole" />
+                </li>
+                <menu class="header__pustolovine-hamburger-menu" id="pustolovine-hamburger-menu" >
+                    <a class="header__pustolovine-hamburger-menu__item" href="/pustolovine.html#link-1" >
+                        <img class="header__pustolovine-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__pustolovine-hamburger-menu__text" >Privatna tura</p>
+                    </a>
+                    <a class="header__pustolovine-hamburger-menu__item" href="/pustolovine.html#link-2" >
+                        <img class="header__pustolovine-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__pustolovine-hamburger-menu__text" >Iznajmljivanje kabine</p>
+                    </a>
+                    <a class="header__pustolovine-hamburger-menu__item" href="/pustolovine.html#link-3" >
+                        <img class="header__pustolovine-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__pustolovine-hamburger-menu__text" >Hotila</p>
+                    </a>
+                </menu>
+                <li class="header__menu__item">
+                    <a href="/destinacije" class="header__menu__anchor"> Destinacije
+                    </a>
+                </li>
+                <li class="header__menu__item">
+                    <a href="/galerija" class="header__menu__anchor"> Galerija
+                    </a>
+                </li>
+                <li class="header__menu__item">
+                    <a href="/o-nama" class="header__menu__anchor"> O nama
+                    </a>
+                </li>
+                <li class="header__menu__item">
+                    <a href="/index.html#sailing-form" class="CTA CTA__small CTA__primary">
+                        Rezerviši plovilo
+                    </a>
+                </li>
+            </menu>
+        </nav>
+        <menu class="header__vodic-menu" id="vodic-menu">
+            <a class="header__vodic-menu__item" href="/vodic.html#link-1" >
+                <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-1.svg" />
+                <p class="header__vodic-menu__text" >Kako bukirati brod</p>
+            </a>
+            <a class="header__vodic-menu__item" href="/vodic.html#link-2" >
+                <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-2.svg" />
+                <p class="header__vodic-menu__text" >Odabir plovila</p>
+            </a>
+            <a class="header__vodic-menu__item" href="/vodic.html#link-3" >
+                <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-3.svg" />
+                <p class="header__vodic-menu__text" >Sve o jedrenju</p>
+            </a>
+            <a class="header__vodic-menu__item" href="/vodic.html#link-4" >
+                <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-4.svg" />
+                <p class="header__vodic-menu__text" >Skiper / Kapetan</p>
+            </a>
+            <a class="header__vodic-menu__item" href="/vodic.html#link-5" >
+                <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-5.svg" />
+                <p class="header__vodic-menu__text" >Agent za najam plovila</p>
+            </a>
+        </menu>
+        <menu class="header__pustolovine-menu" id="pustolovine-menu">
+            <a class="header__pustolovine-menu__item" href="/pustolovine.html#link-1" >
+                <img class="header__pustolovine-menu__icon" src="./assets/svgs/pustolovina-icon-1.svg" />
+                <p class="header__pustolovine-menu__text" >Privatna tura</p>
+            </a>
+            <a class="header__pustolovine-menu__item" href="/pustolovine.html#link-2" >
+                <img class="header__pustolovine-menu__icon" src="./assets/svgs/pustolovina-icon-2.svg" />
+                <p class="header__pustolovine-menu__text" >Iznajmljivanje kabine</p>
+            </a>
+            <a class="header__pustolovine-menu__item" href="/pustolovine.html#link-3" >
+                <img class="header__pustolovine-menu__icon" src="./assets/svgs/pustolovina-icon-3.svg" />
+                <p class="header__pustolovine-menu__text" >Hotila</p>
+            </a>
+        </menu>
+    </header>
+    <section class="section-hero section-hero-mini section-hero-ostrvo-1" >
+        <div class="section-hero__text">
+            <h1 class="heading__h1 section-hero__text__heading" > Hvar </h1>
+            <p class="paragraph__subheading-h1 paragraph__subheading-h1__lightmode section-hero__text__subheading" >Ostrvo Hvar, jedno je od najpoznatijih i najatraktivnijih turističkih destinacija duž Jadranske obale.
+              </p>
+        </div>
+    </section>
+    <section class="section-content-ostrvo-1 section" >
+        <div class="section__heading">
+            <h2 class="heading__h2 heading__h2__lightmode" > Hvar </h2>
+            <p class="paragraph__subheading-h2 paragraph__subheading-h2__lightmode" >  Sa svojom bogatom istorijom, predivnom prirodom i raznolikim sadržajima, Hvar privlači posetioce iz celog sveta.</p>
+        </div>
+        <div class="section-content-ostrvo-1__content">
+            <article class="section-content-ostrvo-1__content__article">
+                <h3 class="section-content-ostrvo-1__content__heading" >Nešto o Hvaru:</h3>
+                <p class="section-content-ostrvo-1__content__paragraph">Jedno od najpoznatijih znamenitosti ostrva je Stari Grad, koji je jedan od najstarijih gradova u Evropi i pod zaštitom UNESCO-a.
+                    Sa svojim uskim kamenim ulicama, prelepim trgovima i brojnim istorijskim zgradama, Stari Grad pruža jedinstvenu atmosferu i bogato kulturno iskustvo.</p>
+                <p class="section-content-ostrvo-1__content__paragraph" >Još jedna atrakcija ostrva Hvar je tvrđava Fortica, koja se nalazi na vrhu brda iznad grada Hvara.
+                    Posetioci mogu uživati u spektakularnom pogledu na grad i okolna ostrva sa ove istorijske lokacije, dok istražuju njegove zidine i kulturno nasleđe.</p>
+                <p class="section-content-ostrvo-1__content__paragraph" >Osim toga, Hvar nudi prelepe plaže sa kristalno čistim morem, kao što su plaže Dubovica, Zlatni rat i Pakleni otoci.
+                    Ovi rajski delovi obale pružaju idealnu priliku za sunčanje, plivanje i ronjenje u tirkiznom moru.</p>
+                <p class="section-content-ostrvo-1__content__paragraph" >Ono što čini Hvar posebno privlačnim je i njegova živopisna noćna scena.
+                    Ostrvo je poznato po svojim živahnim barovima, klubovima i restoranima koji nude bogatu ponudu hrane, pića i zabave tokom cele noći.
+                </p>
+                <p class="section-content-ostrvo-1__content__paragraph" >Sve ove znamenitosti i aktivnosti čine Hvar neodoljivom destinacijom za posetu.
+                    Bez obzira da li ste ljubitelj istorije, prirode, plaža ili noćnog života, Hvar nudi nezaboravno iskustvo za sve posetioce.
+                   Posetite Hvar i otkrijte lepotu ovog magičnog ostrva u srcu Jadrana.
+                </p>
+            </article>
+            <div class="section-content-ostrvo-1__content__images">
+                <img class="section-content-ostrvo-1__content__image" src="./assets/images/hvar/3.jpg" />
+                <img class="section-content-ostrvo-1__content__image" src="./assets/images/hvar/2.jpg" />
+            </div>
+            <article class="section-content-ostrvo-1__content__article">
+                <h3 class="section-content-ostrvo-1__content__heading" >Aktivnosti na ostrvu Hvar:</h3>
+                <p class="section-content-ostrvo-1__content__paragraph">
+                    Na Hvaru postoji obilje stvari koje možete raditi, videti i probati tokom posete ostrvu.
+                </p>
+                <h3 class="section-content-ostrvo-1__content__heading" >1. Istražite Paklena ostrva</h3>
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    Paklena ostrva, smeštena uz jugoistočnu obalu ostrva Hvar, predstavljaju jednu od najatraktivnijih turističkih destinacija ovog regiona.
+                    Ova grupa od 19 šumovitih ostrva, koja doslovno znače "Paklena ostrva" na engleskom jeziku, privlači pažnju posetilaca širom sveta svojom izuzetnom lepotom i raznovrsnošću atrakcija.
+
+                    Prvo što privlači turiste je spektakularan prirodni pejzaž.
+                    Paklena ostrva su okružena kristalno čistim tirkiznim morem i prekrivena bujnom mediteranskom vegetacijom, pružajući posetiocima nezaboravan doživljaj netaknute prirode.
+                    Osim toga, ostrva su poznata po svojim prelepim plažama i skrivenim uvalama, koje nude idealne uslove za sunčanje, plivanje i istraživanje podvodnog sveta.
+                    Jedna od najpoznatijih atrakcija na Paklenim ostrvima je Palmižana, ostrvo koje je pretvoreno u rajski vrt sa prelepim vrtovima, restoranima, barovima i galerijama.
+                    Posetioci mogu uživati u šetnji kroz egzotične biljne vrste, degustaciji lokalnih specijaliteta i kupanju na slikovitim plažama.
+                    Ako se pridružite našoj privatnoj turi brodom ili flotili, savetujemo Vam da ne propustite ovaj doživljaj!
+                </p>
+                <div class="section-content-ostrvo-1__content__images">
+                    <img class="section-content-ostrvo-1__content__image" src="./assets/images/hvar/Paklena ostrva.jpg" />
+                </div>
+                <p class="section-content-ostrvo-1__desc">Paklena Ostrva</p>
+                <h3 class="section-content-ostrvo-1__content__heading" >2. Isprobajte čuvenu lavandu sa Hvara</h3>
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    Hvar već godinama gaji mirisna polja lavande širom ostrva.
+                    Ako postoji proizvod koji bi čak i donekle mogao sadržati lavandu, na ostrvu Hvar ćete ga sigurno pronaći!
+                    Ulje lavande, sladoled od lavande i med od lavande samo su neki od proizvoda koji su dostupni!
+                    Dok istražujete ostrvo, primetićete polja lavande koja rastu gotovo na svakom koraku!
+                    Kraj juna je najbolje vreme da doživite punu raskoš lavandinih polja u punom cvatu.
+                    Posetite porodično vođeno polje lavande, nabavite malo ulja lavande za uspomenu ili jednostavno uživajte u lokalnom sladoledu od lavande!
+                </p>
+                <h3 class="section-content-ostrvo-1__content__heading" >3. Posetite tvrđavu Španjola</h3>
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    Tvrđava Španjola, poznata i kao Fortica, predstavlja jednu od najimpresivnijih znamenitosti na ostrvu Hvar. 
+                    Tvrđava je izgrađena u 16. veku kao odbrambena tvrđava protiv turskih osvajača.
+                    Tokom vekova, bila je ključna tačka odbrane grada Hvara i njegovih stanovnika.
+                    Danas, tvrđava služi kao muzej i domaćin je impresivne kolekcije amfora i antikviteta.
+                    Posetioci mogu istražiti bogatu istoriju ostrva Hvar kroz artefakte iz prošlih vremena.
+                    Jedan od najvećih razloga za posetu tvrđavi Španjola je spektakularan pogled koji pruža. 
+                    Sa vrha tvrđave, posetioci mogu uživati u panoramskom pogledu na grad Hvar, Jadransko more i obližnja Paklena ostrva, što čini posetu nezaboravnim iskustvom.
+                    Pored muzejskih eksponata, tvrđava takođe ima kafe bar gde posetioci mogu uživati u piću i opuštenoj atmosferi dok uživaju u prelepom pogledu.
+                    Kako bi stigli do tvrđave, posetioci moraju proći kroz uske uličice i stepenice Starog grada Hvara, što pruža priliku za istraživanje šarmantnih delova grada pre nego što se popnu na vrh.
+                    Ukratko, tvrđava Španjola je nezaobilazna destinacija za sve posetioce ostrva Hvar.
+                    Njen značaj u istoriji ostrva, impresivna muzejska kolekcija, spektakularan pogled i jedinstven doživljaj čine je nezaboravnom destinacijom za istraživanje i uživanje.
+                </p>
+                <h3 class="section-content-ostrvo-1__content__heading" >4. Probajte lokalna vina</h3>
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    Hvar već više od 2.400 godina neguje tradiciju vinogradarstva i autohtonih sorti grožđa, što ga čini savršenim mestom za uživanje u degustaciji vina!
+                    Prve vinove loze zasađene su na, sada pod zaštitom UNESCO-a, Starogradskoj poljani 384. godine pre nove ere, što znači da su neke loze na ovom ostrvu stare vekovima. 
+                    Topla klima, bogato i raznovrsno zemljište, kao i drevne tradicije proizvode lokalne sorte vina poput Pošipa i Plavca Malog, koji su osvojili brojne nagrade.
+                </p>
+            </article>
+            <article class="section-content-ostrvo-1__content__article">
+                <h3 class="section-content-ostrvo-1__content__heading" >Najbolje lokacije za zabavu na Hvaru:</h3>
+                <p class="section-content-ostrvo-1__content__paragraph">Omiljen među poznatima i ljubiteljima noćnog provoda, Hvar je idealno ostrvo za one koji traže nezaboravnu noćnu avanturu i žele da iskuse najbolji noćni život koji Hrvatska ima da ponudi! </p>
+                <p class="section-content-ostrvo-1__content__paragraph" >Još jedna atrakcija ostrva Hvar je tvrđava Fortica, koja se nalazi na vrhu brda iznad grada Hvara.
+                    Posetioci mogu uživati u spektakularnom pogledu na grad i okolna ostrva sa ove istorijske lokacije, dok istražuju njegove zidine i kulturno nasleđe.
+                </p>     
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    &nbsp &nbsp &nbsp 1. Carpe Diem
+                </p>    
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    &nbsp &nbsp &nbsp 2. Nautica Bar
+                </p>  
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    &nbsp &nbsp &nbsp 3. Hula Hula Bar
+                </p>
+                    <!-- <ul class="section-content__blog__section__list" >
+                        <li class="section-content__blog__section__item" >
+                            <p class="section-content__blog__section__paragraph" >Carpe Diem</p>
+                        </li>
+                        <li class="section-content__blog__section__item" >
+                            <p class="section-content__blog__section__paragraph" >Nautica Bar</p>
+                        </li>
+                        <li class="section-content__blog__section__item" >
+                            <p class="section-content__blog__section__paragraph" >Hula Hula Bar</p>
+                        </li>
+                    </ul> -->
+            </article>
+            <article class="section-content-ostrvo-1__content__article">
+                <h3 class="section-content-ostrvo-1__content__heading" >Gde jesti na Hvaru:</h3>
+                <p class="section-content-ostrvo-1__content__paragraph" >Ovo su samo neka od mnogobrojnih lokacija gde možete jesti ukusnu hranu.
+                </p>  
+                    <p class="section-content-ostrvo-1__content__paragraph" >
+                        &nbsp &nbsp &nbsp 1. Mizarola
+                    </p>    
+                    <p class="section-content-ostrvo-1__content__paragraph" >
+                        &nbsp &nbsp &nbsp 2. Apetti
+                    </p>  
+                    <p class="section-content-ostrvo-1__content__paragraph" >
+                        &nbsp &nbsp &nbsp 3. Divino
+                    </p> 
+                    <!-- <ul class="section-content__blog__section__list" >
+                        <li class="section-content__blog__section__item" >
+                            <p class="section-content__blog__section__paragraph" >Mizarola</p>
+                        </li>
+                        <li class="section-content__blog__section__item" >
+                            <p class="section-content__blog__section__paragraph" >Apetti</p>
+                        </li>
+                        <li class="section-content__blog__section__item" >
+                            <p class="section-content__blog__section__paragraph" >Divino</p>
+                        </li>
+                    </ul> -->
+            </article>
+            <article class="section-content-ostrvo-1__content__article">
+                <h3 class="section-content-ostrvo-1__content__heading" >Posetite najlepše plaže na Hvaru:</h3>
+                <p class="section-content-ostrvo-1__content__paragraph" >Hvar je poznat po tome što ima neke od najlepših plaža u Hrvatskoj koje se nalaze tik uz njegove obale.
+                </p>  
+                <p class="section-content-ostrvo-1__content__paragraph" >Sa obzirom na toliko izbora, mi smo ih suzili na naše favorite!
+                </p>    
+              
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    &nbsp &nbsp &nbsp 1. Pokonji dol
+                </p>    
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    &nbsp &nbsp &nbsp 2. Mekičevica plaža
+                </p>  
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    &nbsp &nbsp &nbsp 3. Dubovica
+                </p> 
+                <div class="section-content-ostrvo-1__content__images">
+                    <img class="section-content-ostrvo-1__content__image" src="./assets/images/hvar/Dubovica.jpg" />
+                </div>
+                <p class="section-content-ostrvo-1__desc">Dubovica</p>
+                <!-- <ul class="section-content__blog__section__list" >
+                    <li class="section-content__blog__section__item" >
+                        <p class="section-content__blog__section__paragraph" >Pokonji dol</p>
+                    </li>
+                    <li class="section-content__blog__section__item" >
+                        <p class="section-content__blog__section__paragraph" >Mekičevica plaža</p>
+                    </li>
+                    <li class="section-content__blog__section__item" >
+                        <p class="section-content__blog__section__paragraph" >Dubovica</p>
+                    </li>
+                </ul> -->
+            
+            </article>
+
+            <article class="section-content-ostrvo-1__content__article">
+                <h3 class="section-content-ostrvo-1__content__heading" >Stari Grad</h3>
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    Stari Grad, jedan od bisera ostrva Hvar, očarava posetioce svojom istorijskom lepotom i jedinstvenim šarmom. 
+                    Ovo slikovito mesto, smešteno na severu ostrva, predstavlja jedno od najstarijih gradskih naselja u Evropi, sa istorijskim korenima koji sežu duboko u prošlost.
+                    Jedna od najupečatljivijih karakteristika Starog Grada je njegova bogata istorija, koja datira još iz perioda oko 3.000 godina pre nove ere.
+                    Grad je bio svedok mnogih istorijskih događaja i promena, što se može videti u njegovoj arhitekturi i spomenicima koji svedoče o različitim periodima i kulturama koje su oblikovale ovaj grad.
+                    Osim svoje istorijske važnosti, Stari Grad očarava svojom slikovitošću i prirodnim lepotama.
+                    Okružen bujnim mediteranskim pejzažem, grad se prostire duž prelepe obale i nudi spektakularne poglede na Jadransko more.
+                    Šetajući njegovim uskim kamenim ulicama, otkrićete skrivene trgove, tradicionalne kuće od kamena i živopisne vrtove punih mirisnih mediteranskih biljaka.
+                    Posetioci mogu istraživati ​​njegove antičke ruševine, posetiti muzeje posvećene lokalnoj istoriji i umetnosti, ili jednostavno uživati u lokalnim restoranima i kafićima koji nude autentične dalmatinske specijalitete.
+                </p>  
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    1. Prošetajte venecijanskim ulicama
+                </p>    
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    Jedan od najboljih načina da doživite destinaciju jeste da se jednostavno izgubite u njoj, a to je posebno istinito u Starom Gradu.
+                    Dok su veći gradovi prenatrpani na svakom koraku, Stari Grad je očaravajuće prazan, što vam omogućava da istražite sve njegove tajne bez uznemiravanja.
+                    Venecijanske uličice Starog Grada su mnogo manje u poređenju sa gradovima poput Splita i Dubrovnika, što znači da možete proći celom mrežom ulica gde je vreme stalo, sve u toku jednog dana.
+                    Na svakom koraku očekuje vas nešto novo: od slikovitih kafića do drevnih arkada i divnih restorana, što samo pojačava vašu radoznalost!
+                </p> 
+
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    2. Uživajte u Rivi Stari Grad
+                </p>    
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    Palmina šetališta uz obalu imaju romantičnu privlačnost, bilo da se šetate pored venecijanskih zgrada starih vekovima, ili opuštate u restoranu na otvorenom, kafa u ruci, posmatrajući lokalno stanovništvo kako provodi vreme. 
+                    Zagrli nežan i spor način života na Rivi u ovom starom gradu, uzimajući vreme da zahvatite što više prelepih prizora koliko je moguće.
+                </p> 
+
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    3. Posetite muzej Starog Grada
+                </p>    
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    Sa obzirom na istoriju Starog Grada, muzej koji prikazuje njegovu bogatu prošlost je nešto što se podrazumeva.
+                    Otkrijte sva čuda i artefakte istorije Starog Grada unutar samog blaga - muzej se nalazi u neorenesansnoj palati iz 19. veka, nekadašnjem domu braće Biankini iz 1896. godine!
+                </p> 
+
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    4. Pešačite do brda Glavica
+                </p>    
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    Pešačenje do brda Glavica je izvodljivo za sve nivoe fizičke spreme.
+                    Relativno je lagani uspon koji postaje malo uzak prema vrhu.
+                    U skladu sa hrvatskim terenom, pešačenje je praćeno gustim borovima duž ivica koji će pružiti hlad za one tropske letnje dane.
+                    Dvadesetominutni hod će se otvoriti panoramskim pogledom na Stari Grad, a možda ćete čak uhvatiti pogled na susedna mesta.
+                </p> 
+
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    5. Probajte sladoled od lavande
+                </p>    
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    Na ostrvu koje obiluje prirodnim cvetom - čak i festivalom istog - sladoled od lavande je neobična lokalna poslastica koju treba probati.
+                    Stara izreka kaže, 'ruža je miris srca, lavanda je miris duše' - šta je bolje za dušu od uživanja u sladoledu!
+                </p> 
+                <h3 class="section-content-ostrvo-1__content__heading" >
+                    Najbolji barovi u Starom Gradu:
+                </h3>
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    &nbsp &nbsp &nbsp 1. Hvar
+                </p>    
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    &nbsp &nbsp &nbsp 2. Lampedusa Bar
+                </p> 
+
+                <h3 class="section-content-ostrvo-1__content__heading" >
+                    Gde jesti u Starom Gradu:
+                </h3>
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    &nbsp &nbsp &nbsp 1. Jurin podrum
+                </p>    
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    &nbsp &nbsp &nbsp 2. Antika
+                </p>  
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    &nbsp &nbsp &nbsp 3. Konoba Batana
+                </p>  
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    &nbsp &nbsp &nbsp 4. Kod Barba Luke
+                </p>
+                <h3 class="section-content-ostrvo-1__content__heading" >
+                    Posetite najlepše plaže u Starom Gradu:
+                </h3>
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    &nbsp &nbsp &nbsp 1. Plaža Banj
+                </p>  
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    &nbsp &nbsp &nbsp 2. Maslinička uvala
+                </p>  
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    &nbsp &nbsp &nbsp 3. Plaža Oslič
+                </p>
+            </article>
+
+            <div class="section-content-ostrvo-1__content__images">
+                <img class="section-content-ostrvo-1__content__image" src="./assets/images/hvar/old town hvar.jpg" />
+                <img class="section-content-ostrvo-1__content__image" src="./assets/images/hvar/old town 2.jpg" />
+            </div>
+            <p class="section-content-ostrvo-1__desc desc-more">Stari Grad</p>
+            <article class="section-content-ostrvo-1__content__article">
+                <h3 class="section-content-ostrvo-1__content__heading" >Jelsa</h3>
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    Na severnoj obali ostrva Hvar nalazi se Jelsa, mali lučki grad smešten na obali slikovite uvale.
+                    Jelsa je miran grad ispunjen fantastičnim mestima za kupanje, intimnim ulicama i upečatljivim trgovima. 
+                    Iz Jelse možete videti dva najviša vrha na ovom ostrvu, Sveti Nikola i Hum, i otkriti najznačajnije praistorijsko nalazište na Jadranu, pećinu Grapčeva.
+                    Jelsa je takođe poznata po svojim prelepim plažama i slikovitim okolinama.
+                    Uživanje na plažama poput Mina, Grebišće ili Stiniva pruža nezaboravno iskustvo, dok okolni pejzaži prepuni zelenila i vinograda pružaju spektakularne poglede.
+                    Osim toga, Jelsa je poznata po vinogradima i vinarijama, a poseta lokalnim vinarijama kao što su Tomić i Plančić pruža priliku da se uživa u degustaciji vrhunskih vina.
+                    Za ljubitelje aktivnog odmora, Jelsa nudi brojne mogućnosti, uključujući planinarenje na obližnjim brdima, biciklizam kroz prelepu prirodu ostrva i razne vodene aktivnosti.
+                </p>  
+                <h3 class="section-content-ostrvo-1__content__heading" >
+                    Gde jesti u Jelsi: 
+                </h3>
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    &nbsp &nbsp &nbsp 1. Konoba Kokot
+                </p>    
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    &nbsp &nbsp &nbsp 2. Konoba Stari Mlin
+                </p> 
+
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    &nbsp &nbsp &nbsp 3. Restoran Me and Mrs. Jones
+                </p>    
+                <h3 class="section-content-ostrvo-1__content__heading" >
+                    Najbolji barovi u Jelsi:
+                </h3>
+
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    &nbsp &nbsp &nbsp 1. Konoba Ribar
+                </p>    
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    &nbsp &nbsp &nbsp 2. Jazz Bar
+                </p> 
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    &nbsp &nbsp &nbsp 3. Konoba Bonaca
+                </p>    
+
+       
+                <div class="section-content-ostrvo-1__content__images">
+                    <img class="section-content-ostrvo-1__content__image" src="./assets/images/hvar/jelsa.jpg" />
+                </div>
+                <p class="section-content-ostrvo-1__desc">Jelsa</p>
+                
+                
+            </article>
+            <article class="section-content-ostrvo-1__content__article">
+                <h3 class="section-content-ostrvo-1__content__heading" >Vrboska</h3>
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    Grad Vrboska na ostrvu Hvar predstavlja jedinstvenu destinaciju koja oduševljava posetioce svojom lepotom i šarmom.
+                    Smatra se jednim od najmanjih gradova na ostrvu, ali obiluje bogatom istorijom, prelepom prirodom i raznovrsnim aktivnostima za sve ukuse.
+                    Jedna od najupečatljivijih karakteristika Vrboske je njena slikovita lokacija u zaštićenoj uvali, koja je čini jednom od najsigurnijih luka na Jadranskom moru.
+                    Šetnja kroz grad otkriva prelepe kamene mostove koji prelaze preko kanala, povezujući grad sa ostrvom u sredini uvale.
+                    Osim toga, fascinantne fasade i utvrđena crkva dodaju čar Vrboski.
+                    Što se tiče aktivnosti, Vrboska nudi nešto za svakoga.
+                    Ljubitelji prirode mogu istraživati obližnje staze za šetnje ili planinarenje, dok avanturisti mogu uživati u raznim vodenim sportovima poput ronjenja, jedrenja ili vožnje kajakom.
+                    Oni koji vole kulturne aktivnosti mogu posetiti lokalne muzeje, galerije i crkve kako bi saznali više o bogatoj istoriji i kulturi grada.
+                    Vrboska nudi nekoliko prelepih mesta za kupanje i opuštanje.
+                    Neke od najpoznatijih plaža uključuju Soline, Maslinicu i Česminicu, koje su poznate po kristalno čistoj vodi i mirnom okruženju.
+                </p>  
+                <h3 class="section-content-ostrvo-1__content__heading" >
+                    Posetite neke od barova u Vrboskoj: 
+                </h3>
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    &nbsp &nbsp &nbsp 1. Nautica Bar
+                </p>    
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    &nbsp &nbsp &nbsp 2. Konoba Sidro
+                </p> 
+
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    &nbsp &nbsp &nbsp 3. Beach Bar Bacchus
+                </p> 
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    &nbsp &nbsp &nbsp 4. Konoba Vina Hvar
+                </p>  
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    &nbsp &nbsp &nbsp 5. Picerija Antonio
+                </p>     
+                <h3 class="section-content-ostrvo-1__content__heading" >
+                    Gde jesti u Vrboskoj:
+                </h3>
+
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    &nbsp &nbsp &nbsp 1. Konoba kod None
+                </p>    
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    &nbsp &nbsp &nbsp 2. Konoba Duga
+                </p> 
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    &nbsp &nbsp &nbsp 3. Konoba Kogo
+                </p>   
+                <p class="section-content-ostrvo-1__content__paragraph" >
+                    &nbsp &nbsp &nbsp 4. Konoba Vrtlic
+                </p> 
+            </article>
+            <div class="section-content-ostrvo-1__content__images">
+                <img class="section-content-ostrvo-1__content__image" src="./assets/images/hvar/vrboska.jpg" />
+            </div>
+            <p class="section-content-ostrvo-1__desc desc-more">Vrboska</p>
+            <div class="section-gallery__gallery">
+                <div class="section-gallery__gallery__column">
+                    <div class="section-gallery__gallery__row">
+                        <img class="section-gallery__gallery__image-2" src="./assets/images/hvar/1.jpg" />
+                        <img class="section-gallery__gallery__image-2" src="./assets/images/hvar/4.jpg" />
+                    </div>
+                    <div class="section-gallery__gallery__row-large">
+                        <img class="section-gallery__gallery__image" src="./assets/images/hvar/5.jpg" />
+                    </div>
+                </div>
+                <div class="section-gallery__gallery__column">
+                    <div class="section-gallery__gallery__row-large">
+                        <img class="section-gallery__gallery__image" src="./assets/images/hvar/6.jpg" />
+                    </div>
+                    <div class="section-gallery__gallery__row">
+                        <img class="section-gallery__gallery__image-2" src="./assets/images/hvar/7.jpg" />
+                        <img class="section-gallery__gallery__image-2" src="./assets/images/hvar/8.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" >
+        <div class="footer__body">
+            <div class="footer__mobile">
+                <img class="footer__mobile__logo" src="./assets/svgs/logo.svg" />
+                <div class="footer__mobile__social">
+                    <a class="footer__mobile__social__link" >
+                        <img class="footer__mobile__social__icon" src="./assets/svgs/social-icon-1.svg" />
+                    </a>
+                    <a class="footer__mobile__social__link" >
+                        <img class="footer__mobile__social__icon" src="./assets/svgs/social-icon-2.svg" />
+                    </a>
+                    <a class="footer__mobile__social__link" >
+                        <img class="footer__mobile__social__icon" src="./assets/svgs/social-icon-3.svg" />
+                    </a>
+                </div>
+            </div>
+            <img class="footer__logo" src="./assets/svgs/logo.svg" />
+            <ul class="footer__links">
+                <div class="footer__divider">
+                    <li class="footer__link" >
+                        <p class="footer__link__title" >Vodič</p>
+                        <ul class="footer__sublinks" >
+                            <li class="footer__sublink" >
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/vodic.html#link-1" >Kako bukirati brod</a>
+                            </li>
+                            <li class="footer__sublink" >
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/vodic.html#link-2" >Odabir plovila</a>
+                            </li>
+                            <li class="footer__sublink" >
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/vodic.html#link-3" >Sve o jedrenju</a>
+                            </li>
+                            <li class="footer__sublink" >
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/vodic.html#link-4" >Skipper/Kapetan</a>
+                            </li>
+                            <li class="footer__sublink" >
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/vodic.html#link-5" >Agent za najam plovila</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer__link" >
+                        <p class="footer__link__title" >Pustolovine</p>
+                        <ul class="footer__sublinks" >
+                            <li class="footer__sublink" >
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/pustolovine.html#link-1" >Privatna tura</a>
+                            </li>
+                            <li class="footer__sublink" >
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/pustolovine.html#link-2" >Iznajmljivanje kabine</a>
+                            </li>
+                            <li class="footer__sublink" >
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/pustolovine.html#link-3" >Hotila</a>
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+                <div class="footer__divider">
+                    <li class="footer__link" >
+                        <a class="footer__link__title" href="/destinacije" >Destinacije</a>
+                    </li>
+                    <li class="footer__link" >
+                        <a class="footer__link__title" href="/galerija" >Galerija</a>
+                    </li>
+                    <li class="footer__link" >
+                        <a class="footer__link__title" href="/o-nama" >O nama</a>
+                    </li>
+                </div>
+            </ul>
+            <div class="footer__social">
+                <a class="footer__social__link" >
+                    <img class="footer__social__icon" src="./assets/svgs/social-icon-1.svg" />
+                </a>
+                <a class="footer__social__link" >
+                    <img class="footer__social__icon" src="./assets/svgs/social-icon-2.svg" />
+                </a>
+                <a class="footer__social__link" >
+                    <img class="footer__social__icon" src="./assets/svgs/social-icon-3.svg" />
+                </a>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p class="footer__copyright__text">© 2024 MDSailing. Sva prava zadržana.</p>
+        </div>
+    </footer>
+    <script src="./header.js" >
+    </script>
+</body>
+
+</html> 

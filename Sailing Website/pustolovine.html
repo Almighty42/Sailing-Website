@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <a class="header__logo-link" href="/index.html">
+                <img class="header__logo" src="./assets/svgs/logo.svg" alt="logo" />
+            </a>
+            <ul class="header__list">
+                <li class="header__item header__item__dropdown" id="vodic">
+                    <a class="header__anchor">
+                        Vodič
+                    </a>
+                    <img class="header__item__arrow" id="vodic-arrow" src="./assets/svgs/arrow-down.svg"
+                        alt="strelica na dole" />
+                </li>
+                <li class="header__item header__item__dropdown" id="pustolovine">
+                    <a class="header__anchor header__anchor__selected">
+                        Pustolovine
+                    </a>
+                    <img class="header__item__arrow" id="pustolovine-arrow" src="./assets/svgs/arrow-down.svg"
+                        alt="strelica na dole" />
+                </li>
+                <li class="header__item">
+                    <a href="/destinacije" class="header__anchor">
+                        Destinacije
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="/galerija" class="header__anchor">
+                        Galerija
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="/o-nama" class="header__anchor">
+                        O nama
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="/index.html#sailing-form" class="CTA CTA__default CTA__primary">
+                        Rezerviši plovilo
+                    </a>
+                </li>
+            </ul>
+            <button class="header__button" id="burgerButton" aria-label="burger button">
+                <hr class="header__hr" id="hr1">
+                <hr class="header__hr" id="hr2">
+                <hr class="header__hr" id="hr3">
+            </button>
+            <menu class="header__menu" id="menu">
+                <li class="header__menu__item" id="vodic-hamburger">
+                    <a class="header__menu__anchor"> Vodič </a>
+                    <img class="header__item__arrow" id="vodic-hamburger-arrow" src="./assets/svgs/arrow-down.svg"
+                        alt="strelica na dole" />
+                </li>
+                <menu class="header__vodic-hamburger-menu" id="vodic-hamburger-menu">
+                    <a class="header__vodic-hamburger-menu__item">
+                        <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__vodic-hamburger-menu__text">Kako bukirati brod</p>
+                    </a>
+                    <a class="header__vodic-hamburger-menu__item">
+                        <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__vodic-hamburger-menu__text">Sve o jedrenju</p>
+                    </a>
+                    <a class="header__vodic-hamburger-menu__item">
+                        <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__vodic-hamburger-menu__text">Odabir plovila</p>
+                    </a>
+                    <a class="header__vodic-hamburger-menu__item">
+                        <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__vodic-hamburger-menu__text">Skipper / Kapetan</p>
+                    </a>
+                    <a class="header__vodic-hamburger-menu__item">
+                        <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__vodic-hamburger-menu__text">Agent za najam plovila</p>
+                    </a>
+                </menu>
+                <li class="header__menu__item" id="pustolovine-hamburger">
+                    <a class="header__menu__anchor"> Pustolovine
+                    </a>
+                    <img class="header__item__arrow" id="pustolovine-hamburger-arrow" src="./assets/svgs/arrow-down.svg"
+                        alt="strelica na dole" />
+                </li>
+                <menu class="header__pustolovine-hamburger-menu" id="pustolovine-hamburger-menu">
+                    <a class="header__pustolovine-hamburger-menu__item" id="header-link-hum-1">
+                        <img class="header__pustolovine-hamburger-menu__icon"
+                            src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__pustolovine-hamburger-menu__text">Privatna tura</p>
+                    </a>
+                    <a class="header__pustolovine-hamburger-menu__item" id="header-link-hum-2">
+                        <img class="header__pustolovine-hamburger-menu__icon"
+                            src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__pustolovine-hamburger-menu__text">Iznajmljivanje kabine</p>
+                    </a>
+                    <a class="header__pustolovine-hamburger-menu__item" id="header-link-hum-3">
+                        <img class="header__pustolovine-hamburger-menu__icon"
+                            src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__pustolovine-hamburger-menu__text">Flotila</p>
+                    </a>
+                </menu>
+                <li class="header__menu__item">
+                    <a href="/destinacije" class="header__menu__anchor"> Destinacije
+                    </a>
+                </li>
+                <li class="header__menu__item">
+                    <a href="/galerija" class="header__menu__anchor"> Galerija
+                    </a>
+                </li>
+                <li class="header__menu__item">
+                    <a href="/o-nama" class="header__menu__anchor"> O nama
+                    </a>
+                </li>
+                <li class="header__menu__item">
+                    <a href="/index.html#sailing-form" class="CTA CTA__small CTA__primary">
+                        Rezerviši plovilo
+                    </a>
+                </li>
+            </menu>
+        </nav>
+        <menu class="header__vodic-menu" id="vodic-menu">
+            <a class="header__vodic-menu__item" href="vodic.html#link-1" >
+                <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-1.svg" />
+                <p class="header__vodic-menu__text">Kako bukirati brod</p>
+            </a>
+            <a class="header__vodic-menu__item" href="vodic.html#link-2">
+                <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-2.svg" />
+                <p class="header__vodic-menu__text">Odabir plovila</p>
+            </a>
+            <a class="header__vodic-menu__item" href="vodic.html#link-3">
+                <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-3.svg" />
+                <p class="header__vodic-menu__text">Sve o jedrenju</p>
+            </a>
+            <a class="header__vodic-menu__item" href="vodic.html#link-4">
+                <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-4.svg" />
+                <p class="header__vodic-menu__text">Skiper / Kapetan</p>
+            </a>
+            <a class="header__vodic-menu__item" href="vodic.html#link-5">
+                <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-5.svg" />
+                <p class="header__vodic-menu__text">Agent za najam plovila</p>
+            </a>
+        </menu>
+        <menu class="header__pustolovine-menu" id="pustolovine-menu">
+            <a class="header__pustolovine-menu__item" id="header-link-1" >
+                <img class="header__pustolovine-menu__icon" src="./assets/svgs/pustolovina-icon-1.svg" />
+                <p class="header__pustolovine-menu__text" >Privatna tura</p>
+            </a>
+            <a class="header__pustolovine-menu__item" id="header-link-2" >
+                <img class="header__pustolovine-menu__icon" src="./assets/svgs/pustolovina-icon-2.svg" />
+                <p class="header__pustolovine-menu__text" >Iznajmljivanje kabine</p>
+            </a>
+            <a class="header__pustolovine-menu__item" id="header-link-3" >
+                <img class="header__pustolovine-menu__icon" src="./assets/svgs/pustolovina-icon-3.svg" />
+                <p class="header__pustolovine-menu__text" >Flotila</p>
+            </a>
+        </menu>
+    </header>
+    <section class="section-hero section-hero-mini section-hero-pustolovine">
+        <div class="section-hero__text">
+            <h1 class="heading__h1 section-hero__text__heading"> Pustolovine </h1>
+            <p class="paragraph__subheading-h1 paragraph__subheading-h1__lightmode section-hero__text__subheading">
+                Nezaboravno iskustvo istraživanja prelepog Jadranskog mora. </p>
+        </div>
+    </section>
+    <section class="section-content">
+        <ul class="section-content__navigation">
+            <div class="section-content__group">
+                <li class="section-content__navigation__item section-content__navigation__item__selected"
+                    id="navigation-link-1">
+                    <button class="section-content__navigation__button" id="link-1">
+                        <p class="section-content__navigation__text">Privatna tura na jahti</p>
+                    </button>
+                </li>
+                <li class="section-content__navigation__item" id="navigation-link-2">
+                    <button class="section-content__navigation__button" id="link-2">
+                        <p class="section-content__navigation__text">Iznajmljivanje kabine</p>
+                    </button>
+                </li>
+            </div>
+            <div class="section-content__group">
+                <li class="section-content__navigation__item" id="navigation-link-3">
+                    <button class="section-content__navigation__button" id="link-3">
+                        <p class="section-content__navigation__text">Flotila</p>
+                    </button>
+                </li>
+            </div>
+        </ul>
+        <hr class="section-content__seperator">
+        <div class="section-content__blog section-content__blog__show" id="blog-1">
+            <h2 class="section-content__blog__heading">Privatna tura na jahti</h2>
+            <article class="section-content__blog__article">
+                <div class="section-content__blog__section">
+                    <h3 class="section-content__blog__section__heading">Savršen paket za porodice, grupe prijatelja ili poslovne događaje!</h3>
+                    <p class="section-content__blog__section__paragraph">Privatna tura na katamaranu pruža nezaboravno iskustvo istraživanja prelepog Jadranskog mora na jedinstven način.
+                        Sa luksuznim katamaranom kao vašim privatnim brodom, doživećete nezaboravno putovanje kroz tirkizne vode, slikovite uvale i skrivena ostrva Hrvatske.</p>
+                </div>
+                <div class="section-content__blog__section">
+                    <p class="section-content__blog__section__paragraph">Katamarani su prostrani, imaju više kabina, dnevni boravak, trpezariju i prostrane palube za sunčanje, pružajući <span class="section-content__blog__section__span" >savršen spoj udobnosti i avanture.</span>
+                        Takođe, imaju stabilnost na vodi, što čini putovanje udobnijim i sigurnijim, posebno za one koji imaju sklonost ka morskoj bolesti.</p>
+                </div>
+                <div class="section-content__blog__section">
+                    <p class="section-content__blog__section__paragraph">Fleksibilnost je još jedan veliki benefit privatnih tura, <span class="section-content__blog__section__span" >možete kreirati svoj sopstveni plan putovanja i istraživati različite destinacije i uvale u skladu sa vašim željama i interesovanjima.</span></p>
+                </div>
+                <div class="section-content__blog__section">
+                    <p class="section-content__blog__section__paragraph">Takođe, možete <span class="section-content__blog__section__span" >birati koliko dugo želite da provedete na određenim mestima, bez ograničenja standardnih tura.</span>
+                        Privatne ture brodom dolaze sa mnoštvom uključenih usluga kako biste mogli samo da se opustite i istražite prelepu obalu kada stignete u Hrvatsku.                        
+                    </p>
+                </div>
+            </article>
+            <div class="section-content__blog__images">
+                <img class="section-content__blog__image" src="./assets/images/vodic-image-5.jpg" />
+                <img class="section-content__blog__image" src="./assets/images/vodic-image-2.jpg" />
+            </div>
+        </div>
+        <div class="section-content__blog" id="blog-2">
+            <h2 class="section-content__blog__heading">Iznajmljivanje kabine</h2>
+            <article class="section-content__blog__article">
+                <div class="section-content__blog__section">
+                    <h3 class="section-content__blog__section__heading">Jedrite na katamaranu u vašim kabinama!</h3>
+                    <p class="section-content__blog__section__paragraph">
+                        <span class="section-content__blog__section__span">
+                            Avantura za parove i samostalne putnike kroz čarobni svet hrvatskih ostrva.
+                        </span>
+                    </p>
+                </div>
+                <div class="section-content__blog__section">
+                    <p class="section-content__blog__section__paragraph">
+                        Uživajte u nezaboravnom iskustvu plovidbe morem na katamaranu sa našim iskusnim skiperom, gde svaka kabina nudi udobnost i privatnost dok istražujete prekrasne destinacije duž Jadrana.
+                    </p>
+                    <p class="section-content__blog__section__paragraph">
+                        Sa širokim palubama za sunčanje i prostranim unutrašnjim prostorima, naš brod pruža savršen spoj udobnosti i avanture.
+                    </p>
+                    <p class="section-content__blog__section__paragraph">
+                        Bilo da želite istražiti skrivene uvale, uživati u ronjenju kristalno čistim morem ili jednostavno opuštati se uz zalazak sunca, naša putovanja pružaju nezaboravne trenutke i mogućnost za istinsko povezivanje sa morem i prirodom.
+                    </p>
+                    <p class="section-content__blog__section__paragraph">
+                        <span class="section-content__blog__section__span">Prepustite se magiji plovidbe, stvorite nova prijateljstva i uspomene koje ćete pamtiti čitav život!</span>
+                    </p>
+                </div>
+            </article>
+            <article class="section-content__blog__article">
+                <div class="section-content__blog__section">
+                    <h3 class="section-content__blog__section__heading">Rezervišite svoju kabinu i zajedno zaplovite daleko od svakodnevnice!</h3>
+                    <p class="section-content__blog__section__paragraph">
+                        Na katamaranu gosti su  <span class="section-content__blog__section__span">deo tima</span>, ukoliko žele aktivno mogu učestvovati u različitim zadacima na brodu u skladu sa svojim sposobnostima.
+                        Mogu doprineti navigaciji, pa čak i preuzeti kormilo uz nadzor skipera, bez obzira na to da li imaju prethodnog iskustva u jedrenju ili ne.
+                    </p>
+                </div>
+                <div class="section-content__blog__section">
+                    <h3 class="section-content__blog__section__heading">Život na brodu</h3>
+                    <p class="section-content__blog__section__paragraph">
+                        Na brodu sve je usmereno ka slavljenju života i zajedništvu, svaki dan donosi novo iskustvo i novu avanturu.
+                        Jutra počinju uz miris sveže kafe i pogled na beskrajno plavo more koji se pruža iz kabine. 
+                    </p>
+                    <p class="section-content__blog__section__paragraph">
+                        U svakoj kabini pronaći ćete dovoljno prostora da se povučete, osećate udobno i potpuno opustite. 
+                        U salonu sa potpuno opremljenom kuhinjom se okupljamo radi zajedničkog druženja i pripreme doručka, ručka, malih poslastica ili koktela. 
+                    </p>
+                    <p class="section-content__blog__section__paragraph">
+                        Tokom dana, putnici mogu uživati u raznovrsnim aktivnostima.
+                        Neki se opuštaju na sunčanim ležaljkama ili u hladovini, čitajući omiljene knjige ili uživajući u razgovoru sa drugim putnicima.
+                    </p>
+                    <p class="section-content__blog__section__paragraph">
+                        Drugi se možda odluče za ronjenje u tirkiznim vodama ili istraživanje skrivenih uvala i plaža.
+                        Večeri su rezervisane za romantične zalaske sunca i večere pod zvezdanim nebom.
+                    </p>
+                    <p class="section-content__blog__section__paragraph">
+                        Uz zvuke blagih talasa i šum vetra, svako veče postaje prilika za povezivanje sa prirodom i sa sobom.
+                    </p>
+                </div>
+                <div class="section-content__blog__section">
+                    <h3 class="section-content__blog__section__heading">Tipičan dnevni raspored na zajedničkom jedrenju</h3>
+                    <p class="section-content__blog__section__paragraph">
+                        Jutro počinje skokom u kristalno čisto more u jednoj od brojnih uvala, nakon čega se doručak poslužuje na palubi uz osvežavajući povetarac i zvuke morskih ptica.
+                        Dan se obično planira tako da ostane dovoljno vremena za izlete na kopno, plivanje, ronjenje, veslanje, sunčanje, opuštanje i naravno, jedrenje. 
+                    </p>
+                    <p class="section-content__blog__section__paragraph">
+                        Ručak se služi na palubi ili na obali, gde se uz miris sveže pripremljenih lokalnih specijaliteta i osvežavajućih napitaka, možete prepustiti čarima okoline. A nakon ručka pravo je vreme za opuštanje i uživanje u laganoj vožnji katamaranom.
+                        Nakon otprilike dva do tri sata vožnje, obično se stiže do sledeće destinacije na ostrvu ili sledeće uvale gde ponovno ima puno toga za istraživanje.
+                    </p>
+                    <p class="section-content__blog__section__paragraph">
+                        Večera se obično jede van broda, u brojnim tradicionalnim malim restoranima i ribarskim mestima, gde se poslužuju fini dalmatinski specijaliteti, a uživa se u mediteranskom šarmu šetajući se uskim uličicama slikovitih antičkih ostrvskih mesta.                        
+                    </p>
+                </div>
+
+                <div class="section-content__blog__section">
+                    <h3 class="section-content__blog__section__heading">Dobrodošsli na brod LAGOON 46</h3>
+                    <p class="section-content__blog__section__paragraph">
+                        Moderan katamaran Lagoon 46 opremljen je sa 4 dvokrevetne gostinjske sobe, svaka sa sopstvneim kupatilom, za maksimalno 8 gostiju, kao i sa kabinom za vašeg skipera.
+                    </p>
+                    <p class="section-content__blog__section__paragraph">
+                        Ove kabine pružaju udoban smeštaj za putnike, sa dovoljno prostora za odmor i opuštanje.
+                        Salon je prostran i svetao prostor, opremljen sofama i trpezarijskim stolom, idealan za zajedničke obroke ili druženje tokom plovidbe.
+                        Takođe, ovde se nalazi potpuno opremljena kuhinja.
+                    </p>
+                    <p class="section-content__blog__section__paragraph">
+                        Na palubi možete pronaći više prostora za sunčanje i opuštanje. 
+                        Postoji veći otvoreni prostor sa sunčanim jastucima gde se možete opustiti i uživati u predivnom pogledu dok plovite.
+                         Takođe, možete pronaći i prostor za obedovanje na otvorenom, savršen za obroke pod vedrim nebom.                        
+                    </p>
+                    <p class="section-content__blog__section__paragraph">
+                        Lagoon 46 je opremljen najsavremenijom opremom za navigaciju i sigurnost, uključujući GPS uređaje, sonare, VHF radio stanice, kao i klima uređajem, wifi i generatorom.                      
+                    </p>
+                </div>
+            </article>
+            <div class="section-content__blog__images">
+                <img class="section-content__blog__image" src="./assets/images/vodic-image-3.jpg" />
+                <img class="section-content__blog__image" src="./assets/images/vodic-image-4.jpg" />
+            </div>
+
+            <div class="section-content__blog__section">
+                <h3 class="section-content__blog__section__heading">Termini putovanja i cene</h3>
+                
+                <p class="section-content__blog__section__paragraph">
+                    <span class="section-content__blog__section__span" >Napomena:</span> pitajte nas za dodatne termine                  
+                </p>
+            </div>
+        </div>
+        <div class="section-content__blog" id="blog-3">
+            <h2 class="section-content__blog__heading">Flotila</h2>
+            <article class="section-content__blog__article">
+                <h3 class="section-content__blog__section__heading">Pripremite se za nezaboravnu nedelju na našoj 7-dnevnoj jedriličarskoj flotili!</h3>
+                <div class="section-content__blog__section">
+                    <p class="section-content__blog__section__paragraph">
+                        Ako volite istraživati skrivene uvale, kristalno čisto more i popularne destinacije Hrvatske, ovo je idealna avantura za vas!
+                    </p>
+                </div>
+                <div class="section-content__blog__section">
+                    <p class="section-content__blog__section__paragraph">
+                        Pridružite se kao <span class="section-content__blog__section__span" >pojedinac ili grupa</span> na našoj flotili jedrilica i doživite čari samostalnog upravljanja brodom, podizanja jedara i osvežavajućih skokova u plavetnilo skrivenih uvala!
+                    </p>
+                </div>
+                <div class="section-content__blog__section">
+                    <p class="section-content__blog__section__paragraph">
+                            Ponesite sa sobom hranu i piće i kuvajte u kuhinji na brodu ili istražite raznoliku ponudu restorana u novom gradu svake večeri - sve je na vama! 
+                            Izaberite jedrilicu koja odgovara vašim željama i budžetu i zaplovite u nezaboravnu avanturu jedrenja duž obala Hrvatske!
+                    </p>
+                </div>
+
+                <div class="section-content__blog__section">
+                    <p class="section-content__blog__section__paragraph">
+                        Poseta flotili je sjajan izbor za mlade i studente iz više razloga.
+                        Prvo, omogućava Vam da se udaljite od uobičajenih turističkih destinacija i istraže manje poznate, ali jednako spektakularne lokacije.
+                        Takođe, pruža priliku za povezivanje sa drugim istomišljenicima iz celog sveta, stvarajući nove prijateljske veze i razmenu iskustava.
+                    </p>
+                </div>
+
+                <div class="section-content__blog__section">
+                    <p class="section-content__blog__section__paragraph">
+                        Flotila takođe nudi izuzetnu priliku za učenje i razvijanje veština povezanih s jedrenjem, navigacijom i timskim radom.
+                        Za studente koji žele da se opuste i odmore od užurbanog studentskog života, flotila nudi jedinstvenu kombinaciju avanture, opuštanja i nezaboravnih iskustava na moru.
+                    </p>
+                </div>
+            </article>
+            <div class="section-content__blog__images">
+                <img class="section-content__blog__image" src="./assets/images/vodic-image-5.jpg" />
+                <img class="section-content__blog__image" src="./assets/images/vodic-image-6.jpg" />
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__body">
+            <div class="footer__mobile">
+                <img class="footer__mobile__logo" src="./assets/svgs/logo.svg" />
+                <div class="footer__mobile__social">
+                    <a class="footer__mobile__social__link">
+                        <img class="footer__mobile__social__icon" src="./assets/svgs/social-icon-1.svg" />
+                    </a>
+                    <a class="footer__mobile__social__link">
+                        <img class="footer__mobile__social__icon" src="./assets/svgs/social-icon-2.svg" />
+                    </a>
+                    <a class="footer__mobile__social__link">
+                        <img class="footer__mobile__social__icon" src="./assets/svgs/social-icon-3.svg" />
+                    </a>
+                </div>
+            </div>
+            <img class="footer__logo" src="./assets/svgs/logo.svg" />
+            <ul class="footer__links">
+                <div class="footer__divider">
+                    <li class="footer__link">
+                        <p class="footer__link__title">Vodič</p>
+                        <ul class="footer__sublinks">
+                            <li class="footer__sublink">
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/vodic.html#link-1">Kako bukirati brod</a>
+                            </li>
+                            <li class="footer__sublink">
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/vodic.html#link-2">Odabir plovila</a>
+                            </li>
+                            <li class="footer__sublink">
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/vodic.html#link-3">Sve o jedrenju</a>
+                            </li>
+                            <li class="footer__sublink">
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/vodic.html#link-4">Skipper/Kapetan</a>
+                            </li>
+                            <li class="footer__sublink">
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/vodic.html#link-5">Agent za najam plovila</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer__link" >
+                        <p class="footer__link__title" >Pustolovine</p>
+                        <ul class="footer__sublinks" >
+                            <li class="footer__sublink" >
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" id="header-link-footer-1" href="#link-1" >Privatna tura</a>
+                            </li>
+                            <li class="footer__sublink" >
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" id="header-link-footer-2" href="#link-2" >Iznajmljivanje kabine</a>
+                            </li>
+                            <li class="footer__sublink" >
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" id="header-link-footer-3" href="#link-3" >Flotila</a>
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+                <div class="footer__divider">
+                    <li class="footer__link">
+                        <a class="footer__link__title" href="/destinacije">Destinacije</a>
+                    </li>
+                    <li class="footer__link">
+                        <p class="footer__link__title">Galerija</p>
+                    </li>
+                    <li class="footer__link">
+                        <p class="footer__link__title">O nama</p>
+                    </li>
+                </div>
+            </ul>
+            <div class="footer__social">
+                <a class="footer__social__link">
+                    <img class="footer__social__icon" src="./assets/svgs/social-icon-1.svg" />
+                </a>
+                <a class="footer__social__link">
+                    <img class="footer__social__icon" src="./assets/svgs/social-icon-2.svg" />
+                </a>
+                <a class="footer__social__link">
+                    <img class="footer__social__icon" src="./assets/svgs/social-icon-3.svg" />
+                </a>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p class="footer__copyright__text">© 2024 MDSailing. Sva prava zadržana.</p>
+        </div>
+    </footer>
+    <script src="./header.js">
+    </script>
+    <script src="./navigation-pustolovine.js">
+    </script>
+</body>
+
+</html>

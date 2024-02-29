@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <a class="header__logo-link" href="/index.html" >
+                <img class="header__logo" src="./assets/svgs/logo.svg" alt="logo" />
+            </a>
+            <ul class="header__list">
+                <li class="header__item header__item__dropdown" id="vodic">
+                    <a class="header__anchor header__anchor__selected">
+                        Vodič
+                    </a>
+                    <img class="header__item__arrow" id="vodic-arrow" src="./assets/svgs/arrow-down.svg" alt="strelica na dole" />
+                </li>
+                <li class="header__item header__item__dropdown" id="pustolovine">
+                    <a class="header__anchor">
+                        Pustolovine
+                    </a>
+                    <img class="header__item__arrow" id="pustolovine-arrow" src="./assets/svgs/arrow-down.svg" alt="strelica na dole" />
+                </li>
+                <li class="header__item">
+                    <a href="/destinacije" class="header__anchor">
+                        Destinacije
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="/galerija" class="header__anchor">
+                        Galerija
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="/o-nama" class="header__anchor">
+                        O nama
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="/index.html#sailing-form" class="CTA CTA__default CTA__primary">
+                        Rezerviši plovilo
+                    </a>
+                </li>
+            </ul>
+            <button class="header__button" id="burgerButton" aria-label="burger button">
+                <hr class="header__hr" id="hr1">
+                <hr class="header__hr" id="hr2">
+                <hr class="header__hr" id="hr3">
+            </button>
+            <menu class="header__menu" id="menu">
+                <li class="header__menu__item" id="vodic-hamburger">
+                    <a class="header__menu__anchor"> Vodič </a>
+                    <img class="header__item__arrow" id="vodic-hamburger-arrow" src="./assets/svgs/arrow-down.svg" alt="strelica na dole" />
+                </li>
+                <menu class="header__vodic-hamburger-menu" id="vodic-hamburger-menu" >
+                    <a class="header__vodic-hamburger-menu__item" id="header-link-hum-1" >
+                        <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__vodic-hamburger-menu__text" >Kako bukirati brod</p>
+                    </a>
+                    <a class="header__vodic-hamburger-menu__item" id="header-link-hum-2" >
+                        <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__vodic-hamburger-menu__text" >Sve o jedrenju</p>
+                    </a>
+                    <a class="header__vodic-hamburger-menu__item" id="header-link-hum-3" >
+                        <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__vodic-hamburger-menu__text" >Odabir plovila</p>
+                    </a>
+                    <a class="header__vodic-hamburger-menu__item" id="header-link-hum-4" >
+                        <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__vodic-hamburger-menu__text" >Skipper / Kapetan</p>
+                    </a>
+                    <a class="header__vodic-hamburger-menu__item" id="header-link-hum-5" >
+                        <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__vodic-hamburger-menu__text" >Agent za najam plovila</p>
+                    </a>
+                </menu>
+                <li class="header__menu__item" id="pustolovine-hamburger">
+                    <a class="header__menu__anchor"> Pustolovine
+                    </a>
+                    <img class="header__item__arrow" id="pustolovine-hamburger-arrow" src="./assets/svgs/arrow-down.svg" alt="strelica na dole" />
+                </li>
+                <menu class="header__pustolovine-hamburger-menu" id="pustolovine-hamburger-menu" >
+                    <a class="header__pustolovine-hamburger-menu__item" href="/pustolovine.html#link-1" >
+                        <img class="header__pustolovine-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__pustolovine-hamburger-menu__text" >Privatna tura</p>
+                    </a>
+                    <a class="header__pustolovine-hamburger-menu__item" href="/pustolovine.html#link-2" >
+                        <img class="header__pustolovine-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__pustolovine-hamburger-menu__text" >Iznajmljivanje kabine</p>
+                    </a>
+                    <a class="header__pustolovine-hamburger-menu__item" href="/pustolovine.html#link-3" >
+                        <img class="header__pustolovine-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__pustolovine-hamburger-menu__text" >Flotila</p>
+                    </a>
+                </menu>
+                <li class="header__menu__item">
+                    <a href="/destinacije" class="header__menu__anchor"> Destinacije
+                    </a>
+                </li>
+                <li class="header__menu__item">
+                    <a href="/galerija" class="header__menu__anchor"> Galerija
+                    </a>
+                </li>
+                <li class="header__menu__item">
+                    <a href="/o-nama" class="header__menu__anchor"> O nama
+                    </a>
+                </li>
+                <li class="header__menu__item">
+                    <a href="/index.html#sailing-form" class="CTA CTA__small CTA__primary">
+                        Rezerviši plovilo
+                    </a>
+                </li>
+            </menu>
+        </nav>
+        <menu class="header__vodic-menu" id="vodic-menu">
+            <a class="header__vodic-menu__item" href="#link-1" id="header-link-1">
+                <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-1.svg" />
+                <p class="header__vodic-menu__text" >Kako bukirati brod</p>
+            </a>
+            <a class="header__vodic-menu__item" href="#link-2" id="header-link-2">
+                <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-2.svg" />
+                <p class="header__vodic-menu__text" >Odabir plovila</p>
+            </a>
+            <a class="header__vodic-menu__item" href="#link-3" id="header-link-3">
+                <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-3.svg" />
+                <p class="header__vodic-menu__text" >Sve o jedrenju</p>
+            </a>
+            <a class="header__vodic-menu__item" href="#link-4" id="header-link-4">
+                <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-4.svg" />
+                <p class="header__vodic-menu__text" >Skiper / Kapetan</p>
+            </a>
+            <a class="header__vodic-menu__item" href="#link-5" id="header-link-5">
+                <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-5.svg" />
+                <p class="header__vodic-menu__text" >Agent za najam plovila</p>
+            </a>
+        </menu>
+        <menu class="header__pustolovine-menu" id="pustolovine-menu">
+            <a class="header__pustolovine-menu__item" href="/pustolovine.html#link-1" >
+                <img class="header__pustolovine-menu__icon" src="./assets/svgs/pustolovina-icon-1.svg" />
+                <p class="header__pustolovine-menu__text" >Privatna tura</p>
+            </a>
+            <a class="header__pustolovine-menu__item" href="/pustolovine.html#link-2" >
+                <img class="header__pustolovine-menu__icon" src="./assets/svgs/pustolovina-icon-2.svg" />
+                <p class="header__pustolovine-menu__text" >Iznajmljivanje kabine</p>
+            </a>
+            <a class="header__pustolovine-menu__item" href="/pustolovine.html#link-3" >
+                <img class="header__pustolovine-menu__icon" src="./assets/svgs/pustolovina-icon-3.svg" />
+                <p class="header__pustolovine-menu__text" >Flotila</p>
+            </a>
+        </menu>
+    </header>
+    <section class="section-hero section-hero-mini section-hero-vodic" >
+        <div class="section-hero__text">
+            <h1 class="heading__h1 section-hero__text__heading" > Vodič </h1>
+            <p class="paragraph__subheading-h1 paragraph__subheading-h1__lightmode section-hero__text__subheading" >Ovde je objašnjen proces bukiranja plovila, kako odabrati plovilo, kao i mnoge druge korisne informacije.</p>
+        </div>
+    </section>
+    <section class="section-content" >
+        <ul class="section-content__navigation" >
+            <div class="section-content__group">
+                <li class="section-content__navigation__item section-content__navigation__item__selected" id="navigation-link-1" >
+                    <button class="section-content__navigation__button" id="link-1" >
+                        <p class="section-content__navigation__text" >Kako bukirati brod</p>
+                    </button>
+                </li>
+                <li class="section-content__navigation__item" id="navigation-link-2" >
+                    <button class="section-content__navigation__button" id="link-2" >
+                        <p class="section-content__navigation__text" >Odabir plovila</p>
+                    </button>
+                </li>
+            </div>
+            <div class="section-content__group">
+                <li class="section-content__navigation__item" id="navigation-link-3" >
+                    <button class="section-content__navigation__button" id="link-3" >
+                        <p class="section-content__navigation__text" >Sve o jedrenju</p>
+                    </button>
+                </li>
+                <li class="section-content__navigation__item" id="navigation-link-4" >
+                    <button class="section-content__navigation__button" id="link-4" >
+                        <p class="section-content__navigation__text" >Skipper / Kapetan</p>
+                    </button>
+                </li>
+                <li class="section-content__navigation__item" id="navigation-link-5" >
+                    <button class="section-content__navigation__button" id="link-5" >
+                        <p class="section-content__navigation__text" >Agent za najam plovila</p>
+                    </button>
+                </li>
+            </div>
+        </ul>
+        <hr class="section-content__seperator" >
+        <div class="section-content__blog section-content__blog__show" id="blog-1">
+            <h2 class="section-content__blog__heading" >Kako bukirati brod</h2>
+            <article class="section-content__blog__article" >
+                <div class="section-content__blog__section" >
+                    <h3 class="section-content__blog__section__heading" >Online upit:</h3>
+                    <p class="section-content__blog__section__paragraph" >Na nasem sajtu pronadjite savršen brod za vaše putovanje.
+                        Nakon odabira, ispunite jednostavnu kontakt formu kako biste zatražili službenu ponudu.
+                        Očekujte da vam ponuda stigne putem e-maila u roku od nekoliko minuta.</p>
+                </div>
+                <div class="section-content__blog__section" >
+                    <p class="section-content__blog__section__paragraph" >Čim ste spremni, potvrdite svoju rezervaciju putem e-maila ili telefona.
+                    </p>
+                    <p class="section-content__blog__section__paragraph" >
+                        Imajte na umu: Plaćanje treba izvršiti najkasnije mesec dana pre početka putovanja kako biste osigurali svoje mesto na brodu.
+                    </p>
+                </div>
+            </article>
+            <article class="section-content__blog__article" >
+                <div class="section-content__blog__section" >
+                    <h3 class="section-content__blog__section__heading" >E-mail upit:</h3>
+                    <p class="section-content__blog__section__paragraph" >Pošaljite detalje o datumima putovanja, broju kabina/osoba i željenom mestu polaska.
+                        Očekujte brz i kompletan odgovor sa našom ponudom, koja odgovara vašim zahtevima putovanja. </p>
+                </div>
+                <div class="section-content__blog__section" >
+                    <p class="section-content__blog__section__paragraph" >Kada ste spremni, potvrdite rezervaciju putem e-maila ili telefona.
+                    </p>
+                    <p class="section-content__blog__section__paragraph" >
+                        Imajte na umu: Plaćanje treba izvršiti najkasnije mesec dana pre početka putovanja kako biste osigurali svoje mesto na brodu i spremno dočekali vaše avanture na moru.
+                    </p>
+                </div>
+            </article>
+
+            <article class="section-content__blog__article" >
+                <div class="section-content__blog__section" >
+                    <h3 class="section-content__blog__section__heading" >Potvrda i kraj procesa:</h3>
+                    <p class="section-content__blog__section__paragraph" >
+                        Nakon detaljne obrade svih potrebnih podataka i potvrde o izvršenoj uplati, želimo vas obavestiti da ćemo vam poslati važne informacije putem e-maila:
+                    </p>
+                </div>
+                <div class="section-content__blog__section" >
+                    <p class="section-content__blog__section__paragraph" >
+                        Vaučer: Ovaj dokument je od suštinske važnosti za preuzimanje plovila. Molimo vas da ga sačuvate i obavezno ponesete sa sobom prilikom putovanja.
+                        <br>
+                        <br>
+                        Informacije o bazi: Dobićete sve potrebne informacije o marini gde ćete preuzeti plovilo, kao i kontakt osobe koja će biti na raspolaganju za sva dodatna pitanja ili eventualne nejasnoće.
+                    </p>
+                </div>
+            </article>
+            <div class="section-content__blog__images" >
+                <img class="section-content__blog__image" src="./assets/images/vodic-image-10.jpg" />
+                <img class="section-content__blog__image" src="./assets/images/vodic-image-2.jpg" />
+            </div>
+        </div>
+        <div class="section-content__blog" id="blog-2">
+            <h2 class="section-content__blog__heading" >Odabir plovila</h2>
+            <article class="section-content__blog__article" >
+                <div class="section-content__blog__section" >
+                    <p class="section-content__blog__section__paragraph" ><span class="section-content__blog__section__span" >Jedrilice i katamarani su dva popularna tipa plovila koja se koriste za plovidbu morima.</p>
+                </div>
+                <div class="section-content__blog__section" >
+                    <p class="section-content__blog__section__paragraph" >
+                        Iako oboje koriste vetar kao glavni izvor energije za kretanje, postoje značajne razlike između ova dva tipa brodova, uključujući dizajn, stabilnost, brzinu i namenu.
+                    </p>
+                </div>
+                <div class="section-content__blog__section" >
+                    <h3 class="section-content__blog__section__heading" >Jedrilica:</h3>
+                    <p class="section-content__blog__section__paragraph" >Jedrilica je tradicionalni tip plovila koji se sastoji od jednog trupa, sa jednim ili više jarbola i jedrom ili više jedara. 
+                        Ova jedrilica može biti monohul ili može imati nekoliko trupova, ali u svakom slučaju, dizajn je sličan po tome što postoji jedan glavni trup.
+                         Jedrilice su često korišćene u takmičenjima, za rekreativno jedrenje ili za dugotrajna putovanja.
+                         Imaju tendenciju da budu okretnije i mogu biti brže od katamarana u određenim uslovima vetra.</p>
+                </div>
+                <div class="section-content__blog__section" >
+                    <h3 class="section-content__blog__section__heading" >Katamaran:</h3>
+                    <p class="section-content__blog__section__paragraph" >Sa druge strane, katamaran je plovilo koje se sastoji od dva paralelna trupa spojena mostom ili platformom.
+                        Ovaj dizajn pruža veću stabilnost i veći kapacitet za teret ili putnike u poređenju sa tradicionalnim jedrilicama.
+                        Katamarani imaju manje duboke kobilice od jedrilica, što im omogućava plovidbu u plićim vodama.
+                        Takođe, zbog svog šireg trupa, katamarani imaju veći unutrašnji prostor, što ih čini popularnim izborom za krstarenja ili luksuzna putovanja.</p>
+                </div>
+                <div class="section-content__blog__section" >
+                    <p class="section-content__blog__section__paragraph" >Konačno, namena plovidbe može biti presudan faktor prilikom odabira između jedrilica i katamarana.
+                        Dok su jedrilice često više usmerene na sportsko jedrenje ili dugotrajna putovanja, katamarani su često korišćeni za komercijalne svrhe poput kruzinga, iznajmljivanja, ili kao privatne jahte zbog svoje veće stabilnosti i unutrašnjeg prostora.</p>
+                </div>
+                <br>
+                <div class="section-content__blog__section" >
+                    <p class="section-content__blog__section__paragraph" >Ukratko, dok jedrilica predstavlja <span class="section-content__blog__section__span" >klasičan i agilan tip plovila pogodan za manji broj ljudi, ali i duža putovanja</span>, katamaran nudi <span class="section-content__blog__section__span" >veću stabilnost, prostor i brzinu</span>, čineći ih popularnim izborom za različite svrhe, uključujući luksuzna putovanja i komercijalnu upotrebu.</p>
+                </div>
+            </article>
+            <div class="section-content__blog__images" >
+                <img class="section-content__blog__image" src="./assets/images/vodic-image-11.jpg" />
+                <img class="section-content__blog__image" src="./assets/images/vodic-image-12.jpg" />
+            </div>
+        </div>
+        <div class="section-content__blog" id="blog-3">
+            <h2 class="section-content__blog__heading" >Sve o jedrenju</h2>
+            <article class="section-content__blog__article" >
+                <div class="section-content__blog__section" >
+                    <p class="section-content__blog__section__paragraph" ><span class="section-content__blog__section__span" >Jedrenje ima dugu i bogatu istoriju</span> koja seže unazad hiljadama godina.
+                        Prve poznate upotrebe jedara na plovilima datiraju iz drevnog Egipta i Mesopotamije, a kroz istoriju, jedrenje je imalo ključnu ulogu u trgovini, istraživanju i vojnim operacijama.
+                        Razvoj tehnologije i dizajna brodova tokom vremena doveo je do raznolikosti u vrstama plovila i stilovima jedrenja, od tradicionalnih jedrenjaka do modernih regatnih jedrilica.
+                       </p>
+                </div>
+            </article>
+            <article class="section-content__blog__article" >
+                <div class="section-content__blog__section" >
+                    <h3 class="section-content__blog__section__heading" >Sta je jedrenje?</h3>
+                    <p class="section-content__blog__section__paragraph" >Jedrenje je višedimenzionalno iskustvo koje spaja ljude sa vodom, vetrom i prirodom na jedinstven način.
+                        Osim što je sport, predstavlja i umetnost upravljanja brodom, istraživanja nepreglednih vodenih prostranstava i životnog stila koji oblikuje karakter pojedinca. </p>
+                </div>
+                <!-- <div class="section-content__blog__section" >
+                    <ul class="section-content__blog__section__list" >
+                        <li class="section-content__blog__section__item" >
+                            <p class="section-content__blog__section__paragraph" >Za otkaz do mesec dana pre početka najma naplaćuje se iznos koji je jednak uplaćenoj akontaciji (30% – 50%) ukupne cene najma, odnosno zadržava se celokupni uplaćeni iznos.</p>
+                        </li>
+                        <li class="section-content__blog__section__item" >
+                            <p class="section-content__blog__section__paragraph" >Za otkaz unutar jednog meseca pre početka najma naplaćuje se 100% ukupne cene najma.</p>
+                        </li>
+                    </ul>
+                </div> -->
+                <div class="section-content__blog__section" >
+                    <p class="section-content__blog__section__paragraph" > U suštini, jedrenje se može opisati kao korišćenje vetra za kretanje broda, koristeći se jedrima kao glavnim izvorom snage.
+                        Postoji mnogo različitih vrsta jedrenja, od rekreativnog krstarenja do takmičarskih regata.
+                         Krstarenje obično podrazumeva opušteno putovanje po vodi sa ciljem istraživanja različitih lokacija i uživanja u pejzažima i prirodnim lepotama.
+                         Regatno jedrenje, s druge strane, uključuje takmičenja u kojima se brodovi trkaju jedan protiv drugog u disciplinama poput brzinskog jedrenja, manevrisanja i taktičkog planiranja.
+                        </p>
+                </div>
+                <div class="section-content__blog__section" >
+                    <p class="section-content__blog__section__paragraph" ><span class="section-content__blog__section__span" >Jedrenje pruža izvanredan osećaj slobode dok plovite po otvorenom moru. </span>
+                        Osećaj vetra u kosi i zvuk talasa pod kobilicom broda često se opisuje kao terapeutski i oslobađajući.
+                        Jedrilicom imate priliku da istražite predele koji su često nedostupni drugim sredstvima.
+                         Mnoge skrivene uvale, plaže i obale mogu se istražiti samo pomoću plovila.
+                    </p>
+                    <p class="section-content__blog__section__paragraph" ><span class="section-content__blog__section__span" >Jedrenje često zahteva timski rad i saradnju, što ga čini odličnim izborom za porodična ili prijateljska putovanja. </span>
+                         Rad u timu na plovilu može izgraditi snažne veze i povećati osećaj zajedništva.
+                    </p>
+                    <p class="section-content__blog__section__paragraph" >
+                        <span class="section-content__blog__section__span" >Jedrilicom imate mogućnost da kreirate sopstvenu rutu putovanja i prilagodite je svojim željama i potrebama.</span>
+                        Možete istraživati različita mesta koliko god želite, bez strogih rasporeda.
+                        Mnoge jedrilice danas su opremljene luksuzno i nude visok nivo udobnosti.
+                        Sa modernim pogodnostima poput klimatizacije, kuhinje, udobnih kabina i kupatila, možete uživati u luksuzu dok plovite.
+                   </p>
+                   <p class="section-content__blog__section__paragraph" >
+                        Sve više putnika traži ovakav vid odmora kako bi doživeli spoj avanture, luksuza i bliskosti sa prirodom. 
+                        Jedrenje može biti nezaboravno iskustvo koje ostavlja dubok utisak i koje se često pamti kao jedno od najlepših putovanja u životu.
+                    </p>
+                </div>
+            </article>
+            <div class="section-content__blog__images" >
+                <img class="section-content__blog__image" src="./assets/images/vodic-image-13.jpg" />
+                <img class="section-content__blog__image" src="./assets/images/vodic-image-4.jpg" />
+            </div>
+        </div>
+        <div class="section-content__blog" id="blog-4">
+            <h2 class="section-content__blog__heading" >Skipper / Kapetan</h2>
+            <article class="section-content__blog__article" >
+                <div class="section-content__blog__section" >
+                    <p class="section-content__blog__section__paragraph" >Skipper ili kapetan koji upravlja brodom je ključna figura na vašem morskom putovanju. Evo detaljnog opisa njegove uloge i odgovornosti:</p>
+                </div>
+                <div class="section-content__blog__section" >
+                    <h3 class="section-content__blog__section__heading" >Iskustvo i kvalifikacije:</h3>
+                    <p class="section-content__blog__section__paragraph" >Skipper je iskusni pomorac sa značajnim iskustvom u vođenju jedrilica. Oni su obučeni i poseduju odgovarajuće kvalifikacije, uključujući nautičke sertifikate i dozvole.</p>
+                </div>
+            </article>
+            <article class="section-content__blog__article" >
+                <div class="section-content__blog__section" >
+                    <h3 class="section-content__blog__section__heading" >Navigacija:</h3>
+                    <p class="section-content__blog__section__paragraph" >Skipper je odgovoran za navigaciju i sigurnost plovila. Oni su stručni u čitanju nautičkih karata, korišćenju navigacionih instrumenata i praćenju vremenskih uslova radi osiguranja sigurnog putovanja.</p>
+                </div>
+            </article>
+            <article class="section-content__blog__article" >
+                <div class="section-content__blog__section" >
+                    <h3 class="section-content__blog__section__heading" >Upravljanje plovilom:</h3>
+                    <p class="section-content__blog__section__paragraph" >Kapetan je odgovoran za upravljanje jedrilicom, što uključuje kormilarenje, upravljanje motorom (ako je primenljivo) i manipulaciju jedrima radi postizanja odgovarajuće brzine i kursa.</p>
+                </div>
+            </article>
+            <article class="section-content__blog__article" >
+                <div class="section-content__blog__section" >
+                    <h3 class="section-content__blog__section__heading" >Bezbednost putnika:</h3>
+                    <p class="section-content__blog__section__paragraph" >Bezbednost putnika je najviši prioritet skipera. Oni su obučeni za reagovanje u hitnim situacijama, pružanje prve pomoći i osiguranje da se pridržavaju propisa o bezbednosti na moru.</p>
+                </div>
+            </article>
+            <article class="section-content__blog__article" >
+                <div class="section-content__blog__section" >
+                    <h3 class="section-content__blog__section__heading" >Komunikacija:</h3>
+                    <p class="section-content__blog__section__paragraph" >Dobri skiperi su takođe dobri komunikatori. Oni su ljubazni i otvoreni za pitanja i zahteve putnika, pružajući im informacije i savete kako bi njihovo iskustvo bilo što prijatnije.</p>
+                </div>
+            </article>
+            <article class="section-content__blog__article" >
+                <div class="section-content__blog__section" >
+                    <h3 class="section-content__blog__section__heading" >Održavanje plovila:</h3>
+                    <p class="section-content__blog__section__paragraph" >Skipper je odgovoran za održavanje plovila tokom putovanja. Oni će proveriti motor, opremu i sistem za upravljanje kako bi osigurali da sve funkcioniše ispravno.</p>
+                </div>
+            </article>
+            <article class="section-content__blog__article" >
+                <div class="section-content__blog__section" >
+                    <p class="section-content__blog__section__paragraph" >Ukratko, skiper je ključna figura na jedrilici, kombinujući veštine navigacije, upravljanja plovilom, bezbednosti putnika i vođenja putovanja kako bi osigurao nezaboravno iskustvo na moru.</p>
+                </div>
+            </article>
+            <div class="section-content__blog__images" >
+                <img class="section-content__blog__image" src="./assets/images/vodic-image-7.jpg" />
+                <img class="section-content__blog__image" src="./assets/images/vodic-image-8.jpg" />
+            </div>
+        </div>
+        <div class="section-content__blog" id="blog-5">
+            <h2 class="section-content__blog__heading" >Agent za najam plovila</h2>
+            <article class="section-content__blog__article" >
+                <div class="section-content__blog__section" >
+                    <p class="section-content__blog__section__paragraph" >Mi smo agencija za najam brodova koja predstavlja ključnog posrednika između vlasnika plovila i klijenata koji žele da iznajme brod za različite svrhe, kao što su odmor, rekreacija, poslovna putovanja ili specijalni događaji poput venčanja ili rođendanskih proslava.</p>
+                </div>
+                <div class="section-content__blog__section" >
+                    <p class="section-content__blog__section__paragraph" >MD Sailing pruža širok spektar usluga koje olakšavaju proces iznajmljivanja broda i omogućavaju klijentima da pronađu savršeno plovilo koje odgovara njihovim potrebama i preferencijama.</p>
+                </div>
+            </article>
+            <article class="section-content__blog__article" >
+                <div class="section-content__blog__section" >
+                    <h3 class="section-content__blog__section__heading" >Inventar plovila</h3>
+                    <p class="section-content__blog__section__paragraph" >Naša agencija  ima veliki inventar plovila različitih veličina, tipova i karakteristika. To može uključivati jahte, jedrilice, katamarane, glisere i druge vrste brodova. Ovi brodovi mogu biti dostupni za kratkoročni ili dugoročni najam, u zavisnosti od potreba klijenata.
+                        Takođe pružamo informacije o uslovima najma, ceni, depozitu i drugim detaljima vezanim za iznajmljivanje.
+                    </p>
+                </div>
+                <div class="section-content__blog__section" >
+                    <h3 class="section-content__blog__section__heading" >Rezervacije plovila</h3>
+                    <p class="section-content__blog__section__paragraph" >Naša agencija za najam olakšava proces rezervacije plovila tako što pomaže klijentima da pronađu odgovarajući brod u željenom terminu i na željenoj lokaciji.
+                        Takođe pružamo informacije o uslovima najma, ceni, depozitu i drugim detaljima vezanim za iznajmljivanje.
+                    </p>
+                </div>
+                <div class="section-content__blog__section" >
+                    <h3 class="section-content__blog__section__heading" >Angažovanje skipera i organizovane aktivnosti</h3>
+                    <p class="section-content__blog__section__paragraph" >Pored iznajmljivanja plovila, pružamo dodatne usluge koje mogu obuhvatiti angažovanje skipera ili posade, organizaciju gastronomskih i vinskih tura, transfer do i sa luke, kao i druge aktivnosti poput ronjenja, ribolova ili vožnje skuterima na vodi.
+                    </p>
+                </div>
+
+                <div class="section-content__blog__section" >
+                    <p class="section-content__blog__section__paragraph" >Takođe pružamo kontinuiranu podršku svojim klijentima tokom celog procesa iznajmljivanja, od početnog upita do završetka putovanja.
+                        To može uključivati pružanje informacija o destinacijama, savete o sigurnosti na moru, kao i rešavanje bilo kakvih problema ili hitnih situacija koje se mogu pojaviti tokom putovanja.
+                    </p>
+                </div>
+
+                <div class="section-content__blog__section" >
+                    <p class="section-content__blog__section__paragraph" >MD Sailing igra ključnu ulogu u olakšavanju i unapređivanju iskustva iznajmljivanja plovila za klijente širom sveta.
+                        Naša stručnost, resursi i posvećenost pružanju visokokvalitetnih usluga čine nas neprocenjivim partnerima za sve koji žele da uživaju u jedinstvenom iskustvu plovidbe i istraživanju mora.
+                    </p>
+                </div>
+            </article>
+            <div class="section-content__blog__images" >
+                <img class="section-content__blog__image" src="./assets/images/vodic-image-7.jpg" />
+                <img class="section-content__blog__image" src="./assets/images/vodic-image-9.jpg" />
+            </div>
+            <form class="section-contact__content__form">
+                <div class="section-form__input-section">
+                    <p class="section-form__input-title">Ime i prezime</p>
+                    <div class="section-form__input-body">
+                        <input class="section-form__input" placeholder="Bogdan Bogdanovic" />
+                    </div>
+                    <p class="section-form__input-warning">Morate da upišete ime!</p>
+                </div>
+                <div class="section-form__input-section">
+                    <p class="section-form__input-title">Email</p>
+                    <div class="section-form__input-body">
+                        <input class="section-form__input" placeholder="bogdanbogdanovic@gmail.com" />
+                    </div>
+                    <p class="section-form__input-warning">Morate da upišete email!</p>
+                </div>
+                <div class="section-form__input-section">
+                    <p class="section-form__input-title">Telefon</p>
+                    <div class="section-form__input-body">
+                        <input class="section-form__input" placeholder="063-456-7890" />
+                    </div>
+                    <p class="section-form__input-warning">Morate da upišete telefon!</p>
+                </div>
+                <div class="section-form__input-section">
+                    <p class="section-form__input-title">Poruka</p>
+                    <div class="section-form__input-body">
+                        <textarea class="section-form__input" placeholder="Dodatne informacije" ></textarea>
+                    </div>
+                    <p class="section-form__input-warning">Morate da upišete poruku!</p>
+                </div>
+                <button type="submit" class="section-form__button" >
+                    <a class="CTA CTA__small CTA__primary" >
+                        Pošaljite poruku
+                    </a>
+                </button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer" >
+        <div class="footer__body">
+            <div class="footer__mobile">
+                <img class="footer__mobile__logo" src="./assets/svgs/logo.svg" />
+                <div class="footer__mobile__social">
+                    <a class="footer__mobile__social__link" >
+                        <img class="footer__mobile__social__icon" src="./assets/svgs/social-icon-1.svg" />
+                    </a>
+                    <a class="footer__mobile__social__link" >
+                        <img class="footer__mobile__social__icon" src="./assets/svgs/social-icon-2.svg" />
+                    </a>
+                    <a class="footer__mobile__social__link" >
+                        <img class="footer__mobile__social__icon" src="./assets/svgs/social-icon-3.svg" />
+                    </a>
+                </div>
+            </div>
+            <img class="footer__logo" src="./assets/svgs/logo.svg" />
+            <ul class="footer__links">
+                <div class="footer__divider">
+                    <li class="footer__link" >
+                        <p class="footer__link__title" >Vodič</p>
+                        <ul class="footer__sublinks" >
+                            <li class="footer__sublink" >
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" id="header-link-footer-1" href="/vodic.html#link-1" >Kako bukirati brod</a>
+                            </li>
+                            <li class="footer__sublink" >
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" id="header-link-footer-2" href="/vodic.html#link-2" >Odabir plovila</a>
+                            </li>
+                            <li class="footer__sublink" >
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" id="header-link-footer-3" href="/vodic.html#link-3" >Sve o jedrenju</a>
+                            </li>
+                            <li class="footer__sublink" >
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" id="header-link-footer-4" href="/vodic.html#link-4" >Skipper/Kapetan</a>
+                            </li>
+                            <li class="footer__sublink" >
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" id="header-link-footer-5" href="/vodic.html#link-5" >Agent za najam plovila</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer__link" >
+                        <p class="footer__link__title" >Pustolovine</p>
+                        <ul class="footer__sublinks" >
+                            <li class="footer__sublink" >
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/pustolovine.html#link-1" >Privatna tura</a>
+                            </li>
+                            <li class="footer__sublink" >
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/pustolovine.html#link-2" >Iznajmljivanje kabine</a>
+                            </li>
+                            <li class="footer__sublink" >
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/pustolovine.html#link-3" >Flotila</a>
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+                <div class="footer__divider">
+                    <li class="footer__link" >
+                        <a class="footer__link__title" href="/destinacije" >Destinacije</a>
+                    </li>
+                    <li class="footer__link" >
+                        <a class="footer__link__title" href="/galerija" >Galerija</a>
+                    </li>
+                    <li class="footer__link" >
+                        <a class="footer__link__title" href="/o-nama" >O nama</a>
+                    </li>
+                </div>
+            </ul>
+            <div class="footer__social">
+                <a class="footer__social__link" >
+                    <img class="footer__social__icon" src="./assets/svgs/social-icon-1.svg" />
+                </a>
+                <a class="footer__social__link" >
+                    <img class="footer__social__icon" src="./assets/svgs/social-icon-2.svg" />
+                </a>
+                <a class="footer__social__link" >
+                    <img class="footer__social__icon" src="./assets/svgs/social-icon-3.svg" />
+                </a>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p class="footer__copyright__text">© 2024 MDSailing. Sva prava zadržana.</p>
+        </div>
+    </footer>
+    <script src="./header.js" >
+    </script>
+    <script src="./navigation-vodic.js" >
+    </script>
+</body>
+
+</html> 

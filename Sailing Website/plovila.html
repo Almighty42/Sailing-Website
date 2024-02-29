@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <a class="header__logo-link" href="/index.html" >
+                <img class="header__logo" src="./assets/svgs/logo.svg" alt="logo" />
+            </a>
+            <ul class="header__list">
+                <li class="header__item header__item__dropdown" id="vodic">
+                    <a class="header__anchor">
+                        Vodič
+                    </a>
+                    <img class="header__item__arrow" id="vodic-arrow" src="./assets/svgs/arrow-down.svg" alt="strelica na dole" />
+                </li>
+                <li class="header__item header__item__dropdown" id="pustolovine">
+                    <a class="header__anchor">
+                        Pustolovine
+                    </a>
+                    <img class="header__item__arrow" id="pustolovine-arrow" src="./assets/svgs/arrow-down.svg" alt="strelica na dole" />
+                </li>
+                <li class="header__item">
+                    <a href="/destinacije" class="header__anchor header__anchor__selected">
+                        Destinacije
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="/galerija" class="header__anchor">
+                        Galerija
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="/o-nama" class="header__anchor">
+                        O nama
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="/index.html#sailing-form" class="CTA CTA__default CTA__primary">
+                        Rezerviši plovilo
+                    </a>
+                </li>
+            </ul>
+            <button class="header__button" id="burgerButton" aria-label="burger button">
+                <hr class="header__hr" id="hr1">
+                <hr class="header__hr" id="hr2">
+                <hr class="header__hr" id="hr3">
+            </button>
+            <menu class="header__menu" id="menu">
+                <li class="header__menu__item" id="vodic-hamburger">
+                    <a class="header__menu__anchor"> Vodič </a>
+                    <img class="header__item__arrow" id="vodic-hamburger-arrow" src="./assets/svgs/arrow-down.svg" alt="strelica na dole" />
+                </li>
+                <menu class="header__vodic-hamburger-menu" id="vodic-hamburger-menu" >
+                    <a class="header__vodic-hamburger-menu__item" href="/vodic.html#link-1" >
+                        <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__vodic-hamburger-menu__text" >Kako bukirati brod</p>
+                    </a>
+                    <a class="header__vodic-hamburger-menu__item" href="/vodic.html#link-2" >
+                        <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__vodic-hamburger-menu__text" >Sve o jedrenju</p>
+                    </a>
+                    <a class="header__vodic-hamburger-menu__item" href="/vodic.html#link-3" >
+                        <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__vodic-hamburger-menu__text" >Odabir plovila</p>
+                    </a>
+                    <a class="header__vodic-hamburger-menu__item" href="/vodic.html#link-4" >
+                        <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__vodic-hamburger-menu__text" >Skipper / Kapetan</p>
+                    </a>
+                    <a class="header__vodic-hamburger-menu__item" href="/vodic.html#link-5" >
+                        <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__vodic-hamburger-menu__text" >Agent za najam plovila</p>
+                    </a>
+                </menu>
+                <li class="header__menu__item" id="pustolovine-hamburger">
+                    <a class="header__menu__anchor"> Pustolovine
+                    </a>
+                    <img class="header__item__arrow" id="pustolovine-hamburger-arrow" src="./assets/svgs/arrow-down.svg" alt="strelica na dole" />
+                </li>
+                <menu class="header__pustolovine-hamburger-menu" id="pustolovine-hamburger-menu" >
+                    <a class="header__pustolovine-hamburger-menu__item" href="/pustolovine.html#link-1" >
+                        <img class="header__pustolovine-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__pustolovine-hamburger-menu__text" >Privatna tura</p>
+                    </a>
+                    <a class="header__pustolovine-hamburger-menu__item" href="/pustolovine.html#link-2" >
+                        <img class="header__pustolovine-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__pustolovine-hamburger-menu__text" >Iznajmljivanje kabine</p>
+                    </a>
+                    <a class="header__pustolovine-hamburger-menu__item" href="/pustolovine.html#link-3" >
+                        <img class="header__pustolovine-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__pustolovine-hamburger-menu__text" >Hotila</p>
+                    </a>
+                </menu>
+                <li class="header__menu__item">
+                    <a href="/destinacije" class="header__menu__anchor"> Destinacije
+                    </a>
+                </li>
+                <li class="header__menu__item">
+                    <a href="/galerija" class="header__menu__anchor"> Galerija
+                    </a>
+                </li>
+                <li class="header__menu__item">
+                    <a href="/o-nama" class="header__menu__anchor"> O nama
+                    </a>
+                </li>
+                <li class="header__menu__item">
+                    <a href="/index.html#sailing-form" class="CTA CTA__small CTA__primary">
+                        Rezerviši plovilo
+                    </a>
+                </li>
+            </menu>
+        </nav>
+        <menu class="header__vodic-menu" id="vodic-menu">
+            <a class="header__vodic-menu__item" href="/vodic.html#link-1" >
+                <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-1.svg" />
+                <p class="header__vodic-menu__text" >Kako bukirati brod</p>
+            </a>
+            <a class="header__vodic-menu__item" href="/vodic.html#link-2" >
+                <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-2.svg" />
+                <p class="header__vodic-menu__text" >Odabir plovila</p>
+            </a>
+            <a class="header__vodic-menu__item" href="/vodic.html#link-3" >
+                <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-3.svg" />
+                <p class="header__vodic-menu__text" >Sve o jedrenju</p>
+            </a>
+            <a class="header__vodic-menu__item" href="/vodic.html#link-4" >
+                <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-4.svg" />
+                <p class="header__vodic-menu__text" >Skiper / Kapetan</p>
+            </a>
+            <a class="header__vodic-menu__item" href="/vodic.html#link-5" >
+                <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-5.svg" />
+                <p class="header__vodic-menu__text" >Agent za najam plovila</p>
+            </a>
+        </menu>
+        <menu class="header__pustolovine-menu" id="pustolovine-menu">
+            <a class="header__pustolovine-menu__item" href="/pustolovine.html#link-1" >
+                <img class="header__pustolovine-menu__icon" src="./assets/svgs/pustolovina-icon-1.svg" />
+                <p class="header__pustolovine-menu__text" >Privatna tura</p>
+            </a>
+            <a class="header__pustolovine-menu__item" href="/pustolovine.html#link-2" >
+                <img class="header__pustolovine-menu__icon" src="./assets/svgs/pustolovina-icon-2.svg" />
+                <p class="header__pustolovine-menu__text" >Iznajmljivanje kabine</p>
+            </a>
+            <a class="header__pustolovine-menu__item" href="/pustolovine.html#link-3" >
+                <img class="header__pustolovine-menu__icon" src="./assets/svgs/pustolovina-icon-3.svg" />
+                <p class="header__pustolovine-menu__text" >Hotila</p>
+            </a>
+        </menu>
+    </header>
+    <section class="section-hero section-hero-mini section-hero-plovila" >
+        <div class="section-hero__text">
+            <h1 class="heading__h1 section-hero__text__heading" > Plovila </h1>
+            <p class="paragraph__subheading-h1 paragraph__subheading-h1__lightmode section-hero__text__subheading" > Osetite uzbuđenje jedrenja s našom flotom modernih i udobnih jedrilica.
+            </p>
+        </div>
+    </section>
+    <section class="section section-plovila" >
+        <div class="section__heading">
+            <h2 class="heading__h2 heading__h2__lightmode" > Naša plovila </h2>
+            <p class="paragraph__subheading-h2 paragraph__subheading-h2__lightmode" >Ovde se nalazi prikaz naših trenutnih plovila koja su Vam na raspolaganju. Naravno, očekujemo da  će broj rasti kako vreme prolazi. Kliknite na neki od njih kako biste rezervisali plovilo.</p>
+        </div>
+        <div class="section-plovila__cards">
+            <article class="section-plovila__card" >
+                <img class="section-plovila__card__image" src="./assets/images/plovila/bali 4.5.jpg" alt="slika broda" />
+                <div class="section-plovila__card__text">
+                    <div class="section-plovila__card__title">
+                        <p class="section-plovila__card__subheading" >Katamarana</p>
+                        <p class="section-plovila__card__heading" >Bali 4.5</p>
+                    </div>
+                    <p class="section-plovila__card__paragraph" >
+                        Ljudi 10 &nbsp|&nbsp Kabine 6 &nbsp|&nbsp Toaleti 4
+                        <br>
+                        Dužina 13.6m &nbsp|&nbsp Širina 7.42m &nbsp|&nbsp Gaz 1.22m
+                    </p>
+                </div>
+                <div class="section-plovila__card__actions">
+                    <a class="CTA CTA__small CTA__secondary" href="./index.html#sailing-form">Rezerviši plovilo <img class="CTA__icon" src="./assets/svgs/arrow-right-secondary.svg" /></a>
+                    <div class="section-plovila__card__info">
+                        <img class="section-plovila__card__info__icon" src="./assets/svgs/users.svg" />
+                        <p class="section-plovila__card__info__text" >  1-10 </p>
+                    </div>
+                </div>
+            </article>
+            <article class="section-plovila__card" >
+                <img class="section-plovila__card__image" src="./assets/images/plovila/oceanis 46.1.webp" alt="slika broda" />
+                <div class="section-plovila__card__text">
+                    <div class="section-plovila__card__title">
+                        <p class="section-plovila__card__subheading" >Jedrilica</p>
+                        <p class="section-plovila__card__heading" >Oceanis 46.1</p>
+                    </div>
+                    <p class="section-plovila__card__paragraph" >
+                        Ljudi 12 &nbsp|&nbsp Kabine 4 &nbsp|&nbsp Toaleti 4
+                        <br>
+                        Dužina 14.6m &nbsp|&nbsp Širina 4.5m &nbsp|&nbsp Gaz 1.75m
+                    </p>
+                </div>
+                <div class="section-plovila__card__actions">
+                    <a class="CTA CTA__small CTA__secondary" href="./index.html#sailing-form">Rezerviši plovilo <img class="CTA__icon" src="./assets/svgs/arrow-right-secondary.svg" /></a>
+                    <div class="section-plovila__card__info">
+                        <img class="section-plovila__card__info__icon" src="./assets/svgs/users.svg" />
+                        <p class="section-plovila__card__info__text" > 1-10 </p>
+                    </div>
+                </div>
+            </article>
+            <article class="section-plovila__card" >
+                <img class="section-plovila__card__image" src="./assets/images/plovila/Lagoon-40.jpg" alt="slika broda" />
+                <div class="section-plovila__card__text">
+                    <div class="section-plovila__card__title">
+                        <p class="section-plovila__card__subheading" >Katamarana</p>
+                        <p class="section-plovila__card__heading" >Lagoon 40</p>
+                    </div>
+                    <p class="section-plovila__card__paragraph" >
+                        Ljudi 10 &nbsp|&nbsp Kabine 6 &nbsp|&nbsp Toaleti 4
+                        <br>
+                        Dužina 11.74m &nbsp|&nbsp Širina 6.77m &nbsp|&nbsp Gaz 1.25m
+                    </p>
+                </div>
+                <div class="section-plovila__card__actions">
+                    <a class="CTA CTA__small CTA__secondary" href="./index.html#sailing-form">Rezerviši plovilo <img class="CTA__icon" src="./assets/svgs/arrow-right-secondary.svg" /></a>
+                    <div class="section-plovila__card__info">
+                        <img class="section-plovila__card__info__icon" src="./assets/svgs/users.svg" />
+                        <p class="section-plovila__card__info__text" > 1-10 </p>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="section-plovila__cards">
+            <article class="section-plovila__card" >
+                <img class="section-plovila__card__image" src="./assets/images/plovila/lagoon 42.webp" alt="slika broda" />
+                <div class="section-plovila__card__text">
+                    <div class="section-plovila__card__title">
+                        <p class="section-plovila__card__subheading" >Katamarana</p>
+                        <p class="section-plovila__card__heading" >LAGOON 42</p>
+                    </div>
+                    <p class="section-plovila__card__paragraph" >
+                        Ljudi 12 &nbsp|&nbsp Kabine 6 &nbsp|&nbsp Toaleti 4
+                        <br>
+                        Dužina 12.8m &nbsp|&nbsp Širina 7.7m &nbsp|&nbsp Gaz 1.25m
+                    </p>
+                </div>
+                <div class="section-plovila__card__actions">
+                    <a class="CTA CTA__small CTA__secondary" href="./index.html#sailing-form">Rezerviši plovilo <img class="CTA__icon" src="./assets/svgs/arrow-right-secondary.svg" /></a>
+                    <div class="section-plovila__card__info">
+                        <img class="section-plovila__card__info__icon" src="./assets/svgs/users.svg" />
+                        <p class="section-plovila__card__info__text" >  1-12 </p>
+                    </div>
+                </div>
+            </article>
+            <article class="section-plovila__card" >
+                <img class="section-plovila__card__image" src="./assets/images/plovila/catamaran-dufour-catamaran-48-per-sito1.jpg" alt="slika broda" />
+                <div class="section-plovila__card__text">
+                    <div class="section-plovila__card__title">
+                        <p class="section-plovila__card__subheading" >Katamarana</p>
+                        <p class="section-plovila__card__heading" >DUFOUR 48</p>
+                    </div>
+                    <p class="section-plovila__card__paragraph" >
+                        Ljudi 10 &nbsp|&nbsp Kabine 5 &nbsp|&nbsp Toaleti 5
+                        <br>
+                        Dužina 15m &nbsp|&nbsp Širina 8m &nbsp|&nbsp Gaz 1.3m
+                    </p>
+                </div>
+                <div class="section-plovila__card__actions">
+                    <a class="CTA CTA__small CTA__secondary" href="./index.html#sailing-form">Rezerviši plovilo <img class="CTA__icon" src="./assets/svgs/arrow-right-secondary.svg" /></a>
+                    <div class="section-plovila__card__info">
+                        <img class="section-plovila__card__info__icon" src="./assets/svgs/users.svg" />
+                        <p class="section-plovila__card__info__text" > 1-10 </p>
+                    </div>
+                </div>
+            </article>
+            <article class="section-plovila__card" >
+                <img class="section-plovila__card__image" src="./assets/images/plovila/lagoon 46.jpg" alt="slika broda" />
+                <div class="section-plovila__card__text">
+                    <div class="section-plovila__card__title">
+                        <p class="section-plovila__card__subheading" >Katamarana</p>
+                        <p class="section-plovila__card__heading" >LAGOON 46</p>
+                    </div>
+                    <p class="section-plovila__card__paragraph" >
+                        Ljudi 8 &nbsp|&nbsp Kabine 4 &nbsp|&nbsp Toaleti 4
+                        <br>
+                        Dužina 13.99m &nbsp|&nbsp Širina 7.96m &nbsp|&nbsp Gaz 1.3m
+                    </p>
+                </div>
+                <div class="section-plovila__card__actions">
+                    <a class="CTA CTA__small CTA__secondary" href="./index.html#sailing-form">Rezerviši plovilo <img class="CTA__icon" src="./assets/svgs/arrow-right-secondary.svg" /></a>
+                    <div class="section-plovila__card__info">
+                        <img class="section-plovila__card__info__icon" src="./assets/svgs/users.svg" />
+                        <p class="section-plovila__card__info__text" > 1-8 </p>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="section-plovila__cards">
+            <article class="section-plovila__card" >
+                <img class="section-plovila__card__image" src="./assets/images/plovila/bavaria 42.jpeg" alt="slika broda" />
+                <div class="section-plovila__card__text">
+                    <div class="section-plovila__card__title">
+                        <p class="section-plovila__card__subheading" >Jedrilica</p>
+                        <p class="section-plovila__card__heading" >Bavaria 42</p>
+                    </div>
+                    <p class="section-plovila__card__paragraph" >
+                        Ljudi 7 &nbsp|&nbsp Kabine 3 &nbsp|&nbsp Toaleti 4
+                        <br>
+                        Dužina 12.8m &nbsp|&nbsp Širina 3.99m &nbsp|&nbsp Gaz 1.8m
+                    </p>
+                </div>
+                <div class="section-plovila__card__actions">
+                    <a class="CTA CTA__small CTA__secondary" href="./index.html#sailing-form">Rezerviši plovilo <img class="CTA__icon" src="./assets/svgs/arrow-right-secondary.svg" /></a>
+                    <div class="section-plovila__card__info">
+                        <img class="section-plovila__card__info__icon" src="./assets/svgs/users.svg" />
+                        <p class="section-plovila__card__info__text" >  1-7 </p>
+                    </div>
+                </div>
+            </article>
+            <article class="section-plovila__card" >
+                <img class="section-plovila__card__image" src="./assets/images/plovila/dufour 460.webp" alt="slika broda" />
+                <div class="section-plovila__card__text">
+                    <div class="section-plovila__card__title">
+                        <p class="section-plovila__card__subheading" >Katamarana</p>
+                        <p class="section-plovila__card__heading" >DUFOUR 460</p>
+                    </div>
+                    <p class="section-plovila__card__paragraph" >
+                        Ljudi 10 &nbsp|&nbsp Kabine 4 &nbsp|&nbsp Toaleti 2
+                        <br>
+                        Dužina 14.85m &nbsp|&nbsp Širina 4.74m &nbsp|&nbsp Gaz 2.25m
+                    </p>
+                </div>
+                <div class="section-plovila__card__actions">
+                    <a class="CTA CTA__small CTA__secondary" href="./index.html#sailing-form">Rezerviši plovilo <img class="CTA__icon" src="./assets/svgs/arrow-right-secondary.svg" /></a>
+                    <div class="section-plovila__card__info">
+                        <img class="section-plovila__card__info__icon" src="./assets/svgs/users.svg" />
+                        <p class="section-plovila__card__info__text" > 1-10 </p>
+                    </div>
+                </div>
+            </article>
+            <article class="section-plovila__card" >
+                <img class="section-plovila__card__image" src="./assets/images/plovila/dufour 470.webp" alt="slika broda" />
+                <div class="section-plovila__card__text">
+                    <div class="section-plovila__card__title">
+                        <p class="section-plovila__card__subheading" >Katamarana</p>
+                        <p class="section-plovila__card__heading" >DUFOUR 470</p>
+                    </div>
+                    <p class="section-plovila__card__paragraph" >
+                        Ljudi 10 &nbsp|&nbsp Kabine 4 &nbsp|&nbsp Toaleti 2
+                        <br>
+                        Dužina 14.85m &nbsp|&nbsp Širina 4.74m &nbsp|&nbsp Gaz 2.25m
+                    </p>
+                </div>
+                <div class="section-plovila__card__actions">
+                    <a class="CTA CTA__small CTA__secondary" href="./index.html#sailing-form">Rezerviši plovilo <img class="CTA__icon" src="./assets/svgs/arrow-right-secondary.svg" /></a>
+                    <div class="section-plovila__card__info">
+                        <img class="section-plovila__card__info__icon" src="./assets/svgs/users.svg" />
+                        <p class="section-plovila__card__info__text" > 1-10 </p>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="section-plovila__cards">
+            <article class="section-plovila__card" >
+                <img class="section-plovila__card__image" src="./assets/images/plovila/hanse 455.jpg" alt="slika broda" />
+                <div class="section-plovila__card__text">
+                    <div class="section-plovila__card__title">
+                        <p class="section-plovila__card__subheading" >Jedrilica</p>
+                        <p class="section-plovila__card__heading" >HANSE 455</p>
+                    </div>
+                    <p class="section-plovila__card__paragraph" >
+                        Ljudi 8 &nbsp|&nbsp Kabine 3 &nbsp|&nbsp Toaleti 2
+                        <br>
+                        Dužina 13.95m &nbsp|&nbsp Širina 4.38m &nbsp|&nbsp Gaz 1.82m
+                    </p>
+                </div>
+                <div class="section-plovila__card__actions">
+                    <a class="CTA CTA__small CTA__secondary" href="./index.html#sailing-form">Rezerviši plovilo <img class="CTA__icon" src="./assets/svgs/arrow-right-secondary.svg" /></a>
+                    <div class="section-plovila__card__info">
+                        <img class="section-plovila__card__info__icon" src="./assets/svgs/users.svg" />
+                        <p class="section-plovila__card__info__text" >  1-8 </p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    
+    <footer class="footer" >
+        <div class="footer__body">
+            <div class="footer__mobile">
+                <img class="footer__mobile__logo" src="./assets/svgs/logo.svg" />
+                <div class="footer__mobile__social">
+                    <a class="footer__mobile__social__link" >
+                        <img class="footer__mobile__social__icon" src="./assets/svgs/social-icon-1.svg" />
+                    </a>
+                    <a class="footer__mobile__social__link" >
+                        <img class="footer__mobile__social__icon" src="./assets/svgs/social-icon-2.svg" />
+                    </a>
+                    <a class="footer__mobile__social__link" >
+                        <img class="footer__mobile__social__icon" src="./assets/svgs/social-icon-3.svg" />
+                    </a>
+                </div>
+            </div>
+            <img class="footer__logo" src="./assets/svgs/logo.svg" />
+            <ul class="footer__links">
+                <div class="footer__divider">
+                    <li class="footer__link" >
+                        <p class="footer__link__title" >Vodič</p>
+                        <ul class="footer__sublinks" >
+                            <li class="footer__sublink" >
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/vodic.html#link-1" >Kako bukirati brod</a>
+                            </li>
+                            <li class="footer__sublink" >
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/vodic.html#link-2" >Odabir plovila</a>
+                            </li>
+                            <li class="footer__sublink" >
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/vodic.html#link-3" >Sve o jedrenju</a>
+                            </li>
+                            <li class="footer__sublink" >
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/vodic.html#link-4" >Skipper/Kapetan</a>
+                            </li>
+                            <li class="footer__sublink" >
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/vodic.html#link-5" >Agent za najam plovila</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer__link" >
+                        <p class="footer__link__title" >Pustolovine</p>
+                        <ul class="footer__sublinks" >
+                            <li class="footer__sublink" >
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/pustolovine.html#link-1" >Privatna tura</a>
+                            </li>
+                            <li class="footer__sublink" >
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/pustolovine.html#link-2" >Iznajmljivanje kabine</a>
+                            </li>
+                            <li class="footer__sublink" >
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/pustolovine.html#link-3" >Hotila</a>
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+                <div class="footer__divider">
+                    <li class="footer__link" >
+                        <a class="footer__link__title" href="/destinacije" >Destinacije</a>
+                    </li>
+                    <li class="footer__link" >
+                        <a class="footer__link__title" href="/galerija" >Galerija</a>
+                    </li>
+                    <li class="footer__link" >
+                        <a class="footer__link__title" href="/o-nama" >O nama</a>
+                    </li>
+                </div>
+            </ul>
+            <div class="footer__social">
+                <a class="footer__social__link" >
+                    <img class="footer__social__icon" src="./assets/svgs/social-icon-1.svg" />
+                </a>
+                <a class="footer__social__link" >
+                    <img class="footer__social__icon" src="./assets/svgs/social-icon-2.svg" />
+                </a>
+                <a class="footer__social__link" >
+                    <img class="footer__social__icon" src="./assets/svgs/social-icon-3.svg" />
+                </a>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p class="footer__copyright__text">© 2024 SunShine Iznajmljivanje Vozila. Sva prava zadrzana.</p>
+        </div>
+    </footer>
+    <script src="./header.js" >
+    </script>
+</body>
+
+</html> 
