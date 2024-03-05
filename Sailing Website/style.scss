@@ -635,6 +635,7 @@ $font-size-paragraph-1: 24px;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    background-position: center;
     @media (min-width: 1600px) or (min-height: 899px) {
         height: 100vh;
         @include marginBetweenElements(48px, "vertical");
@@ -669,6 +670,9 @@ $font-size-paragraph-1: 24px;
         z-index: 1;
         overflow: hidden;
         object-fit: cover;
+        @media (max-width: 650px) {
+            display: none;
+        }
     }
     &__overlay {
         position: absolute;
@@ -1130,7 +1134,7 @@ $font-size-paragraph-1: 24px;
         }
         @media (max-width: 1050px) or (max-height: 599px) {
             @include marginBetweenElements(0px, "horizontal");
-            @include marginBetweenElements(24px, "vertical");
+            @include marginBetweenElements(48px, "vertical");
             padding: 0 !important;
             //padding: 0 92px;
             flex-direction: column;
@@ -1237,11 +1241,11 @@ $font-size-paragraph-1: 24px;
 
         @media (min-width: 1600px) or (min-height: 899px) {
             @include marginBetweenElements(24px, "vertical");
-            padding: 0px 64px;
+            padding: 0px 40px;
         }
         @media (max-width: 1600px) or (max-height: 899px) {
             @include marginBetweenElements(20px, "vertical");
-            padding: 0px 52px;
+            padding: 0px 24px;
         }
         @media (max-width: 1050px) or (max-height: 599px) {
         }

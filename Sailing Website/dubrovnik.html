@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD Sailing - Dubrovnik</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./assets/logo/Logo.ico">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <a class="header__logo-link" href="/index.html">
+                <img class="header__logo" src="./assets/svgs/logo.svg" alt="logo" />
+            </a>
+            <ul class="header__list">
+                <li class="header__item header__item__dropdown" id="vodic">
+                    <a class="header__anchor">
+                        Vodič
+                    </a>
+                    <img class="header__item__arrow" id="vodic-arrow" src="./assets/svgs/arrow-down.svg"
+                        alt="strelica na dole" />
+                </li>
+                <li class="header__item header__item__dropdown" id="pustolovine">
+                    <a class="header__anchor">
+                        Pustolovine
+                    </a>
+                    <img class="header__item__arrow" id="pustolovine-arrow" src="./assets/svgs/arrow-down.svg"
+                        alt="strelica na dole" />
+                </li>
+                <li class="header__item">
+                    <a href="/destinacije" class="header__anchor header__anchor__selected">
+                        Destinacije
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="/plovila" class="header__anchor">
+                        Plovila
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="/o-nama" class="header__anchor">
+                        O nama
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="/index.html#sailing-form" class="CTA CTA__default CTA__primary">
+                        Rezerviši plovilo
+                    </a>
+                </li>
+            </ul>
+            <button class="header__button" id="burgerButton" aria-label="burger button">
+                <hr class="header__hr" id="hr1">
+                <hr class="header__hr" id="hr2">
+                <hr class="header__hr" id="hr3">
+            </button>
+            <menu class="header__menu" id="menu">
+                <li class="header__menu__item" id="vodic-hamburger">
+                    <a class="header__menu__anchor"> Vodič </a>
+                    <img class="header__item__arrow" id="vodic-hamburger-arrow" src="./assets/svgs/arrow-down.svg"
+                        alt="strelica na dole" />
+                </li>
+                <menu class="header__vodic-hamburger-menu" id="vodic-hamburger-menu">
+                    <a class="header__vodic-hamburger-menu__item" href="/vodic.html#link-1">
+                        <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__vodic-hamburger-menu__text">Kako bukirati brod</p>
+                    </a>
+                    <a class="header__vodic-hamburger-menu__item" href="/vodic.html#link-2">
+                        <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__vodic-hamburger-menu__text">Sve o jedrenju</p>
+                    </a>
+                    <a class="header__vodic-hamburger-menu__item" href="/vodic.html#link-3">
+                        <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__vodic-hamburger-menu__text">Odabir plovila</p>
+                    </a>
+                    <a class="header__vodic-hamburger-menu__item" href="/vodic.html#link-4">
+                        <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__vodic-hamburger-menu__text">Skipper / Kapetan</p>
+                    </a>
+                    <a class="header__vodic-hamburger-menu__item" href="/vodic.html#link-5">
+                        <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__vodic-hamburger-menu__text">Agent za najam plovila</p>
+                    </a>
+                </menu>
+                <li class="header__menu__item" id="pustolovine-hamburger">
+                    <a class="header__menu__anchor"> Pustolovine
+                    </a>
+                    <img class="header__item__arrow" id="pustolovine-hamburger-arrow" src="./assets/svgs/arrow-down.svg"
+                        alt="strelica na dole" />
+                </li>
+                <menu class="header__pustolovine-hamburger-menu" id="pustolovine-hamburger-menu">
+                    <a class="header__pustolovine-hamburger-menu__item" href="/pustolovine.html#link-1">
+                        <img class="header__pustolovine-hamburger-menu__icon"
+                            src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__pustolovine-hamburger-menu__text">Privatna tura</p>
+                    </a>
+                    <a class="header__pustolovine-hamburger-menu__item" href="/pustolovine.html#link-2">
+                        <img class="header__pustolovine-hamburger-menu__icon"
+                            src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__pustolovine-hamburger-menu__text">Iznajmljivanje kabine</p>
+                    </a>
+                    <a class="header__pustolovine-hamburger-menu__item" href="/pustolovine.html#link-3">
+                        <img class="header__pustolovine-hamburger-menu__icon"
+                            src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__pustolovine-hamburger-menu__text">Hotila</p>
+                    </a>
+                </menu>
+                <li class="header__menu__item">
+                    <a href="/destinacije" class="header__menu__anchor"> Destinacije
+                    </a>
+                </li>
+                <li class="header__menu__item">
+                    <a href="/plovila" class="header__menu__anchor"> Plovila
+                    </a>
+                </li>
+                <li class="header__menu__item">
+                    <a href="/o-nama" class="header__menu__anchor"> O nama
+                    </a>
+                </li>
+                <li class="header__menu__item">
+                    <a href="/index.html#sailing-form" class="CTA CTA__small CTA__primary">
+                        Rezerviši plovilo
+                    </a>
+                </li>
+            </menu>
+        </nav>
+        <menu class="header__vodic-menu" id="vodic-menu">
+            <a class="header__vodic-menu__item" href="/vodic.html#link-1">
+                <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-1.svg" />
+                <p class="header__vodic-menu__text">Kako bukirati brod</p>
+            </a>
+            <a class="header__vodic-menu__item" href="/vodic.html#link-2">
+                <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-2.svg" />
+                <p class="header__vodic-menu__text">Odabir plovila</p>
+            </a>
+            <a class="header__vodic-menu__item" href="/vodic.html#link-3">
+                <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-3.svg" />
+                <p class="header__vodic-menu__text">Sve o jedrenju</p>
+            </a>
+            <a class="header__vodic-menu__item" href="/vodic.html#link-4">
+                <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-4.svg" />
+                <p class="header__vodic-menu__text">Skiper / Kapetan</p>
+            </a>
+            <a class="header__vodic-menu__item" href="/vodic.html#link-5">
+                <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-5.svg" />
+                <p class="header__vodic-menu__text">Agent za najam plovila</p>
+            </a>
+        </menu>
+        <menu class="header__pustolovine-menu" id="pustolovine-menu">
+            <a class="header__pustolovine-menu__item" href="/pustolovine.html#link-1">
+                <img class="header__pustolovine-menu__icon" src="./assets/svgs/pustolovina-icon-1.svg" />
+                <p class="header__pustolovine-menu__text">Privatna tura</p>
+            </a>
+            <a class="header__pustolovine-menu__item" href="/pustolovine.html#link-2">
+                <img class="header__pustolovine-menu__icon" src="./assets/svgs/pustolovina-icon-2.svg" />
+                <p class="header__pustolovine-menu__text">Iznajmljivanje kabine</p>
+            </a>
+            <a class="header__pustolovine-menu__item" href="/pustolovine.html#link-3">
+                <img class="header__pustolovine-menu__icon" src="./assets/svgs/pustolovina-icon-3.svg" />
+                <p class="header__pustolovine-menu__text">Hotila</p>
+            </a>
+        </menu>
+    </header>
+    <section class="section-hero section-hero-mini section-hero-ostrvo-1">
+        <div class="section-hero__text">
+            <h1 class="heading__h1 section-hero__text__heading"> Dubrovnik </h1>
+        </div>
+    </section>
+    <section class="section-content-ostrvo-1 section">
+        <div class="section__heading">
+            <h2 class="heading__h2 heading__h2__lightmode"> Dubrovnik </h2>
+            <p class="paragraph__subheading-h2 paragraph__subheading-h2__lightmode"> Dubrovnik, biser Jadrana i jedan od
+                najčarobnijih gradova na svetu! </p>
+        </div>
+        <div class="section-content-ostrvo-1__content">
+            <article class="section-content-ostrvo-1__content__article">
+                <p class="section-content-ostrvo-1__content__paragraph">Sa svojim impresivnim zidinama Starog grada,
+                    crvenim krovovima koji blistaju pod suncem i kristalno čistim plavim morem, Dubrovnik je prava
+                    poslastica za sve avanturiste i ljubitelje kulture.
+                    Ovaj grad, često nazvan "biserom Jadrana", svojom istorijom koja seže duboko u prošlost, osvaja srca
+                    posetilaca iz celog sveta.</p>
+                <p class="section-content-ostrvo-1__content__paragraph">Šetajući kamenim ulicama Starog grada, osećaćete
+                    se kao da ste zakoračili u bajku iz prošlosti.
+                    Posetite zidine koje su vekovima čuvale grad od napada, istražite uske prolaze prepune istorijskih
+                    znamenitosti i uživajte u fantastičnim pogledima sa starih tvrđava.</p>
+                <p class="section-content-ostrvo-1__content__paragraph">Ali Dubrovnik nije samo grad sa bogatom
+                    istorijom - to je i grad koji obiluje životom i energijom.
+                    Uživajte u ukusnoj hrani i lokalnim specijalitetima u brojnim restoranima i konobama, istražite
+                    živopisne pijace i tržnice, ili jednostavno sedite u nekom od brojnih kafića uz obalu i posmatrajte
+                    živopisni svet koji prolazi.</p>
+                <p class="section-content-ostrvo-1__content__paragraph">Ne zaboravite da se osvežite u kristalno čistom
+                    moru, istražite obližnje plaže i uživajte u suncu i pesku.
+                    Dubrovnik ima sve što vam je potrebno za savršen odmor - od fascinantne istorije do predivnih plaža,
+                    od ukusne hrane do uzbudljive atmosfere.
+                </p>
+            </article>
+            <article class="section-content-ostrvo-1__content__article">
+                <h3 class="section-content-ostrvo-1__content__heading">Istorija Dubrovnika</h3>
+                <p class="section-content-ostrvo-1__content__paragraph">Dubrovnik ima bogatu i fascinantnu istoriju koja
+                    se proteže kroz vekove.
+                    Ovaj grad, osnovan u drevnim vremenima, postao je značajna trgovačka luka u srednjem veku.</p>
+                <p class="section-content-ostrvo-1__content__paragraph"> Tokom 15. veka Dubrovnik je razvio Republiku
+                    koja je bila rival Mlečanima i koja je cvetala kao centar trgovine i kulture.
+                    Grad je bio poznat po svojoj naprednoj kulturi i demokratskim vrednostima, uključujući i rano
+                    ukidanje ropstva. </p>
+                <p class="section-content-ostrvo-1__content__paragraph">Tokom vekova, Dubrovnik je bio poprište brojnih
+                    istorijskih događaja, a danas je jedan od najposećenijih turističkih destinacija na Jadranskoj obali
+                    zbog svoje bogate istorije, impresivne arhitekture i spektakularne prirodne lepote.</p>
+            </article>
+            <div class="section-content-ostrvo-1__content__images">
+                <img class="section-content-ostrvo-1__content__image" src="./assets/images/dubrovnik/1.jpg" />
+                <img class="section-content-ostrvo-1__content__image" src="./assets/images/dubrovnik/2.jpg" />
+            </div>
+            <article class="section-content-ostrvo-1__content__article">
+                <h3 class="section-content-ostrvo-1__content__heading">Aktivnosti u Dubrovniku:</h3>
+                <h3 class="section-content-ostrvo-1__content__heading">1. Posetite tvrđavu Minčeta</h3>
+                <p class="section-content-ostrvo-1__content__paragraph">
+                    Jedan od najimpresivnijih bedema, odmah iza onog u Kini, okružuje Stari Grad Dubrovnika.
+                    Izgrađen isključivo u svrhu odbrane grada od Mletačke Republike, danas je zid glavna atrakcija zbog
+                    koje desetine hiljada turista posećuje grad svakog meseca.
+                    Na zidu se nalazi nekoliko tvrđava, a najveća među njima je tvrđava Minčeta, koja pruža zadivljujući
+                    pogled na unutrašnjost grada.
+                    Iako zidovi mogu biti poprilično zauzeti, poseta tvrđavi Minčeta svakako vredi truda i plaćanja
+                    ulaznice.
+                </p>
+                <div class="section-content-ostrvo-1__content__images">
+                    <img class="section-content-ostrvo-1__content__image"
+                        src="./assets/images/dubrovnik/minceta.jpg" />
+                </div>
+                <p class="section-content-ostrvo-1__desc">Minčeta</p>
+                <h3 class="section-content-ostrvo-1__content__heading">2. Prošetajte gradskim bedemima</h3>
+                <p class="section-content-ostrvo-1__content__paragraph">
+                    Upustite se u avanturu hodanja duž bedema Dubrovnika i otkrijte čaroliju prošlosti koja živi u
+                    svakom kamenu.
+                    Ovi impozantni zidovi, podignuti još u 15. veku, svedoci su bogate istorije grada, odbranjenog od
+                    brojnih izazova kroz vekove.
+                    Prošetajte iznad terakotnih krovova Starog grada i uživajte u spektakularnim pogledima na kristalno
+                    čisto Jadransko more.
+                    Svaki korak na ovim bedemima nosi sa sobom osećaj pustolovine i otkrivanja skrivenih dragulja
+                    Dubrovnika.
+                    Ne propustite priliku da doživite jedinstvenu atmosferu ovih istorijskih zidina i stvorite
+                    nezaboravne uspomene koje će vas pratiti zauvek.
+                </p>
+                <h3 class="section-content-ostrvo-1__content__heading">3. Vožnja dubrovačkom gondolom</h3>
+                <p class="section-content-ostrvo-1__content__paragraph">
+                    Za potpun doživljaj Dubrovnika, ne propustite priliku da posetite planinu Srđ, najvišu tačku grada.
+                    Put do vrha možete započeti vožnjom kabinskom žičarom koja polazi sa spoljne strane gradskih bedema
+                    i vodi do starog utvrđenja na planini Srđ.
+                    Na vrhu ćete biti nagrađeni prelepim pogledom na grad i njegove karakteristične terakotne krovove.
+                    U blizini se nalazi i restoran gde možete uživati u hrani i piću dok posmatrate pejzaž, bilo da je
+                    to uz šoljicu kafe ili opušteni ručak.
+                    U daljini možete primetiti otoke Lokrum i Elafit, dva bisera Jadranskog mora koje vredi posetiti
+                    tokom boravka u Dubrovniku.
+                </p>
+                <h3 class="section-content-ostrvo-1__content__heading">4. Prošetajte Stradunom</h3>
+                <p class="section-content-ostrvo-1__content__paragraph">
+                    Stradun je nezaobilazna destinacija u Dubrovniku, budući da je glavna ulica grada.
+                    Popločana drevnim mermernim pločama, Stradun je dom nekih od najimpresivnijih građevina Dubrovnika.
+                    Srednjovekovna crkva Svetog Vlaha i Dubrovačka katedrala su arhitektonski dragulji Straduna, dok se
+                    ispod ulice nalazi neverovatan vodovodni sistem star čak 600 godina.
+                    Ne zaboravite posetiti Franjevački manastir i istražiti najstariju apoteku u Evropi!
+                    Nakon što ste upoznali znamenitosti, opustite se u jednoj od brojnih bočnih ulica koje se seku sa
+                    Dubrovačkim Stradunom.
+                    Te uličice su ispunjene autentičnim restoranima, barovima i kafićima, savršenim za odmor uz kafu
+                    između istraživanja!
+                </p>
+                <h3 class="section-content-ostrvo-1__content__heading">5. Posetite Buža Bar</h3>
+                <p class="section-content-ostrvo-1__content__paragraph">
+                    Dok šetate kroz uske uličice Starog grada, uživajući u njegovoj lepoti i atmosferi srednjovekovnog
+                    doba, možda ćete slučajno naići na Buža Bar.
+                    Nazvan po svom neobičnom ulazu - maloj rupi u gradskim zidinama (Buža), ovaj bar smešten je na
+                    litici s pogledom na more.
+                    Buža Bar je savršeno mesto za opuštanje i uživanje u mirnoj atmosferi koja karakteriše život u
+                    Dubrovniku.
+                    Ako ga ne pronađete slučajno, možete ga potražiti gledajući prema strani gradskih zidina koja gleda
+                    na ostrvo Lokrum.
+                    Tražite znak s natpisom "Hladna pića" i nećete pogrešiti!
+                </p>
+                <h3 class="section-content-ostrvo-1__content__heading">6. Istražite lokacije snimanja Igre prestola</h3>
+                <p class="section-content-ostrvo-1__content__paragraph">
+                    Snimanje serije "Igra prestola" u Dubrovniku bilo je izuzetno značajno za ovaj grad na jadranskoj
+                    obali.
+                    Dubrovnik je poslužio kao spektakularna kulisa za Kraljevu Luku, glavni grad Sedam kraljevstava.
+                    Ova drevna mediteranska luka, sa svojim impozantnim zidinama i istorijskim građevinama, savršeno je
+                    odgovarala viziji autora Džordža R. R. Martina.
+                    Lokacije kao što su "sramne" stepenice, Crkva Svetog Spasa i Lovrijenac tvrđava postale su ikonične
+                    destinacije za fanove širom sveta.
+                </p>
+                <h3 class="section-content-ostrvo-1__content__heading">7. Posetite najstariju apoteku u Evropi</h3>
+                <p class="section-content-ostrvo-1__content__paragraph">
+                    Datira iz 1317. godine i smatra se trećom najstarijom apotekom na svetu.
+                    Nalazi se unutar dominikanskog manastira iz 14. veka.
+                    Ova apoteka, koja je bila u upotrebi tokom doba Raguse, pružala je medicinske usluge lokalnom
+                    stanovništvu i stranim posetiocima.
+                    Danas, posetioci mogu da posete ovu istorijsku znamenitost i da vide staru farmaceutsku opremu,
+                    medicinske knjige i druge artefakte iz perioda.
+                    Takođe, unutar manastira nalazi se i Muzej apoteke koji čuva značajne artefakte iz 15. veka i pruža
+                    uvid u bogatu istoriju ovog mesta.
+                </p>
+            </article>
+            <article class="section-content-ostrvo-1__content__article">
+                <h3 class="section-content-ostrvo-1__content__heading">Najbolja mesta za zabavu u Dubrovniku:</h3>
+                <p class="section-content-ostrvo-1__content__paragraph">Copacabana Beach Club</p>
+                <p class="section-content-ostrvo-1__content__paragraph">Nema luksuznije opcije od Copacabane! Ova
+                    ekskluzivna plaža nalazi se duž obale u obliku polumeseca, pružajući posetiocima spektakularne
+                    poglede na Jadransko more.
+                    Klub je osmišljen tako da gostima pruži vrhunsko iskustvo, uključujući luksuzne kabine, šampanjac i
+                    trendi muziku.</p>
+                <p class="section-content-ostrvo-1__content__paragraph">Sky Bar</p>
+                <p class="section-content-ostrvo-1__content__paragraph">Sky Bar je popularno noćno mesto smešteno blizu
+                    Pile kapije, jednog od glavnih ulaza u Stari grad.
+                    Ovaj bar privlači posetioce svojim trendi dizajnom, modernim ambijentom i uzbudljivom atmosferom.
+                    Vrata bara otvaraju se tek u ponoć, a zabava traje do ranih jutarnjih sati, što ga čini savršenim
+                    mestom za one koji traže zabavu do kasno u noć.
+                    Sky Bar poznat je po svojim spektakularnim žurkama i elektronskoj muzici koja će vas držati na
+                    plesnom podijumu celu noć.</p>
+                <p class="section-content-ostrvo-1__content__paragraph">Revelin Culture Club</p>
+                <p class="section-content-ostrvo-1__content__paragraph">Revelin Culture Club je jedan od najpoznatijih i
+                    najekskluzivnijih klubova u Dubrovniku, smešten unutar zidina stare gradske tvrđave, koja datira iz
+                    15. veka.
+                    Ovaj klub je postao simbol noćnog života grada te privlači posetioce iz celog sveta.
+                    Svojim jedinstvenim ambijentom i energičnom atmosferom, Revelin je nezaobilazna destinacija za sve
+                    ljubitelje zabave i elektronske muzike.</p>
+                <!-- <ul class="section-content__blog__section__list" >
+                        <li class="section-content__blog__section__item" >
+                            <p class="section-content__blog__section__paragraph" >Carpe Diem</p>
+                        </li>
+                        <li class="section-content__blog__section__item" >
+                            <p class="section-content__blog__section__paragraph" >Nautica Bar</p>
+                        </li>
+                        <li class="section-content__blog__section__item" >
+                            <p class="section-content__blog__section__paragraph" >Hula Hula Bar</p>
+                        </li>
+                    </ul> -->
+            </article>
+            <article class="section-content-ostrvo-1__content__article">
+                <h3 class="section-content-ostrvo-1__content__heading">Gde jesti u Dubrovniku?</h3>
+                <p class="section-content-ostrvo-1__content__paragraph">Dubrovnik je raj za ljubitelje hrane, sa
+                    mnoštvom renomiranih restorana koji nude bogat izbor jela.
+                    Bez obzira da li se nalazite unutar zidina Starog grada ili duž Straduna, očekuje vas izvanredno
+                    gastronomsko iskustvo.
+                    Evo nekoliko naših preporuka koje biste mogli posetiti tokom boravka u ovom prelepom gradu.
+                </p>
+                <p class="section-content-ostrvo-1__content__paragraph">Restoran 360</p>
+                <p class="section-content-ostrvo-1__content__paragraph">Nalazi se na spektakularnoj lokaciji na zidinama
+                    UNESCO-ve tvrđave, pružajući predivan pogled na luku i more.
+                    Ovaj restoran ističe se svojim vrhunskim jelima inspirisanim mediteranskom kuhinjom, kao i modernim
+                    interpretacijama tradicionalnih hrvatskih recepata.
+                    Dobitnik je Michelinove zvezde, što dodatno potvrđuje kvalitet njegove kuhinje.
+                    Poseta restoranu 360 pruža priliku da uživate u vrhunskoj usluzi, prefinjenom ambijentu i
+                    gastronomskom iskustvu koje će ostati urezano u pamćenju.</p>
+                <p class="section-content-ostrvo-1__content__paragraph">Nautika</p>
+                <p class="section-content-ostrvo-1__content__paragraph">Nautika je luksuzni restoran smešten uz samu
+                    obalu Dubrovnika, nedaleko od Pile kapije.
+                    Ovaj ugledni restoran poznat je po svojoj izuzetnoj kuhinji i vrhunskoj usluzi.
+                    Restoran je često posećivan od strane poznatih ličnosti, uključujući i pape i članove kraljevskih
+                    porodica, što dodatno potvrđuje njegov ugled i kvalitet.
+                    Ambijent restorana je elegantan, sa prekrasnim pogledom na more, što ga čini idealnim mestom za
+                    romantične večere ili posebne događaje.</p>
+                <p class="section-content-ostrvo-1__content__paragraph">Nishta</p>
+                <p class="section-content-ostrvo-1__content__paragraph">U moru restorana, Nishta se ističe kao mesto za
+                    vegetarijansku i vegansku hranu!
+                    Prvi takav restoran u Dubrovniku, Nishta kombinuje ukuse zapadnih zemalja, uključujući Bliski Istok,
+                    Kinu, Indiju i Meksiko, stvarajući zaista jedinstveni spoj istoka i zapada.
+                    Uživajte u jelima koja variraju od falafela do samosa, kao i u bogatom izboru ukusnih salata u ovom
+                    restoranu u Starom Gradu.</p>
+                <!-- <ul class="section-content__blog__section__list" >
+                        <li class="section-content__blog__section__item" >
+                            <p class="section-content__blog__section__paragraph" >Mizarola</p>
+                        </li>
+                        <li class="section-content__blog__section__item" >
+                            <p class="section-content__blog__section__paragraph" >Apetti</p>
+                        </li>
+                        <li class="section-content__blog__section__item" >
+                            <p class="section-content__blog__section__paragraph" >Divino</p>
+                        </li>
+                    </ul> -->
+            </article>
+            <article class="section-content-ostrvo-1__content__article">
+                <h3 class="section-content-ostrvo-1__content__heading">Atrakcije Starog grada:</h3>
+                <p class="section-content-ostrvo-1__content__paragraph">Pile kapija
+                </p>
+                <p class="section-content-ostrvo-1__content__paragraph">
+                    Pile kapija je jedan od glavnih ulaza u Stari grad Dubrovnika.
+                    To je impozantan kameni luk koji se nalazi na zapadnom kraju Straduna, glavne ulice u Dubrovniku.
+                    Ova kapija je izgrađena u 15. veku i služila je kao glavni prolaz kroz srednjovekovne zidine grada.
+                    Danas je Pile kapija popularna turistička atrakcija i simbol grada. Posetioci mogu proći kroz ovu
+                    kapiju i istražiti Stari grad sa svojim brojnim istorijskim znamenitostima, restoranima i
+                    prodavnicama.
+                </p>
+
+                <p class="section-content-ostrvo-1__content__paragraph">
+                    Dubrovačka katedrala
+                </p>
+                <p class="section-content-ostrvo-1__content__paragraph">
+                    Dubrovačka katedrala, poznata i kao Katedrala Velike Gospe, jedna je od najvažnijih sakralnih
+                    građevina u Dubrovniku.
+                    Nalazi se u samom centru Starog grada Dubrovnika, blizu glavnog trga.
+                    Ova impozantna crkva posvećena je Velikoj Gospi, a njena izgradnja započela je u 12. veku, iako je
+                    više puta pretrpela različite obnove i dogradnje tokom istorije.
+                    Unutrašnjost katedrale bogato je ukrašena umetničkim delima, uključujući slike i skulpture poznatih
+                    majstora poput Tiziana, Rafaela i drugih.
+                    Posebno je impresivan Glavni oltar katedrale, koji je ukrašen srebrom i pozlaćenim reljefima, kao i
+                    relikvijama svetaca.
+                </p>
+                <p class="section-content-ostrvo-1__content__paragraph">
+                    TVRĐAVA LOVRIJENAC
+                </p>
+                <p class="section-content-ostrvo-1__content__paragraph">
+                    Tvrđava Lovrijenac se nalazi izvan Dubrovnika, duž njegove obale na stenovitom vrhu brda.
+                    Smatra se jednim od najznačajnijih bedema u Dubrovačkoj odbrambenoj strukturi, zajedno sa zidinama
+                    grada.
+                    Izgrađena je u 11. veku kao odgovor na rastuću pretnju od morskih napadača.
+                    Visoka preko 37 metara, Tvrđava Lovrijenac dominira obalom i pruža impresivan pogled na Jadransko
+                    more i okolne oblasti.
+                    Posetioci mogu istražiti unutrašnjost tvrđave, prošetati se po zidinama i uživati u panoramskom
+                    pogledu na grad i more.
+                    Takođe je često korišćena kao lokacija za različite kulturne događaje, poput pozorišnih predstava i
+                    koncerata, što doprinosi njenom šarmu i privlačnosti.
+                </p>
+                <!-- <ul class="section-content__blog__section__list" >
+                    <li class="section-content__blog__section__item" >
+                        <p class="section-content__blog__section__paragraph" >Pokonji dol</p>
+                    </li>
+                    <li class="section-content__blog__section__item" >
+                        <p class="section-content__blog__section__paragraph" >Mekičevica plaža</p>
+                    </li>
+                    <li class="section-content__blog__section__item" >
+                        <p class="section-content__blog__section__paragraph" >Dubovica</p>
+                    </li>
+                </ul> -->
+
+            </article>
+            <div class="section-gallery__gallery">
+                <div class="section-gallery__gallery__column">
+                    <div class="section-gallery__gallery__row">
+                        <img class="section-gallery__gallery__image-2" src="./assets/images/dubrovnik/3.jpg" />
+                        <img class="section-gallery__gallery__image-2" src="./assets/images/dubrovnik/4.jpg" />
+                    </div>
+                    <div class="section-gallery__gallery__row-large">
+                        <img class="section-gallery__gallery__image" src="./assets/images/dubrovnik/5.jpg" />
+                    </div>
+                </div>
+                <div class="section-gallery__gallery__column">
+                    <div class="section-gallery__gallery__row-large">
+                        <img class="section-gallery__gallery__image" src="./assets/images/dubrovnik/6.jpg" />
+                    </div>
+                    <div class="section-gallery__gallery__row">
+                        <img class="section-gallery__gallery__image-2" src="./assets/images/dubrovnik/Buza bar.jpg" />
+                        <img class="section-gallery__gallery__image-2" src="./assets/images/dubrovnik/Game of thrones stepenice.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__body">
+            <div class="footer__mobile">
+                <img class="footer__mobile__logo" src="./assets/svgs/logo.svg" />
+                <div class="footer__mobile__social">
+                    <a class="footer__mobile__social__link">
+                        <img class="footer__mobile__social__icon" src="./assets/svgs/social-icon-1.svg" />
+                    </a>
+                    <a class="footer__mobile__social__link">
+                        <img class="footer__mobile__social__icon" src="./assets/svgs/social-icon-2.svg" />
+                    </a>
+                    <a class="footer__mobile__social__link">
+                        <img class="footer__mobile__social__icon" src="./assets/svgs/social-icon-3.svg" />
+                    </a>
+                </div>
+            </div>
+            <img class="footer__logo" src="./assets/svgs/logo.svg" />
+            <ul class="footer__links">
+                <div class="footer__divider">
+                    <li class="footer__link">
+                        <p class="footer__link__title">Vodič</p>
+                        <ul class="footer__sublinks">
+                            <li class="footer__sublink">
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/vodic.html#link-1">Kako bukirati brod</a>
+                            </li>
+                            <li class="footer__sublink">
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/vodic.html#link-2">Odabir plovila</a>
+                            </li>
+                            <li class="footer__sublink">
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/vodic.html#link-3">Sve o jedrenju</a>
+                            </li>
+                            <li class="footer__sublink">
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/vodic.html#link-4">Skipper/Kapetan</a>
+                            </li>
+                            <li class="footer__sublink">
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/vodic.html#link-5">Agent za najam plovila</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer__link">
+                        <p class="footer__link__title">Pustolovine</p>
+                        <ul class="footer__sublinks">
+                            <li class="footer__sublink">
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/pustolovine.html#link-1">Privatna tura</a>
+                            </li>
+                            <li class="footer__sublink">
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/pustolovine.html#link-2">Iznajmljivanje
+                                    kabine</a>
+                            </li>
+                            <li class="footer__sublink">
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/pustolovine.html#link-3">Hotila</a>
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+                <div class="footer__divider">
+                    <li class="footer__link">
+                        <a class="footer__link__title" href="/destinacije">Destinacije</a>
+                    </li>
+                    <li class="footer__link">
+                        <a class="footer__link__title" href="/plovila">Plovila</a>
+                    </li>
+                    <li class="footer__link">
+                        <a class="footer__link__title" href="/o-nama">O nama</a>
+                    </li>
+                </div>
+            </ul>
+            <div class="footer__social">
+                <a class="footer__social__link">
+                    <img class="footer__social__icon" src="./assets/svgs/social-icon-1.svg" />
+                </a>
+                <a class="footer__social__link">
+                    <img class="footer__social__icon" src="./assets/svgs/social-icon-2.svg" />
+                </a>
+                <a class="footer__social__link">
+                    <img class="footer__social__icon" src="./assets/svgs/social-icon-3.svg" />
+                </a>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p class="footer__copyright__text">© 2024 MDSailing. Sva prava zadržana.</p>
+        </div>
+    </footer>
+    <script src="./header.js">
+    </script>
+</body>
+
+</html>

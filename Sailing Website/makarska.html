@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD Sailing - Makarska</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./assets/logo/Logo.ico">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <a class="header__logo-link" href="/index.html">
+                <img class="header__logo" src="./assets/svgs/logo.svg" alt="logo" />
+            </a>
+            <ul class="header__list">
+                <li class="header__item header__item__dropdown" id="vodic">
+                    <a class="header__anchor">
+                        Vodič
+                    </a>
+                    <img class="header__item__arrow" id="vodic-arrow" src="./assets/svgs/arrow-down.svg"
+                        alt="strelica na dole" />
+                </li>
+                <li class="header__item header__item__dropdown" id="pustolovine">
+                    <a class="header__anchor">
+                        Pustolovine
+                    </a>
+                    <img class="header__item__arrow" id="pustolovine-arrow" src="./assets/svgs/arrow-down.svg"
+                        alt="strelica na dole" />
+                </li>
+                <li class="header__item">
+                    <a href="/destinacije" class="header__anchor header__anchor__selected">
+                        Destinacije
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="/plovila" class="header__anchor">
+                        Plovila
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="/o-nama" class="header__anchor">
+                        O nama
+                    </a>
+                </li>
+                <li class="header__item">
+                    <a href="/index.html#sailing-form" class="CTA CTA__default CTA__primary">
+                        Rezerviši plovilo
+                    </a>
+                </li>
+            </ul>
+            <button class="header__button" id="burgerButton" aria-label="burger button">
+                <hr class="header__hr" id="hr1">
+                <hr class="header__hr" id="hr2">
+                <hr class="header__hr" id="hr3">
+            </button>
+            <menu class="header__menu" id="menu">
+                <li class="header__menu__item" id="vodic-hamburger">
+                    <a class="header__menu__anchor"> Vodič </a>
+                    <img class="header__item__arrow" id="vodic-hamburger-arrow" src="./assets/svgs/arrow-down.svg"
+                        alt="strelica na dole" />
+                </li>
+                <menu class="header__vodic-hamburger-menu" id="vodic-hamburger-menu">
+                    <a class="header__vodic-hamburger-menu__item" href="/vodic.html#link-1">
+                        <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__vodic-hamburger-menu__text">Kako bukirati brod</p>
+                    </a>
+                    <a class="header__vodic-hamburger-menu__item" href="/vodic.html#link-2">
+                        <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__vodic-hamburger-menu__text">Sve o jedrenju</p>
+                    </a>
+                    <a class="header__vodic-hamburger-menu__item" href="/vodic.html#link-3">
+                        <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__vodic-hamburger-menu__text">Odabir plovila</p>
+                    </a>
+                    <a class="header__vodic-hamburger-menu__item" href="/vodic.html#link-4">
+                        <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__vodic-hamburger-menu__text">Skipper / Kapetan</p>
+                    </a>
+                    <a class="header__vodic-hamburger-menu__item" href="/vodic.html#link-5">
+                        <img class="header__vodic-hamburger-menu__icon" src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__vodic-hamburger-menu__text">Agent za najam plovila</p>
+                    </a>
+                </menu>
+                <li class="header__menu__item" id="pustolovine-hamburger">
+                    <a class="header__menu__anchor"> Pustolovine
+                    </a>
+                    <img class="header__item__arrow" id="pustolovine-hamburger-arrow" src="./assets/svgs/arrow-down.svg"
+                        alt="strelica na dole" />
+                </li>
+                <menu class="header__pustolovine-hamburger-menu" id="pustolovine-hamburger-menu">
+                    <a class="header__pustolovine-hamburger-menu__item" href="/pustolovine.html#link-1">
+                        <img class="header__pustolovine-hamburger-menu__icon"
+                            src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__pustolovine-hamburger-menu__text">Privatna tura</p>
+                    </a>
+                    <a class="header__pustolovine-hamburger-menu__item" href="/pustolovine.html#link-2">
+                        <img class="header__pustolovine-hamburger-menu__icon"
+                            src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__pustolovine-hamburger-menu__text">Iznajmljivanje kabine</p>
+                    </a>
+                    <a class="header__pustolovine-hamburger-menu__item" href="/pustolovine.html#link-3">
+                        <img class="header__pustolovine-hamburger-menu__icon"
+                            src="./assets/svgs/footer-sublink-arrow.svg" />
+                        <p class="header__pustolovine-hamburger-menu__text">Hotila</p>
+                    </a>
+                </menu>
+                <li class="header__menu__item">
+                    <a href="/destinacije" class="header__menu__anchor"> Destinacije
+                    </a>
+                </li>
+                <li class="header__menu__item">
+                    <a href="/plovila" class="header__menu__anchor"> Plovila
+                    </a>
+                </li>
+                <li class="header__menu__item">
+                    <a href="/o-nama" class="header__menu__anchor"> O nama
+                    </a>
+                </li>
+                <li class="header__menu__item">
+                    <a href="/index.html#sailing-form" class="CTA CTA__small CTA__primary">
+                        Rezerviši plovilo
+                    </a>
+                </li>
+            </menu>
+        </nav>
+        <menu class="header__vodic-menu" id="vodic-menu">
+            <a class="header__vodic-menu__item" href="/vodic.html#link-1">
+                <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-1.svg" />
+                <p class="header__vodic-menu__text">Kako bukirati brod</p>
+            </a>
+            <a class="header__vodic-menu__item" href="/vodic.html#link-2">
+                <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-2.svg" />
+                <p class="header__vodic-menu__text">Odabir plovila</p>
+            </a>
+            <a class="header__vodic-menu__item" href="/vodic.html#link-3">
+                <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-3.svg" />
+                <p class="header__vodic-menu__text">Sve o jedrenju</p>
+            </a>
+            <a class="header__vodic-menu__item" href="/vodic.html#link-4">
+                <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-4.svg" />
+                <p class="header__vodic-menu__text">Skiper / Kapetan</p>
+            </a>
+            <a class="header__vodic-menu__item" href="/vodic.html#link-5">
+                <img class="header__vodic-menu__icon" src="./assets/svgs/vodic-icon-5.svg" />
+                <p class="header__vodic-menu__text">Agent za najam plovila</p>
+            </a>
+        </menu>
+        <menu class="header__pustolovine-menu" id="pustolovine-menu">
+            <a class="header__pustolovine-menu__item" href="/pustolovine.html#link-1">
+                <img class="header__pustolovine-menu__icon" src="./assets/svgs/pustolovina-icon-1.svg" />
+                <p class="header__pustolovine-menu__text">Privatna tura</p>
+            </a>
+            <a class="header__pustolovine-menu__item" href="/pustolovine.html#link-2">
+                <img class="header__pustolovine-menu__icon" src="./assets/svgs/pustolovina-icon-2.svg" />
+                <p class="header__pustolovine-menu__text">Iznajmljivanje kabine</p>
+            </a>
+            <a class="header__pustolovine-menu__item" href="/pustolovine.html#link-3">
+                <img class="header__pustolovine-menu__icon" src="./assets/svgs/pustolovina-icon-3.svg" />
+                <p class="header__pustolovine-menu__text">Hotila</p>
+            </a>
+        </menu>
+    </header>
+    <section class="section-hero section-hero-mini section-hero-ostrvo-1">
+        <div class="section-hero__text">
+            <h1 class="heading__h1 section-hero__text__heading"> Makarska </h1>
+        </div>
+    </section>
+    <section class="section-content-ostrvo-1 section">
+        <div class="section__heading">
+            <h2 class="heading__h2 heading__h2__lightmode"> Makarska </h2>
+            <p class="paragraph__subheading-h2 paragraph__subheading-h2__lightmode"> Makarska - Poluostrvski grad smešten uz ivicu Jadranskog mora.</p>
+        </div>
+        <div class="section-content-ostrvo-1__content">
+            <article class="section-content-ostrvo-1__content__article">
+                <p class="section-content-ostrvo-1__content__paragraph">Biser hrvatske obale koji će vas zapanjiti svojom lepotom i raznolikošću.
+                    Ovaj grad ima nešto za svakoga, bilo da ste ljubitelj sunca i plaže, avanturističkog duha ili pak gurman koji uživa u lokalnoj kuhinji.
+                    Zamislite se kako šetate dugim šetalištima obasjanim suncem dok udišete sveži morski vazduh i uživate u pogledu na kristalno čisto more.</p>
+                <p class="section-content-ostrvo-1__content__paragraph">Makarska je upravo takvo mjesto - pravi raj za ljubitelje plaže i vodenih sportova.
+                    Plaže su očaravajuće, a more je osvežavajuće i idealno za plivanje ili ronjenje.</p>
+                <p class="section-content-ostrvo-1__content__paragraph">No, Makarska je mnogo više od plaža. Zahvaljujući spektakularnom planinskom lancu Biokovo, ovde ćete pronaći i prekrasne planinske staze koje vode do neverovatnih vidikovaca sa kojih puca pogled na celi grad i okolinu.
+                    To je prilika za avanturiste da istraže netaknutu prirodu i osete mir i tišinu koju nudi ova planinska oaza.</p>
+                <p class="section-content-ostrvo-1__content__paragraph">A kad ogladnite, ne propustite priliku da uživate u bogatstvu ukusa dalmatinske kuhinje u jednom od lokalnih restorana ili konoba. 
+                    Ovde ćete pronaći sveže ulovljenu ribu, ukusne morske plodove, domaće maslinovo ulje i vrhunska vina koja će zadovoljiti i najizbirljivije nepce.
+                    Ali to nije sve! Makarska nudi i živahnu noćnu scenu sa brojnim barovima, klubovima i lounge barovima koji će vas zabaviti do kasno u noć.
+                     Upoznajte lokalno stanovništvo, zaplešite uz ritam muzike i uživajte u opuštenoj atmosferi ovog prekrasnog grada.</p>
+            </article>
+            <div class="section-content-ostrvo-1__content__images">
+                <img class="section-content-ostrvo-1__content__image" src="./assets/images/makarska/1.jpg" />
+                <img class="section-content-ostrvo-1__content__image" src="./assets/images/makarska/2.jpg" />
+            </div>
+            <article class="section-content-ostrvo-1__content__article">
+                <h3 class="section-content-ostrvo-1__content__heading">Ovo su naše omiljene stvari koje možete raditi u Makarskoj:</h3>
+                <h3 class="section-content-ostrvo-1__content__heading">1. Posetite ogradu ljubavi</h3>
+                <p class="section-content-ostrvo-1__content__paragraph">
+                    Ograda ljubavi u Makarskoj predstavlja posebno mesto na kojem se posetioci i lokalci odlučuju da simbolično obeleže svoju ljubav.
+ Nalazi se duž obale, a na lancima ograde su zaključani brojni katanci, svaki sa svojom pričom. 
+Ova tradicija potiče iz različitih delova sveta, a u Makarskoj je posebno omiljena.
+ Uz prelep pogled na Jadransko more i ugodnu atmosferu, Ograda ljubavi postala je nezaobilazna tačka za zaljubljene parove i romantične duše koje posećuju ovaj predivni grad na hrvatskoj obali.
+                </p>
+                <div class="section-content-ostrvo-1__content__images">
+                    <img class="section-content-ostrvo-1__content__image"
+                        src="./assets/images/makarska/Observatory.jpg" />
+                </div>
+                <p class="section-content-ostrvo-1__desc">Posetite astronomsku opservatoriju</p>
+                <h3 class="section-content-ostrvo-1__content__heading">2. Pogledajte film u bioskopu na otvorenom</h3>
+                <p class="section-content-ostrvo-1__content__paragraph">
+                    Da li ste znali da Makarska ima astronomsku opservatoriju?
+ Za one koji su zainteresovani za svemirska istraživanja ili jednostavno radoznali putnici, posetite opservatoriju koja se nalazi samo 50 metara od centra grada!
+Makarska ima sreću da doživi niske nivoe svetlosnog zagađenja i sa obzirom na svoju odličnu lokaciju blizu mora, okruženu borovom šumom, preporučujemo posetu opservatoriji u sumrak.
+ Imaćete priliku da vidite spektakularno zvezdano nebo koje se može opisati samo kao vanzemaljsko!
+                </p>
+                <h3 class="section-content-ostrvo-1__content__heading">3. Planinarenje planinom Biokovo</h3>
+                <p class="section-content-ostrvo-1__content__paragraph">
+                    Planinarenje na planini Biokovo iznad Makarske pruža nezaboravno iskustvo za sve ljubitelje prirode i avanture. 
+Biokovo je impresivan planinski lanac koji se uzdiže iznad obale Dalmacije, pružajući spektakularne pejzaže i neverovatne vidike.
+Jedan od najpopularnijih staza za planinarenje je staza koja vodi do najvišeg vrha Biokova - Svetog Jurea, koji se uzdiže na visinu od 1.762 metra nadmorske visine.
+ Ova staza nudi izazovno ali uzbudljivo planinarenje kroz guste borove šume i strmije delove terena.
+ Na vrhu Svetog Jurea, posetioci će biti nagrađeni zadivljujućim panoramskim pogledom na obalu Jadranskog mora, Makarsku rivijeru i okolne planinske vrhove.
+Ako je dan dovoljno vedar možda ćete videti čak i delove Italije i Bosne.
+                </p>
+            </article>
+            <article class="section-content-ostrvo-1__content__article">
+                <h3 class="section-content-ostrvo-1__content__heading">Najbolja mesta za izlazak u Makarskoj:</h3>
+                <p class="section-content-ostrvo-1__content__paragraph">Kada je reč o mestima za izlazak, Makarska možda nije najpoznatija destinacija među putnicima, ali ima neke od najuzbudljivijih noćnih lokacija u Hrvatskoj. 
+                    Od klubova u pećinama do otvorenih prostora, očekujte neočekivano od Makarske!</p>
+                <p class="section-content-ostrvo-1__content__paragraph">
+                    &nbsp &nbsp &nbsp 1. 1. Club Deep
+                </p>
+                <p class="section-content-ostrvo-1__content__paragraph">
+                    Klub Deep je neosporno najpoznatiji i najpopularniji noćni klub u Makarskoj, a razlozi za to su očigledni.
+ Smešten u pećini duž obale Makarske, ovaj klub privlači ljubitelje zabave iz svih krajeva koji dolaze da uživaju u house ritmovima i obilju pića.
+                </p>
+                <p class="section-content-ostrvo-1__content__paragraph">
+                    &nbsp &nbsp &nbsp 2. Petar Pan
+                </p>
+                <p class="section-content-ostrvo-1__content__paragraph">
+                    Makarska je prepuna klubova na otvorenom, a jedno od omiljenih mesta za provod je Petar Pan.
+ Smešten tik uz plažu, ovaj klub nudi žurke uz zvuke rnb-a, elektronske i plesne muzike, dok se družite sa saputnicima i lokalnim stanovnicima Makarske do ranih jutarnjih sati!
+                </p>
+            </article>
+            <article class="section-content-ostrvo-1__content__article">
+                <h3 class="section-content-ostrvo-1__content__heading">Gde jesti u Makarskoj:</h3>
+                <p class="section-content-ostrvo-1__content__paragraph">
+                    Kao i u većini gradova u Hrvatskoj, restorani u Makarskoj nude ukusnu hranu koja će oduševiti vaše nepce. 
+Tik uz obalu možete pronaći najsvežiji ulov dana ili se odlučiti za bogatu ponudu hrvatske kuhinje.
+ Ako vas zanima gde se zaustaviti, svakako preporučujemo da pitate lokalce za njihove omiljene i tajne preporuke!
+                </p>
+                <p class="section-content-ostrvo-1__content__paragraph">
+                    &nbsp &nbsp &nbsp 1. Domina
+                </p>
+                <p class="section-content-ostrvo-1__content__paragraph">
+                    Ljubitelji pizze, obratite pažnju! Omiljena među turistima, Domina je poznata po odličnoj usluzi i još boljoj pici.
+ Idealno mesto za opuštanje i punjenje energije uz parče po vašem izboru.
+                </p>
+                <p class="section-content-ostrvo-1__content__paragraph">
+                    &nbsp &nbsp &nbsp 2. Briskula
+                </p>
+                <p class="section-content-ostrvo-1__content__paragraph">
+                    U centru glavnog trga Makarske, očekuje vas lokalni favorit koji nudi mediteransku kuhinju obogaćenu tradicionalnim jelima uz hrvatska vina i domaće rakije.
+ Opustite se uz predivan pogled na Jadransko more i lokalno vino u ruci dok završavate dan!
+                </p>
+                <p class="section-content-ostrvo-1__content__paragraph">
+                    &nbsp &nbsp &nbsp 3. Freyja
+                </p>
+                <p class="section-content-ostrvo-1__content__paragraph">
+                    Jedinstvena i kreativna kuhinja je ono što izdvaja restoran Freyja od drugih u Makarskoj.
+ Naziv restorana inspirisan je nordijskom mitologijom, odajući počast strasti i lepoti, a to se odražava i u njihovim jelima.
+ Tokom dana možete uživati u opuštenoj atmosferi i konceptu ulične hrane, dok večernje čari donose sofisticiranije doživljaje sa mediteranskim sastojcima i modernim tumačenjem tradicionalnih dalmatinskih recepata.
+                </p>
+            </article>
+            <article class="section-content-ostrvo-1__content__article">
+                <h3 class="section-content-ostrvo-1__content__heading">Posetite najlepše plaže u Makarskoj:</h3>
+                <p class="section-content-ostrvo-1__content__paragraph">
+                    Obzirom da se Makarska Rivijera proteže na preko 60 kilometara duž obale, očekuje vas niz spektakularnih plaža duž njenih obala!
+ Evo nekoliko naših omiljenih koje biste trebali istražiti!
+                </p>
+                <p class="section-content-ostrvo-1__content__paragraph">
+                    &nbsp &nbsp &nbsp 1. Plaža Makarska
+                </p>
+                <p class="section-content-ostrvo-1__content__paragraph">
+                    &nbsp &nbsp &nbsp 2. Baška Voda
+                </p>
+                <p class="section-content-ostrvo-1__content__paragraph">
+                    &nbsp &nbsp &nbsp 3. Plaža Nugul 
+                </p>
+
+            </article>
+
+            <div class="section-content-ostrvo-1__content__images">
+                <img class="section-content-ostrvo-1__content__image" src="./assets/images/makarska/Biokovo.jpg" />
+                <img class="section-content-ostrvo-1__content__image" src="./assets/images/makarska/Klub deep.jpg" />
+            </div>
+            <div class="section-gallery__gallery">
+                <div class="section-gallery__gallery__column">
+                    <div class="section-gallery__gallery__row">
+                        <img class="section-gallery__gallery__image-2" src="./assets/images/makarska/Night life.jpg" />
+                        <img class="section-gallery__gallery__image-2" src="./assets/images/makarska/Nugal Plaza.jpg" />
+                    </div>
+                    <div class="section-gallery__gallery__row-large">
+                        <img class="section-gallery__gallery__image" src="./assets/images/makarska/ograda ljubavi.jpg" />
+                    </div>
+                </div>
+                <div class="section-gallery__gallery__column">
+                    <div class="section-gallery__gallery__row-large">
+                        <img class="section-gallery__gallery__image" src="./assets/images/makarska/Petar Pan club.jpg" />
+                    </div>
+                    <div class="section-gallery__gallery__row">
+                        <img class="section-gallery__gallery__image-2" src="./assets/images/makarska/Plaza Baska Voda.jpg" />
+                        <img class="section-gallery__gallery__image-2" src="./assets/images/makarska/Sv Jure.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__body">
+            <div class="footer__mobile">
+                <img class="footer__mobile__logo" src="./assets/svgs/logo.svg" />
+                <div class="footer__mobile__social">
+                    <a class="footer__mobile__social__link">
+                        <img class="footer__mobile__social__icon" src="./assets/svgs/social-icon-1.svg" />
+                    </a>
+                    <a class="footer__mobile__social__link">
+                        <img class="footer__mobile__social__icon" src="./assets/svgs/social-icon-2.svg" />
+                    </a>
+                    <a class="footer__mobile__social__link">
+                        <img class="footer__mobile__social__icon" src="./assets/svgs/social-icon-3.svg" />
+                    </a>
+                </div>
+            </div>
+            <img class="footer__logo" src="./assets/svgs/logo.svg" />
+            <ul class="footer__links">
+                <div class="footer__divider">
+                    <li class="footer__link">
+                        <p class="footer__link__title">Vodič</p>
+                        <ul class="footer__sublinks">
+                            <li class="footer__sublink">
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/vodic.html#link-1">Kako bukirati brod</a>
+                            </li>
+                            <li class="footer__sublink">
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/vodic.html#link-2">Odabir plovila</a>
+                            </li>
+                            <li class="footer__sublink">
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/vodic.html#link-3">Sve o jedrenju</a>
+                            </li>
+                            <li class="footer__sublink">
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/vodic.html#link-4">Skipper/Kapetan</a>
+                            </li>
+                            <li class="footer__sublink">
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/vodic.html#link-5">Agent za najam plovila</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer__link">
+                        <p class="footer__link__title">Pustolovine</p>
+                        <ul class="footer__sublinks">
+                            <li class="footer__sublink">
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/pustolovine.html#link-1">Privatna tura</a>
+                            </li>
+                            <li class="footer__sublink">
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/pustolovine.html#link-2">Iznajmljivanje
+                                    kabine</a>
+                            </li>
+                            <li class="footer__sublink">
+                                <img class="footer__sublink__arrow" src="./assets/svgs/footer-sublink-arrow.svg" />
+                                <a class="footer__sublink__anchor" href="/pustolovine.html#link-3">Hotila</a>
+                            </li>
+                        </ul>
+                    </li>
+                </div>
+                <div class="footer__divider">
+                    <li class="footer__link">
+                        <a class="footer__link__title" href="/destinacije">Destinacije</a>
+                    </li>
+                    <li class="footer__link">
+                        <a class="footer__link__title" href="/plovila">Plovila</a>
+                    </li>
+                    <li class="footer__link">
+                        <a class="footer__link__title" href="/o-nama">O nama</a>
+                    </li>
+                </div>
+            </ul>
+            <div class="footer__social">
+                <a class="footer__social__link">
+                    <img class="footer__social__icon" src="./assets/svgs/social-icon-1.svg" />
+                </a>
+                <a class="footer__social__link">
+                    <img class="footer__social__icon" src="./assets/svgs/social-icon-2.svg" />
+                </a>
+                <a class="footer__social__link">
+                    <img class="footer__social__icon" src="./assets/svgs/social-icon-3.svg" />
+                </a>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p class="footer__copyright__text">© 2024 MDSailing. Sva prava zadržana.</p>
+        </div>
+    </footer>
+    <script src="./header.js">
+    </script>
+</body>
+
+</html>
